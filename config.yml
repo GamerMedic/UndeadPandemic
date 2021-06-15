@@ -18,7 +18,6 @@ Kill_Reward_Head_Shot: 15.0 # Reward if player gets a head shot (will not work w
 # Do not use numeric IDs, and it's recommended that you use all caps for mob names. Replace all spaces with an underscore ( _ ).
 # ZOMBIE will be ignored, because there's no point disabling Zombies in a Zombie Apocalypse plugin :)
 
-#?Premium
 Disable_Mobs:
   - BLAZE
   - CAVE_SPIDER
@@ -59,8 +58,6 @@ Zombie_Spawn_Rate: 5
 Drop_Exp: false
 
 # GUN SETTINGS
-
-# 1 Gun on Free, rest on Premium
 Weapons:
   99P:
     # The type of weapon can be changed to use different ammo.
@@ -115,8 +112,6 @@ Weapons:
     Head_Shot_Damage: 20
     
 # AMMO SETTINGS
-
-# Customisable on Premium
 Ammo:
   Pistol:
     Name: '&fPistol Bullet'
