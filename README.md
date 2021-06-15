@@ -79,3 +79,4 @@ This is a zombie apocalypse plugin made for Spigot 1.16.5.
   - [ ] First Aid Kits
   - [ ] Thirst System
   - [ ] Melee Weapons
+  - [ ] Weapon & Ammo Sound Bytes
