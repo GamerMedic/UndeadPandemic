@@ -1,0 +1,129 @@
+# MESSAGE SETTINGS
+
+Show_Message: true # If the headshot message should appear
+Head_Shot_ActionBar_Text: '&bYou got a headshot!'
+Show_Message_Length: 3 # How long the head shot message show appear on screen for, in seconds.
+
+# KILL SETTINGS
+
+Kill_Reward: 10.0 # Currency to award player for killing a zombie.
+Kill_Reward_Head_Shot: 15.0 # Reward if player gets a head shot (will not work when using a shotgun).
+
+# MOB SETTINGS
+
+# You can disable any mob by listing it below, or enable disabled mobs by removing them. It is recommended that you add a # to the start of the mob like so:
+# - BLAZE
+# This will enable the BLAZE mobs and you can disabled them again by removing the #.
+# We recommend fetching mob names from https://minecraft-ids.grahamedgecombe.com/entities
+# Do not use numeric IDs, and it's recommended that you use all caps for mob names. Replace all spaces with an underscore ( _ ).
+# ZOMBIE will be ignored, because there's no point disabling Zombies in a Zombie Apocalypse plugin :)
+
+#?Premium
+Disable_Mobs:
+  - BLAZE
+  - CAVE_SPIDER
+  - CREEPER
+  - ENDER_DRAGON
+  - ENDERMAN
+  - ENDERMITE
+  - EVOKER
+  - EVOKER_FANGS
+  - GHAST
+  - GIANT
+  - HUSK
+  - PHANTOM
+  - PILLAGER
+  - RAVAGER
+  - SKELETON
+  - SLIME
+  - SPIDER
+  - STRAY
+  - STRIDER
+  - VEX
+  - VINDICATOR
+  - WITCH
+  - WITHER
+  - WITHER_SKELETON
+
+# The higher the spawn rate is, the slower your server will be. Be careful with this settings.
+# The default is 5, this should be enough to occasionally cause herds.
+# Set the spawn rate to -1 to disable it. This will not disable Zombie spawning, it will simply prevent more Zombies from spawning.
+# You should restart your server after changing this setting as it may not work when reloading the config.
+
+Zombie_Spawn_Rate: 5
+
+# Mob Exp
+
+# Should Zombies drop Exp? If you have a high spawn rate, then it's recommended that this is set to false, because otherwise your players will get a LOT of exp from killing zombies.
+# This is false by default, which means that you must explicitly set it to true if you want Zombies to drop Exp Orbs.
+Drop_Exp: false
+
+# GUN SETTINGS
+
+# 1 Gun on Free, rest on Premium
+Weapons:
+  99P:
+    # The type of weapon can be changed to use different ammo.
+    Type: 'Pistol'
+    Name: '&fWither 99P'
+    Lore: '&fAn effective pistol.'
+    # Material ID - We used https://www.digminecraft.com/lists/item_id_list_pc.php and recommend that you use it too. Use Minecraft ID NAME (NOT numeric ID).
+    Material: MUSIC_DISC_11
+    # Damage: 20 = 10 Hearts. This should be enough, but you can set it to anything. THIS CANNOT BE ZERO OR NEGATIVE - negative and zero values will default to a damage value of 10
+    Damage: 20
+    # Head shot damage a bonus damage amount that is applied when a player gets head shot. It's recommended that the additional damage is enough to kill the target entity.
+    Head_Shot_Damage: 20
+
+  AK-47:
+    Type: 'Rifle'
+    Name: '&fAK-47'
+    Lore: '&fCheap and effective... sometimes.'
+    Material: MUSIC_DISC_13
+    Damage: 20
+    Head_Shot_Damage: 20 # Head shot damage is ignored for the AK-47.
+
+  Barcine:
+    Type: 'Rifle'
+    Name: '&fBarcine'
+    Lore: '&fA powerful semi-automatic rifle.'
+    Material: MUSIC_DISC_BLOCKS
+    Damage: 20
+    Head_Shot_Damage: 20
+
+  MK31:
+    Type: 'Rifle'
+    Name: '&fRimmington MK31'
+    Lore: '&fA military-grade sniper rifle.'
+    Material: MUSIC_DISC_CAT
+    Damage: 20
+    Head_Shot_Damage: 20
+
+  Nuck:
+    Type: 'Shotgun'
+    Name: '&fNuck Shotgun'
+    Lore: '&fA shotgun fitting for a farmer, and his mum.'
+    Material: MUSIC_DISC_CHIRP
+    Damage: 20
+    Head_Shot_Damage: 20
+
+  Revolver:
+    Type: 'Pistol'
+    Name: '&fMagnus Revolver'
+    Lore: '&fThe classic 6-shot pistol.'
+    Material: MUSIC_DISC_FAR
+    Damage: 20
+    Head_Shot_Damage: 20
+    
+# AMMO SETTINGS
+
+# Customisable on Premium
+Ammo:
+  Pistol:
+    Name: '&fPistol Bullet'
+    Lore: '&fBullets for Pistols, obviously.'
+  Rifle:
+    Name: '&fRifle Bullet'
+    Lore: '&fBullets for rifles and sniper rifles.'
+  Shotgun:
+    Name: '&fShotgun Shell'
+    Lore: '&fShells for a shotgun.'
