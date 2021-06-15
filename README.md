@@ -75,6 +75,7 @@ This is a zombie apocalypse plugin made for Spigot 1.16.5.
 
   - [ ] Safe Zones & Camps
   - [ ] Barbed Wire Player Damage
+  - [ ] Infection System
   - [ ] First Aid Kits
   - [ ] Thirst System
   - [ ] Melee Weapons
