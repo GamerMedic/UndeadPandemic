@@ -4,6 +4,10 @@ Show_Message: true # If the headshot message should appear
 Head_Shot_ActionBar_Text: '&bYou got a headshot!'
 Show_Message_Length: 3 # How long the head shot message show appear on screen for, in seconds.
 
+# Barbed WIRE SETTINGS
+
+Barbed_Wire_Damage: 2.0 # 1.0 = half a heart;
+
 # KILL SETTINGS
 
 Kill_Reward: 10.0 # Currency to award player for killing a zombie.
@@ -58,6 +62,8 @@ Zombie_Spawn_Rate: 5
 Drop_Exp: false
 
 # GUN SETTINGS
+
+# 1 Gun on Free, rest on Premium
 Weapons:
   99P:
     # The type of weapon can be changed to use different ammo.
@@ -112,6 +118,8 @@ Weapons:
     Head_Shot_Damage: 20
     
 # AMMO SETTINGS
+
+# Customisable on Premium
 Ammo:
   Pistol:
     Name: '&fPistol Bullet'
