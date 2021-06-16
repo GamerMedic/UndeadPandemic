@@ -15,8 +15,9 @@ This is a zombie apocalypse plugin made for Spigot 1.16.5.
   - Enable/Disable Mobs;
   - Enable/Disable Zombie Exp Drops;
   - Set the Zombie spawn rate;
-  - Enable/Disable head shot title message.
-  - Barbed wire will cause damage to player.
+  - Enable/Disable head shot title message;
+  - Barbed wire will cause damage to player;
+  - Thirst system.
 
 ### COMMANDS
 
@@ -77,6 +78,6 @@ This is a zombie apocalypse plugin made for Spigot 1.16.5.
   - [X] Barbed Wire Player Damage
   - [ ] Infection System
   - [ ] First Aid Kits
-  - [ ] Thirst System
+  - [X] Thirst System
   - [ ] Melee Weapons
-  - [ ] Weapon & Ammo Sound Bytes
+  - [X] Weapon & Ammo Sound Bytes
