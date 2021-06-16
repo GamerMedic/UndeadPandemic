@@ -57,9 +57,30 @@ Zombie_Spawn_Rate: 5
 
 # Mob Exp
 
-# Should Zombies drop Exp? If you have a high spawn rate, then it's recommended that this is set to false, because otherwise your players will get a LOT of exp from killing zombies.
-# This is false by default, which means that you must explicitly set it to true if you want Zombies to drop Exp Orbs.
+# Should mobs drop Exp? It is recommended that this is set to false if you have the thirst system enabled, otherwise the thirst system will not work as intended.
+
 Drop_Exp: false
+
+# THIRST SETTINGS
+
+enable_thirst: true
+dehydration_rate: 90 # The player's thirst will reduce by 1% every x seconds. Default = 90 seconds.
+
+# Set replenishing thirst level for consumables
+
+APPLE: 2
+BEETROOT_SOUP: 50
+CARROT: 5
+GLISTERING_MELON_SLICE: 20
+GOLDEN_CARROT: 15
+HONEY_BOTTLE: 15
+MELON_SLICE: 10
+MILK_BUCKET: 75
+MUSHROOM_STEW: 50
+RABBIT_STEW: 50
+ROTTEN_FLESH: -15
+SUSPICIOUS_STEW: -10
+WATER_BOTTLE: 75
 
 # GUN SETTINGS
 
