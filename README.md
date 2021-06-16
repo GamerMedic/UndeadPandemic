@@ -8,7 +8,6 @@ This is a zombie apocalypse plugin made for Spigot 1.16.5.
 
   - Zombies don't die during the day;
   - Zombies form a herd if you stay in one place for too long;
-  - Weapons;
   - Kill instantly with a nicely placed head shot;
   - Customisable kill rewards;
   - Fully customisable weapons, including item material and weapon damage values;
@@ -17,6 +16,7 @@ This is a zombie apocalypse plugin made for Spigot 1.16.5.
   - Enable/Disable Zombie Exp Drops;
   - Set the Zombie spawn rate;
   - Enable/Disable head shot title message.
+  - Barbed wire will cause damage to player.
 
 ### COMMANDS
 
@@ -74,7 +74,7 @@ This is a zombie apocalypse plugin made for Spigot 1.16.5.
 ### PLANNED FUTURE FEATURE UPDATES
 
   - [ ] Safe Zones & Camps
-  - [ ] Barbed Wire Player Damage
+  - [X] Barbed Wire Player Damage
   - [ ] Infection System
   - [ ] First Aid Kits
   - [ ] Thirst System
