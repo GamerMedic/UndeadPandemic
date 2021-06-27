@@ -46,21 +46,21 @@ The following plugins are **RECOMMENDED**; some features may not work without:
 
   *Everyone*:
   
-    `/safezone`
+    /safezone
 
   *Admin*:
 
-    `/undeadpandemic <give> <{Player}> <99P|AK-47|Barcine|MK31|Nuck|Revolver|ammo> [if ammo: <Pistol|Rifle|Shotgun>] <{amount}>`
+    /undeadpandemic <give> <{Player}> <99P|AK-47|Barcine|MK31|Nuck|Revolver|ammo> [if ammo: <Pistol|Rifle|Shotgun>] <{amount}>
     
-    `/undeadpandemicreload | /undeadpandemic reload | /undead reload`
+    /undeadpandemicreload | /undeadpandemic reload | /undead reload
       
 ### PERMISSIONS
 
-    `undeadpandemic.reload` = Give to OP only by default. Reload the plugin config.yml.
-    `undeadpandemic.safezone` = Given to everybody by default. Allows players to create, delete, and modify their safe zones.
-    `undeadpandemic.use` = Given to everybody by default. It allows players to interact with the plugin.
-    `undeadpandemic.weapons.give` = Given to OP only by default. Allow player to give weapons and ammo to other players (and themselves).
-    `undeadpandemic.weapons.use` = Given to everybody by default. Allow player to use weapons and ammo.
+    undeadpandemic.reload = Give to OP only by default. Reload the plugin config.yml.
+    undeadpandemic.safezone = Given to everybody by default. Allows players to create, delete, and modify their safe zones.
+    undeadpandemic.use = Given to everybody by default. It allows players to interact with the plugin.
+    undeadpandemic.weapons.give = Given to OP only by default. Allow player to give weapons and ammo to other players (and themselves).
+    undeadpandemic.weapons.use = Given to everybody by default. Allow player to use weapons and ammo.
     
 ### PLACEHOLDERS
 
