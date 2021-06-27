@@ -18,53 +18,53 @@ This is a zombie apocalypse plugin made for Spigot 1.16.5.
   - Enable/Disable head shot title message;
   - Barbed wire will cause damage to player;
   - Thirst system.
+  - Infection and Cure System
+  - Safe Zones
+
+### Install
+
+ 1. Download latest files from Spigot or [UndeadPandemic Website](https://undeadpandemic.stevezr963.me).
+ 2. Unzip folder.
+ 3. Place UndeadPandemic.jar into plugins folder.
+ 4. Place UndeadPandemic.zip Resource Pack into resource packs folder.
+ 5. Restart server.
+ 6. Set your resource pack to the UndeadPandemic pack.
+
+### Dependencies
+
+The following plugins are **REQUIRED** for UndeadPandemic to work:
+
+  - [Vault](https://www.spigotmc.org/resources/vault.34315/)
+  - [WorldEdit](https://dev.bukkit.org/projects/worldedit)
+  - [WorldGuard](https://dev.bukkit.org/projects/worldguard)
+
+The following plugins are **RECOMMENDED**; some features may not work without:
+
+  - [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/)
 
 ### COMMANDS
 
-  *Root*:
+  *Everyone*:
   
-    /undeadpandemic | /undead
+    `/safezone`
 
   *Admin*:
 
-    /undeadpandemic <give> <{Player}> <99P|AK-47|Barcine|MK31|Nuck|Revolver|ammo> [if ammo: <Pistol|Rifle|Shotgun>] <{amount}>
+    `/undeadpandemic <give> <{Player}> <99P|AK-47|Barcine|MK31|Nuck|Revolver|ammo> [if ammo: <Pistol|Rifle|Shotgun>] <{amount}>`
     
-    /undeadpandemicreload | /undeadpandemic reload | /undead reload
-    
-  ***Command Explanation***
-  
-  <*Required*>
-  
-  [*Optional*]
-  
-  {Player} = The name of the player that you would like to give the item to. The player must be online.
-  
-  <99P|AK047|Barcine|MK31|Nuck|Revolver> = Weapon names.
-  
-  <|ammo> = Give the player ammo.
-  
-  [if ammo:] = If you are giving the player ammo use <Pistol|Rifle>, otherwise, ignore.
-  
-  <Pistol|Rifle|Shotgun> = Weapon types. These also indicate the required ammo. You can use Pistol ammo with a rifle, etc. This is case-sensitive and so will not work with lower case first characters.
-    
-  {amount} = The amount that you want to give.
-    
-##### Command Examples
-
-    Give a gun and ammo to SteveZR963:
-    
-      /undead give stevezr963 99P 1
-      
-      /undead give stevezr963 ammo Pistol 10
+    `/undeadpandemicreload | /undeadpandemic reload | /undead reload`
       
 ### PERMISSIONS
 
-    undeadpandemic.use = Given to everybody by default. It allows players to interact with the plugin.
-    undeadpandemic.weapons.give = Given to OP only by default. Allow player to give weapons and ammo to other players (and themselves).
-    undeadpandemic.weapons.use = Given to everybody by default. Allow player to use weapons and ammo.
-    undeadpandemic.reload = Give to OP only by default. Reload the plugin config.yml.
+    `undeadpandemic.reload` = Give to OP only by default. Reload the plugin config.yml.
+    `undeadpandemic.safezone` = Given to everybody by default. Allows players to create, delete, and modify their safe zones.
+    `undeadpandemic.use` = Given to everybody by default. It allows players to interact with the plugin.
+    `undeadpandemic.weapons.give` = Given to OP only by default. Allow player to give weapons and ammo to other players (and themselves).
+    `undeadpandemic.weapons.use` = Given to everybody by default. Allow player to use weapons and ammo.
     
-### PLACEHOLDER API
+### PLACEHOLDERS
+
+***(Requires PlaceholderAPI Plugin)***
 
   "Byter Kills"
     %undeadpandemic_byter_kills% : {placeholderapi_undeadpandemic_byter_kills}
@@ -74,9 +74,9 @@ This is a zombie apocalypse plugin made for Spigot 1.16.5.
     
 ### PLANNED FUTURE FEATURE UPDATES
 
-  - [ ] Safe Zones & Camps
+  - [X] Safe Zones
   - [X] Barbed Wire Player Damage
-  - [ ] Infection System
+  - [X] Infection System
   - [ ] First Aid Kits
   - [X] Thirst System
   - [ ] Melee Weapons
