@@ -20,6 +20,7 @@ This is a zombie apocalypse plugin made for Spigot 1.16.5.
   - Thirst system.
   - Infection and Cure System
   - Safe Zones
+  - Zombies Attack Each Other (sometimes with weapons)
 
 ### Install
 
