@@ -1,28 +1,32 @@
 # MESSAGE SETTINGS
 
-Show_Message: true # If the headshot message should appear
-Head_Shot_ActionBar_Text: '&bYou got a headshot!'
-Show_Message_Length: 3 # How long the head shot message show appear on screen for, in seconds.
+show_message: true # If the headshot message should appear
+head_shot_actionBar_Text: '&bYou got a headshot!'
+ahow_message_length: 3 # How long the head shot message show appear on screen for, in seconds.
 
-# Barbed WIRE SETTINGS
+# INFECTION SETTINGS
 
-Barbed_Wire_Damage: 2.0 # 1.0 = half a heart;
+enable_infections: true
+
+# BARBED WIRE SETTINGS
+
+barbed_wire_damage: 2.0 # 1.0 = half a heart;
 
 # KILL SETTINGS
 
-Kill_Reward: 10.0 # Currency to award player for killing a zombie.
-Kill_Reward_Head_Shot: 15.0 # Reward if player gets a head shot (will not work when using a shotgun).
+kill_reward: 10.0 # Currency to award player for killing a zombie.
+kill_reward_head_shot: 15.0 # Reward if player gets a head shot (will not work when using a shotgun).
 
 # MOB SETTINGS
 
 # You can disable any mob by listing it below, or enable disabled mobs by removing them. It is recommended that you add a # to the start of the mob like so:
 # - BLAZE
 # This will enable the BLAZE mobs and you can disabled them again by removing the #.
-# We recommend fetching mob names from https://minecraft-ids.grahamedgecombe.com/entities
+# We recommend fetching mob names from https://papermc.io/javadocs/paper/1.16/org/bukkit/entity/package-summary.html
 # Do not use numeric IDs, and it's recommended that you use all caps for mob names. Replace all spaces with an underscore ( _ ).
 # ZOMBIE will be ignored, because there's no point disabling Zombies in a Zombie Apocalypse plugin :)
 
-Disable_Mobs:
+disable_mobs:
   - BLAZE
   - CAVE_SPIDER
   - CREEPER
@@ -31,6 +35,8 @@ Disable_Mobs:
   - ENDERMITE
   - EVOKER
   - EVOKER_FANGS
+  - EVOCATION_ILLAGER
+  - EVOCATION_FANGS
   - GHAST
   - GIANT
   - HUSK
@@ -44,6 +50,7 @@ Disable_Mobs:
   - STRIDER
   - VEX
   - VINDICATOR
+  - VINDICATION_ILLAGER
   - WITCH
   - WITHER
   - WITHER_SKELETON
@@ -53,13 +60,13 @@ Disable_Mobs:
 # Set the spawn rate to -1 to disable it. This will not disable Zombie spawning, it will simply prevent more Zombies from spawning.
 # You should restart your server after changing this setting as it may not work when reloading the config.
 
-Zombie_Spawn_Rate: 5
+zombie_spawn_rate: 5
 
 # Mob Exp
 
 # Should mobs drop Exp? It is recommended that this is set to false if you have the thirst system enabled, otherwise the thirst system will not work as intended.
 
-Drop_Exp: false
+drop_exp: false
 
 # THIRST SETTINGS
 
@@ -71,7 +78,6 @@ dehydration_rate: 90 # The player's thirst will reduce by 1% every x seconds. De
 APPLE: 2
 BEETROOT_SOUP: 50
 CARROT: 5
-GLISTERING_MELON_SLICE: 20
 GOLDEN_CARROT: 15
 HONEY_BOTTLE: 15
 MELON_SLICE: 10
@@ -82,72 +88,93 @@ ROTTEN_FLESH: -15
 SUSPICIOUS_STEW: -10
 WATER_BOTTLE: 75
 
+# HEALTH SETTINGS
+
+adrenaline:
+  name: 'Adrenaline'
+  lore: 'Temporarily Cure an Infection'
+  material: MUSIC_DISC_MALL # Changing the material will require an updated resource pack
+
+antibiotics:
+  name: 'Antibiotics'
+  lore: 'Cure an Infection'
+  material: MUSIC_DISC_MELLOHI
+
+bandage:
+  name: 'Bandage'
+  lore: 'Heal Infection Wound'
+  material: MUSIC_DISC_STAL
+
+keycard:
+  name: 'Key Card'
+  lore: 'Opens up doors.'
+  material: MUSIC_DISC_STRAD
+
 # GUN SETTINGS
 
 # 1 Gun on Free, rest on Premium
-Weapons:
+weapons:
   99P:
     # The type of weapon can be changed to use different ammo.
-    Type: 'Pistol'
-    Name: '&fWither 99P'
-    Lore: '&fAn effective pistol.'
-    # Material ID - We used https://www.digminecraft.com/lists/item_id_list_pc.php and recommend that you use it too. Use Minecraft ID NAME (NOT numeric ID).
-    Material: MUSIC_DISC_11
-    # Damage: 20 = 10 Hearts. This should be enough, but you can set it to anything. THIS CANNOT BE ZERO OR NEGATIVE - negative and zero values will default to a damage value of 10
-    Damage: 20
+    type: 'Pistol'
+    name: '&fWither 99P'
+    lore: '&fAn effective pistol.'
+    # Material ID - We used https://www.digminecraft.com/lists/item_id_list_pc.php and recommend that you use it too. Use Minecraft ID NAME (NOT numeric ID). Be careful! You'll have to update the resource pack if you change this option.
+    material: MUSIC_DISC_11
+    # damage: 20 = 10 Hearts. This should be enough, but you can set it to anything. THIS CANNOT BE ZERO OR NEGATIVE - negative and zero values will default to a damage value of 10
+    damage: 20
     # Head shot damage a bonus damage amount that is applied when a player gets head shot. It's recommended that the additional damage is enough to kill the target entity.
-    Head_Shot_Damage: 20
+    head_shot_damage: 20
 
   AK-47:
-    Type: 'Rifle'
-    Name: '&fAK-47'
-    Lore: '&fCheap and effective... sometimes.'
-    Material: MUSIC_DISC_13
-    Damage: 20
-    Head_Shot_Damage: 20 # Head shot damage is ignored for the AK-47.
+    type: 'Rifle'
+    name: '&fAK-47'
+    lore: '&fCheap and effective... sometimes.'
+    material: MUSIC_DISC_13
+    damage: 20
+    head_shot_damage: 20 # Head shot damage is ignored for the AK-47.
 
   Barcine:
-    Type: 'Rifle'
-    Name: '&fBarcine'
-    Lore: '&fA powerful semi-automatic rifle.'
-    Material: MUSIC_DISC_BLOCKS
-    Damage: 20
-    Head_Shot_Damage: 20
+    type: 'Rifle'
+    name: '&fBarcine'
+    lore: '&fA powerful semi-automatic rifle.'
+    material: MUSIC_DISC_BLOCKS
+    damage: 20
+    head_shot_damage: 20
 
   MK31:
-    Type: 'Rifle'
-    Name: '&fRimmington MK31'
-    Lore: '&fA military-grade sniper rifle.'
-    Material: MUSIC_DISC_CAT
-    Damage: 20
-    Head_Shot_Damage: 20
+    type: 'Rifle'
+    name: '&fRimmington MK31'
+    lore: '&fA military-grade sniper rifle.'
+    material: MUSIC_DISC_CAT
+    damage: 20
+    head_shot_damage: 20
 
   Nuck:
-    Type: 'Shotgun'
-    Name: '&fNuck Shotgun'
-    Lore: '&fA shotgun fitting for a farmer, and his mum.'
-    Material: MUSIC_DISC_CHIRP
-    Damage: 20
-    Head_Shot_Damage: 20
+    type: 'Shotgun'
+    name: '&fNuck Shotgun'
+    lore: '&fA shotgun fitting for a farmer, and his mum.'
+    material: MUSIC_DISC_CHIRP
+    damage: 20
+    head_shot_damage: 20
 
   Revolver:
-    Type: 'Pistol'
-    Name: '&fMagnus Revolver'
-    Lore: '&fThe classic 6-shot pistol.'
-    Material: MUSIC_DISC_FAR
-    Damage: 20
-    Head_Shot_Damage: 20
+    type: 'Pistol'
+    name: '&fMagnus Revolver'
+    lore: '&fThe classic 6-shot pistol.'
+    material: MUSIC_DISC_FAR
+    damage: 20
+    head_shot_damage: 20
     
 # AMMO SETTINGS
 
-# Customisable on Premium
-Ammo:
+ammo:
   Pistol:
-    Name: '&fPistol Bullet'
-    Lore: '&fBullets for Pistols, obviously.'
+    name: '&fPistol Bullet'
+    lore: '&fBullets for Pistols, obviously.'
   Rifle:
-    Name: '&fRifle Bullet'
-    Lore: '&fBullets for rifles and sniper rifles.'
+    name: '&fRifle Bullet'
+    lore: '&fBullets for rifles and sniper rifles.'
   Shotgun:
-    Name: '&fShotgun Shell'
-    Lore: '&fShells for a shotgun.'
+    name: '&fShotgun Shell'
+    lore: '&fShells for a shotgun.'
