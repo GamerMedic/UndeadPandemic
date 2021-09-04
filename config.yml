@@ -68,6 +68,10 @@ zombie_spawn_rate: 5
 
 drop_exp: false
 
+# Enchant Settings
+
+allow_enchants: false
+
 # THIRST SETTINGS
 
 enable_thirst: true
