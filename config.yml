@@ -1,21 +1,83 @@
+# CORE SETTINGS
+
+# When set to false, players will not require any permissions to use commands or items
+require_perms: true
+
+# UndeadPandemic will not function in the worlds listed here.
+disable_in_worlds:
+#  - 'world'
+
 # MESSAGE SETTINGS
 
 show_message: true # If the headshot message should appear
 head_shot_actionBar_Text: '&bYou got a headshot!'
 ahow_message_length: 3 # How long the head shot message show appear on screen for, in seconds.
 
+# ENCHANT SETTINGS
+
+allow_enchants: false
+
+# Should mobs drop Exp? It is recommended that this is set to false if you have the thirst system enabled, otherwise the thirst system will not work as intended.
+
+drop_exp: false
+
 # INFECTION SETTINGS
 
-enable_infections: true
+infection:
+  
+  # enabled by default
+  enabled: true
+  
+  # duration in seconds
+  # If empty, or not set, the duration will be 120 seconds.
+  duration: 120
+  
+  # Amplify the effects of the infection. Used in conjunction with the 'amplify_effect' option below.
+  amplifier: 10
+  
+  # Determines whether to amplify all effects of the infection, or just the damage to player.
+  # Options: damage_only|all.
+  # Option must be surrounded by apostrophes (ex. 'all').
+  # If damage_only is set, then all other effects will use the default amplification setting of 10.
+  amplify_effect: 'all'
 
 # BARBED WIRE SETTINGS
+# Set to -1.0 to disable.
+barbed_wire:
 
-barbed_wire_damage: 2.0 # 1.0 = half a heart;
+  enabled: true
+ 
+  # 1 = half a heart.
+  damage: 2
 
-# KILL SETTINGS
+# REWARD SETTINGS
 
-kill_reward: 10.0 # Currency to award player for killing a zombie.
-kill_reward_head_shot: 15.0 # Reward if player gets a head shot (will not work when using a shotgun).
+# Currency to award player for killing a zombie.
+kill_reward: 10
+
+# Reward if player gets a head shot (will not work when using a shotgun).
+kill_reward_head_shot: 15
+
+# Choose to reward player either: instantly when a zombie is killed, or by dropping cash when the zombie is killed
+# Use one of these options:
+# - instant (default)
+# - mobdrop # Only use 'mobdrop' if you are using an item-based economy
+reward_kill: 'instant'
+
+# Only use these settings if you reward_kill is set to 'mobdrop'.
+# If you don't use an item-based economy, then you can remove the 'reward_item' settings from this config file.
+
+# Your custom item currency material
+reward_item_material: 'emerald'
+
+# Your custom item name
+reward_item_name: 'Emerald'
+
+# Your custom item lore
+reward_item_lore: 'Currency'
+
+# Your custom item CustomModelData
+reward_item_data: 123456
 
 # MOB SETTINGS
 
@@ -62,35 +124,27 @@ disable_mobs:
 
 zombie_spawn_rate: 5
 
-# Mob Exp
-
-# Should mobs drop Exp? It is recommended that this is set to false if you have the thirst system enabled, otherwise the thirst system will not work as intended.
-
-drop_exp: false
-
-# Enchant Settings
-
-allow_enchants: false
-
 # THIRST SETTINGS
 
 enable_thirst: true
-dehydration_rate: 90 # The player's thirst will reduce by 1% every x seconds. Default = 90 seconds.
+dehydration_rate: 90 # Rate (in seconds) at which thirst will drop by 1%.
 
 # Set replenishing thirst level for consumables
 
-APPLE: 2
-BEETROOT_SOUP: 50
-CARROT: 5
-GOLDEN_CARROT: 15
-HONEY_BOTTLE: 15
-MELON_SLICE: 10
-MILK_BUCKET: 75
-MUSHROOM_STEW: 50
-RABBIT_STEW: 50
-ROTTEN_FLESH: -15
-SUSPICIOUS_STEW: -10
-WATER_BOTTLE: 75
+consumables:
+  APPLE: 2
+  BEETROOT_SOUP: 50
+  CARROT: 5
+  GOLDEN_CARROT: 15
+  HONEY_BOTTLE: 15
+  MELON_SLICE: 10
+  MILK_BUCKET: 75
+  MUSHROOM_STEW: 50
+  POTION: 75
+  RABBIT_STEW: 50
+  ROTTEN_FLESH: -15
+  SUSPICIOUS_STEW: -10
+  WATER_BOTTLE: 75
 
 # HEALTH SETTINGS
 
@@ -98,27 +152,32 @@ adrenaline:
   name: 'Adrenaline'
   lore: 'Temporarily Cure an Infection'
   material: MUSIC_DISC_MALL # Changing the material will require an updated resource pack
+  data: 123456
 
 antibiotics:
   name: 'Antibiotics'
   lore: 'Cure an Infection'
   material: MUSIC_DISC_MELLOHI
+  data: 123456
 
 bandage:
   name: 'Bandage'
   lore: 'Heal Infection Wound'
   material: MUSIC_DISC_STAL
+  data: 123456
+  
+# KEYCARD SETTINGS
 
 keycard:
   name: 'Key Card'
   lore: 'Opens up doors.'
   material: MUSIC_DISC_STRAD
+  data: 123456
 
 # GUN SETTINGS
 
-# 1 Gun on Free, rest on Premium
 weapons:
-  99P:
+  99p:
     # The type of weapon can be changed to use different ammo.
     type: 'Pistol'
     name: '&fWither 99P'
@@ -129,40 +188,35 @@ weapons:
     damage: 20
     # Head shot damage a bonus damage amount that is applied when a player gets head shot. It's recommended that the additional damage is enough to kill the target entity.
     head_shot_damage: 20
-
-  AK-47:
+  ak-47:
     type: 'Rifle'
     name: '&fAK-47'
     lore: '&fCheap and effective... sometimes.'
     material: MUSIC_DISC_13
     damage: 20
     head_shot_damage: 20 # Head shot damage is ignored for the AK-47.
-
-  Barcine:
+  barcine:
     type: 'Rifle'
     name: '&fBarcine'
     lore: '&fA powerful semi-automatic rifle.'
     material: MUSIC_DISC_BLOCKS
     damage: 20
     head_shot_damage: 20
-
-  MK31:
+  mk31:
     type: 'Rifle'
     name: '&fRimmington MK31'
     lore: '&fA military-grade sniper rifle.'
     material: MUSIC_DISC_CAT
     damage: 20
     head_shot_damage: 20
-
-  Nuck:
+  nuck:
     type: 'Shotgun'
     name: '&fNuck Shotgun'
     lore: '&fA shotgun fitting for a farmer, and his mum.'
     material: MUSIC_DISC_CHIRP
     damage: 20
     head_shot_damage: 20
-
-  Revolver:
+  revolver:
     type: 'Pistol'
     name: '&fMagnus Revolver'
     lore: '&fThe classic 6-shot pistol.'
