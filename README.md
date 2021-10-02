@@ -8,28 +8,31 @@ This is a zombie apocalypse plugin made for Spigot 1.16.5.
 
   - Zombies don't die during the day;
   - Zombies form a herd if you stay in one place for too long;
+  - Zombies will canniblise each other if they cannot find living flesh;
+  - Customisable zombie spawn rate;
   - Kill instantly with a nicely placed head shot;
+  - Customisable kill messages;
   - Customisable kill rewards;
-  - Fully customisable weapons, including item material and weapon damage values;
-  - Customisable ammunition;
-  - Enable/Disable Mobs;
-  - Enable/Disable Zombie Exp Drops;
-  - Set the Zombie spawn rate;
-  - Enable/Disable head shot title message;
-  - Barbed wire will cause damage to player;
-  - Thirst system.
-  - Infection and Cure System
-  - Safe Zones
-  - Zombies Attack Each Other (sometimes with weapons)
+  - Customisable weapons and ammo;
+  - Have Zombies drop custom items. Custom Model Data is supported!;
+  - Barbed wire causes damage to player;
+  - Players can be infected after a zombie attack;
+  - Zombies will ignore players wearing zombie guts;
+  - Disable on specific worlds;
+  - Players can create Safe Zones to protect their stuff and stay safe from zombie attacks;
+  - Create secure areas using Key Cards;
+  - Thirst system with customisable consumables;
+  - Customisable dehydration rate
+  - Customisable health items;
+  - Add/Remove mobs from the game using the 'disable_mobs' config option.
 
 ### Install
 
- 1. Download latest files from Spigot or [UndeadPandemic Website](https://undeadpandemic.stevezr963.me).
- 2. Unzip folder.
- 3. Place UndeadPandemic.jar into plugins folder.
- 4. Place UndeadPandemic.zip Resource Pack into resource packs folder.
- 5. Restart server.
- 6. Set your resource pack to the UndeadPandemic pack.
+ 1. Download latest files from [Spigot](https://www.spigotmc.org/resources/undeadpandemic-v2-x.95385/).
+ 2. Place UndeadPandemic.jar into plugins folder.
+ 3. Place UndeadPandemic.zip Resource Pack into resource packs folder.
+ 4. Restart server.
+ 5. Set your resource pack to the UndeadPandemic pack.
 
 ### Dependencies
 
@@ -38,47 +41,14 @@ The following plugins are **REQUIRED** for UndeadPandemic to work:
   - [Vault](https://www.spigotmc.org/resources/vault.34315/)
   - [WorldEdit](https://dev.bukkit.org/projects/worldedit)
   - [WorldGuard](https://dev.bukkit.org/projects/worldguard)
+  - + Any [Vault Supported Economy](https://github.com/MilkBowl/Vault/#supported-plugins) (We highly recommend [EssentialsX](https://www.spigotmc.org/resources/essentialsx.9089/)
 
 The following plugins are **RECOMMENDED**; some features may not work without:
 
   - [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/)
 
-### COMMANDS
+Download the necessary extension from the GutHub files for this resource.
 
-  *Everyone*:
-  
-    /safezone
-
-  *Admin*:
-
-    /undeadpandemic <give> <{Player}> <99P|AK-47|Barcine|MK31|Nuck|Revolver|ammo> [if ammo: <Pistol|Rifle|Shotgun>] <{amount}>
-    
-    /undeadpandemicreload | /undeadpandemic reload | /undead reload
-      
-### PERMISSIONS
-
-    undeadpandemic.reload = Give to OP only by default. Reload the plugin config.yml.
-    undeadpandemic.safezone = Given to everybody by default. Allows players to create, delete, and modify their safe zones.
-    undeadpandemic.use = Given to everybody by default. It allows players to interact with the plugin.
-    undeadpandemic.weapons.give = Given to OP only by default. Allow player to give weapons and ammo to other players (and themselves).
-    undeadpandemic.weapons.use = Given to everybody by default. Allow player to use weapons and ammo.
-    
-### PLACEHOLDERS
-
-***(Requires PlaceholderAPI Plugin)***
-
-  "Byter Kills"
-    %undeadpandemic_byter_kills% : {placeholderapi_undeadpandemic_byter_kills}
-    
-  "Head Shots"
-    &undeadpandemic_byter_head_shots% : {placeholderapi_undeadpandemic_byter_head_shots}
-    
 ### PLANNED FUTURE FEATURE UPDATES
 
-  - [X] Safe Zones
-  - [X] Barbed Wire Player Damage
-  - [X] Infection System
-  - [ ] First Aid Kits
-  - [X] Thirst System
   - [ ] Melee Weapons
-  - [X] Weapon & Ammo Sound Bytes
