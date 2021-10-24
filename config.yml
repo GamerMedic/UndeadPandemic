@@ -117,12 +117,19 @@ disable_mobs:
   - WITHER
   - WITHER_SKELETON
 
-# The higher the spawn rate is, the slower your server will be. Be careful with this settings.
+# The higher the spawn rate is, the slower your server will be. Be careful with this setting.
 # The default is 5, this should be enough to occasionally cause herds.
 # Set the spawn rate to -1 to disable it. This will not disable Zombie spawning, it will simply prevent more Zombies from spawning.
 # You should restart your server after changing this setting as it may not work when reloading the config.
 
 zombie_spawn_rate: 5
+
+# Zombies are attracted by the sound of guns. This is how many will spawn within your defined radius whena gun is fired.
+# The higher this rate is, the slower your server will be. Be careful with this setting.
+attract_zombie_rate: 2
+
+# Attract zombies after a gunshot within this radius of blocks.
+attract_zombie_radius: 5
 
 # THIRST SETTINGS
 
@@ -203,7 +210,7 @@ weapons:
     damage: 20
     head_shot_damage: 20
   mk31:
-    type: 'Rifle'
+    type: 'Sniper'
     name: '&fRimmington MK31'
     lore: '&fA military-grade sniper rifle.'
     material: MUSIC_DISC_CAT
@@ -217,7 +224,7 @@ weapons:
     damage: 20
     head_shot_damage: 20
   revolver:
-    type: 'Pistol'
+    type: 'Revolver'
     name: '&fMagnus Revolver'
     lore: '&fThe classic 6-shot pistol.'
     material: MUSIC_DISC_FAR
@@ -227,12 +234,25 @@ weapons:
 # AMMO SETTINGS
 
 ammo:
+  # ammo type names are case-sensitive
   Pistol:
     name: '&fPistol Bullet'
     lore: '&fBullets for Pistols, obviously.'
+    # Clip-size is how many bullets the weapon can hold.
+    clip-size: 16
+  Revolver:
+    name: '&fRevolver Bullet'
+    lore: '&fBullets for Revolvers.'
+    clip-size: 6
   Rifle:
     name: '&fRifle Bullet'
     lore: '&fBullets for rifles and sniper rifles.'
+    clip-size: 32
+  Sniper:
+    name: '&fSniper Bullet'
+    lore: '&fMoly-coated.'
+    clip-size: 12
   Shotgun:
     name: '&fShotgun Shell'
     lore: '&fShells for a shotgun.'
+    clip-size: 6
