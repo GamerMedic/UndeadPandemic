@@ -25,6 +25,8 @@ This is a zombie apocalypse plugin made for Spigot 1.16.5.
   - Customisable dehydration rate
   - Customisable health items;
   - Add/Remove mobs from the game using the 'disable_mobs' config option.
+  - Guns must be reloaded using bullets in the player's inventory.
+  - Gun fire will attract Zombies.
 
 ### Install
 
