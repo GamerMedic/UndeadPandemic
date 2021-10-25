@@ -183,6 +183,10 @@ keycard:
 
 # GUN SETTINGS
 
+# If you use other weapons plugins, set this to false.
+# This will also disable ammo.
+enable_weapons: true
+
 weapons:
   99p:
     # The type of weapon can be changed to use different ammo.
@@ -195,6 +199,10 @@ weapons:
     damage: 20
     # Head shot damage a bonus damage amount that is applied when a player gets head shot. It's recommended that the additional damage is enough to kill the target entity.
     head_shot_damage: 20
+    # Clip-size is how many bullets the weapon can hold.
+    clip-size: 16
+    # Custom model data will allow you to add a texture to the weapon
+    custom_model_data: 2
   ak-47:
     type: 'Rifle'
     name: '&fAK-47'
@@ -202,6 +210,8 @@ weapons:
     material: MUSIC_DISC_13
     damage: 20
     head_shot_damage: 20 # Head shot damage is ignored for the AK-47.
+    clip-size: 32
+    custom_model_data: 2
   barcine:
     type: 'Rifle'
     name: '&fBarcine'
@@ -209,6 +219,8 @@ weapons:
     material: MUSIC_DISC_BLOCKS
     damage: 20
     head_shot_damage: 20
+    clip-size: 32
+    custom_model_data: 2
   mk31:
     type: 'Sniper'
     name: '&fRimmington MK31'
@@ -216,6 +228,8 @@ weapons:
     material: MUSIC_DISC_CAT
     damage: 20
     head_shot_damage: 20
+    clip-size: 12
+    custom_model_data: 2
   nuck:
     type: 'Shotgun'
     name: '&fNuck Shotgun'
@@ -223,6 +237,8 @@ weapons:
     material: MUSIC_DISC_CHIRP
     damage: 20
     head_shot_damage: 20
+    clip-size: 8
+    custom_model_data: 2
   revolver:
     type: 'Revolver'
     name: '&fMagnus Revolver'
@@ -230,6 +246,8 @@ weapons:
     material: MUSIC_DISC_FAR
     damage: 20
     head_shot_damage: 20
+    clip-size: 6
+    custom_model_data: 2
     
 # AMMO SETTINGS
 
@@ -238,21 +256,21 @@ ammo:
   Pistol:
     name: '&fPistol Bullet'
     lore: '&fBullets for Pistols, obviously.'
-    # Clip-size is how many bullets the weapon can hold.
-    clip-size: 16
+    # Custom model data will allow you to add a texture to the ammo
+    custom_model_data: 1
   Revolver:
     name: '&fRevolver Bullet'
     lore: '&fBullets for Revolvers.'
-    clip-size: 6
+    custom_model_data: 1
   Rifle:
     name: '&fRifle Bullet'
     lore: '&fBullets for rifles and sniper rifles.'
-    clip-size: 32
-  Sniper:
-    name: '&fSniper Bullet'
-    lore: '&fMoly-coated.'
-    clip-size: 12
+    custom_model_data: 2
   Shotgun:
     name: '&fShotgun Shell'
     lore: '&fShells for a shotgun.'
-    clip-size: 6
+    custom_model_data: 3
+  Sniper:
+    name: '&fSniper Bullet'
+    lore: '&fMoly-coated.'
+    custom_model_data: 2
