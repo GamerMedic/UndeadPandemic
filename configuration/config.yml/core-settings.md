@@ -6,11 +6,9 @@ The Core Settings section is found under the # CORE SETTINGS line at the top of 
 
 The `require_perms` setting decides whether or not players will need permission to use commands and actions for the plugin.
 
-This setting has two options:
+`true|false`
 
-`true`
 
-`false`
 
 When set to `true` (which is the default setting), players will need to have the individual permissions to allow them to interact with the plugin.
 
