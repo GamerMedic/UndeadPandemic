@@ -2,6 +2,7 @@
 
 * [Getting Started!](README.md)
   * [Installation](getting-started/installation.md)
+  * [Features](getting-started/features.md)
 
 ## Documentation
 
