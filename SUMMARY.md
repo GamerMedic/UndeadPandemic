@@ -5,6 +5,7 @@
 * [UndeadPandemic](README.md)
 * [Installation](getting-started/installation.md)
 * [Features](getting-started/features.md)
+* [End-User Licence Agreement ("EULA")](getting-started/end-user-licence-agreement-eula.md)
 
 ## Configuration
 
