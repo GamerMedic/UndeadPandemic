@@ -6,11 +6,7 @@ The message settings are used to decide if the head shot message should be used,
 
 Nice and simple. Should the player receive a message when they shoot a zombie in the head?
 
-`true`: yes (default setting)
-
-`false`: no
-
-Easy-peasy.
+`true|false`
 
 **`head_shot_text`**:
 
@@ -24,8 +20,9 @@ How long, in seconds, would you like the `head_shot_text` to appear on screen?
 
 The default length is 3 seconds, because this is enough so that it'll be seen, but not so much that the player will become annoyed by its presence. You can set this to however long you'd like.
 
-**COMING SOON**
-
-If you've already spent some time playing UndeadPandemic, then you may have seen the 'Execution!' message appear. This appears when you get a head shot within 7 blocks of the Zombie. At the minute, this message can't be changed or altered in any way, but this is going to change.
+{% hint style="warning" %}
+_**FUTURE UPDATES**_: If you've already spent some time playing UndeadPandemic, then you may have seen the 'Execution!' message appear. This appears when you get a head shot within 7 blocks of the Zombie. At the minute, this message can't be changed or altered in any way, but this is going to change.
 
 An option will also be added to let server operators decide if head shot and execution texts should appear as titles (as they do now) or in text.
+{% endhint %}
+
