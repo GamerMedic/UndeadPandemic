@@ -3,7 +3,7 @@
 Ammunition settings create the ammo types within the game.
 
 {% hint style="info" %}
-_**TIP**_: It is possible to create your own ammunition! See the '[Custom Ammunition](../custom-ammunition.md)' section for instructions.
+_**TIP**_: It is possible to create your own ammunition! See the '[Custom Ammunition](../../items/custom-ammunition.md)' section for instructions.
 {% endhint %}
 
 **`ammoName`**:

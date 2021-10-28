@@ -1,13 +1,14 @@
 ---
 description: Learn how to configure UndeadPandemic
-cover: >-
-  https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2970&q=80
-coverY: 0
 ---
 
 # config.yml
 
 This is the default config.yml page. The following pages will discuss, in considerable detail, how each configuration section works, and how you can edit the config.yml file to make the plugin do what you want.
+
+{% hint style="success" %}
+The config.yml is a configuration file!
+{% endhint %}
 
 ## Default config.yml
 

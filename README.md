@@ -1,12 +1,25 @@
----
-description: UndeadPandemic Wiki
-coverY: 0
----
+# UndeadPandemic
 
-# Getting Started!
+UndeadPandemic is Spigot plugin that turns your SMP Minecraft Server into Zombie-infested post-apocalyptic world!
 
-Getting set up with UndeadPandemic is quick and easy.
+The aim of the game is to survive, or die trying.
 
-The plugin can be played 'out of the box', meaning that as soon as you install it on your server, your players will experience what it's like to survive within a post-apocalyptic world where Zombies have inherited the Earth.
+Use any weapons and all the ammo that you can get your hands on, and use medication and first aids kits to heal yourself from injuries and infection!
 
-Follow the Installation instructions and you'll be all set to go!
+### Getting Started!
+
+{% content-ref url="getting-started/installation.md" %}
+[installation.md](getting-started/installation.md)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}

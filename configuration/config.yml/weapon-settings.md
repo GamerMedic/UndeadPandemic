@@ -3,7 +3,7 @@
 This is a big section and is used to precisely configure how weapons will look and work within the game.
 
 {% hint style="info" %}
-_**TIP**_: It is possible to create your own weapons! See the '[Custom Weapons](../custom-weapons.md)' section for instructions.
+_**TIP**_: It is possible to create your own weapons! See the '[Custom Weapons](../../items/custom-weapons.md)' section for instructions.
 {% endhint %}
 
 **`enable_weapons`**:
