@@ -2,7 +2,7 @@
 
 You can configure the name, lore, and material that you use for the key cards.
 
-**`name`**:
+#### **`name`**:
 
 This can be anything you want. It is set to 'Key Card' by default.
 
@@ -21,3 +21,13 @@ This is the Minecraft item that you'd like to use for the key card.
 **`data`**:
 
 You can set the custom model data here.
+
+**`openable_doors`**:
+
+This is a list of Minecraft materials that can be opened when using a key card. The default list is below:
+
+```
+openable_doors:
+  - IRON_DOOR
+  - IRON_TRAPDOOR
+```

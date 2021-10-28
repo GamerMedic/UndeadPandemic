@@ -24,8 +24,8 @@ disable_in_worlds:
 # MESSAGE SETTINGS
 
 show_message: true # If the headshot message should appear
-head_shot_actionBar_Text: '&bYou got a headshot!'
-ahow_message_length: 3 # How long the head shot message show appear on screen for, in seconds.
+head_shot_actionbar_text: '&bYou got a headshot!'
+show_message_length: 3 # How long the head shot message show appear on screen for, in seconds.
 
 # ENCHANT SETTINGS
 
@@ -138,7 +138,7 @@ disable_mobs:
 
 zombie_spawn_rate: 5
 
-# Zombies are attracted by the sound of guns. This is how many will spawn within your defined radius whena gun is fired.
+# Zombies are attracted by the sound of guns. This is how many will spawn within your defined radius when a gun is fired.
 # The higher this rate is, the slower your server will be. Be careful with this setting.
 attract_zombie_rate: 2
 
@@ -146,7 +146,6 @@ attract_zombie_rate: 2
 attract_zombie_radius: 5
 
 # Chance that a zombie will be attracted by gun fire. chance%
-# Set to -1 to disable (this will cause a zombie to be attracted to every gun shot).
 attract_zombie_chance: 70
 
 # THIRST SETTINGS
@@ -198,12 +197,24 @@ keycard:
   lore: 'Opens up doors.'
   material: MUSIC_DISC_STRAD
   data: 123456
+  
+  # A list of doors that can be opened.
+  # This can be set to any valid material, but it'd be silly not to make it a door!
+  openable_doors:
+    - IRON_DOOR
+    - IRON_TRAPDOOR
 
 # GUN SETTINGS
 
 # If you use other weapons plugins, set this to false.
 # This will also disable ammo.
 enable_weapons: true
+
+# Should other players be harmed by gun fire? true|false
+damage_players: true
+
+# This is how loud the gun fire will be. 1.0 = loudest, 0.0 = silent
+gun_fire_volume: 0.5
 
 weapons:
   99p:
