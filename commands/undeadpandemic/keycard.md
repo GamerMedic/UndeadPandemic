@@ -30,6 +30,16 @@ _**Keycard Description**_
 
 The keycard decription is the lore of the key card item. If you do not set the description, the lore will default to the keycard lore set in config.yml.
 
+You cannot use spaces in the description, instead, replace spaces with an underscore ( \_ ).
+
+You can add new lines to the key lore by adding a pipe ( | ) to the key card description.
+
+{% hint style="success" %}
+Example:
+
+`/undead keycard cut ~ ~ ~+1 This_key_will_open|a_special_door! 5`
+{% endhint %}
+
 _**Uses**_
 
 This is the number of uses that the player will be allowed to have before the key card is 'used' (removed from their inventory).
