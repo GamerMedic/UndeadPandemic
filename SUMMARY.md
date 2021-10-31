@@ -40,6 +40,7 @@
 * [/safezone](commands/safezone/README.md)
   * [:build](commands/safezone/build.md)
   * [:destroy](commands/safezone/destroy.md)
+  * [:help](commands/safezone/help.md)
   * [:info](commands/safezone/info.md)
   * [:plots](commands/safezone/plots.md)
 
@@ -70,3 +71,10 @@
   * [Adrenaline](items/first-aid-items/adrenaline.md)
   * [Antibiotics](items/first-aid-items/antibiotics.md)
   * [Bandage](items/first-aid-items/bandage.md)
+  * [First Aid Kit](items/first-aid-items/first-aid-kit.md)
+* [Key Cards](items/key-cards.md)
+
+## Changelogs
+
+* [Changelogs](changelogs/changelogs/README.md)
+  * [v2.3.1](changelogs/changelogs/v2.3.1.md)

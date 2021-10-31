@@ -191,6 +191,11 @@ bandage:
   material: MUSIC_DISC_STAL
   data: 123456
   
+first_aid_kit:
+  name: '&4First Aid Kit'
+  lore: '&f&oAn emergency first aid kit!'
+  data: 2
+  
 # KEYCARD SETTINGS
 
 keycard:

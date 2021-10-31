@@ -2,10 +2,15 @@
 
 The `/safezone` command is used to create safezone plots, destroy them, and to give or take plots to or from other players.
 
-_**Valid Arguments**_
+### Command Structure
+
+`/safezone <parameter>`
+
+_**Valid **_**Parameters**
 
 * build
 * destroy
+* help
 * info
 * plots
   * give

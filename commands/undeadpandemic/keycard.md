@@ -1,6 +1,6 @@
 # :keycard
 
-![Key Card Texture](../../../.gitbook/assets/keycard.png)
+![Key Card Texture](../../.gitbook/assets/keycard.png)
 
 ### Command Structure
 
@@ -10,7 +10,7 @@
 
 `/undeadpandemic `<mark style="color:blue;">`keycard`</mark>` `<mark style="color:purple;">`<cut>`</mark>` `<mark style="color:orange;">`<X co-ordinate>`</mark>` `<mark style="color:orange;">`<Y co-ordinate> <Z co-ordinate>`</mark>` `<mark style="color:red;">`[keycard description]`</mark>` `<mark style="color:yellow;">`[uses]`</mark>` `<mark style="color:green;">`[quantity]`</mark>
 
-![](../../../.gitbook/assets/keycard\_cmd.png)
+![](../../.gitbook/assets/keycard\_cmd.png)
 
 ### Parameter Descriptions
 
@@ -43,7 +43,3 @@ If the **keycard description** parameter is not set, then you cannot set this va
 **Quantity**
 
 The quantity parameter determines how many key cards the player will be given. All of the key cards given will have the same values (so will open the same door).
-
-### Openable Doors
-
-Only the doors listed in this section can be opened using the key card. You can set what doors can be opened by adding them to the `keycard openable_doors` config option.
