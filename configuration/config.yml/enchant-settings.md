@@ -2,6 +2,12 @@
 
 There are two configuration options for enchants.
 
+{% hint style="warning" %}
+It is _**strongly recommended**_ to disable the [thirst system](thirst-settings.md) if you have either of these settings enabled.
+
+The thirst system will allow players to fill their XP bar by using consumables defined by the thirst system.
+{% endhint %}
+
 **`allow_enchants`**:
 
 Should players be allowed to use the enchanting table? This is set to `false` by default because the thirst system is enabled by default. The thirst system uses XP levels to display thirst, and so is set high (up to 100) a part of the game play.

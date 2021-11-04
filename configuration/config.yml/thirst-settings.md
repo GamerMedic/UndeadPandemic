@@ -8,6 +8,10 @@ Nice and basic.
 
 If set to false, the XP level bar will work as normal. Otherwise, the XP level bar will act as the thirst indicator.
 
+{% hint style="warning" %}
+It is _**strongly recommended**_ to set `enable_thirst` to `false` if you have enabled [enchants or mob drop XP orbs](enchant-settings.md).
+{% endhint %}
+
 **`dehydration_rate`**:
 
 This settings dictates how quickly (in seconds) a player's thirst will reduce by 1%. It is set to 90 seconds by default, but you can set this to whatever you want. The higher this value is, the slower a player will become thirsty.

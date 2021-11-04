@@ -74,6 +74,10 @@
   * [First Aid Kit](items/first-aid-items/first-aid-kit.md)
 * [Key Cards](items/key-cards.md)
 
+## Systems
+
+* [Thirst System](systems/thirst-system.md)
+
 ## Changelogs
 
 * [Changelogs](changelogs/changelogs/README.md)
