@@ -10,8 +10,8 @@ disable_in_worlds:
 # MESSAGE SETTINGS
 
 show_message: true # If the headshot message should appear
-head_shot_actionBar_Text: '&bYou got a headshot!'
-ahow_message_length: 3 # How long the head shot message show appear on screen for, in seconds.
+head_shot_actionbar_text: '&bYou got a headshot!'
+show_message_length: 3 # How long the head shot message show appear on screen for, in seconds.
 
 # ENCHANT SETTINGS
 
@@ -27,6 +27,10 @@ infection:
   
   # enabled by default
   enabled: true
+  
+  # milk cures effects
+  # Milk will not cure effects by default
+  cure_with_milk: false
   
   # duration in seconds
   # If empty, or not set, the duration will be 120 seconds.
@@ -124,15 +128,20 @@ disable_mobs:
 
 zombie_spawn_rate: 5
 
-# Zombies are attracted by the sound of guns. This is how many will spawn within your defined radius whena gun is fired.
+# Zombies are attracted by the sound of guns. This is how many will spawn within your defined radius when a gun is fired.
 # The higher this rate is, the slower your server will be. Be careful with this setting.
 attract_zombie_rate: 2
 
 # Attract zombies after a gunshot within this radius of blocks.
 attract_zombie_radius: 5
 
+# Chance that a zombie will be attracted by gun fire. chance%
+attract_zombie_chance: 70
+
 # THIRST SETTINGS
 
+# Set enable_thirst to false to prevent players from gaining XP levels when they use the consumables listed below.
+# If enable_thirst is set to true then it is recommended to disable allow_enchants and drop_exp. 
 enable_thirst: true
 dehydration_rate: 90 # Rate (in seconds) at which thirst will drop by 1%.
 
@@ -173,6 +182,11 @@ bandage:
   material: MUSIC_DISC_STAL
   data: 123456
   
+first_aid_kit:
+  name: '&4First Aid Kit'
+  lore: '&f&oAn emergency first aid kit!'
+  data: 2
+  
 # KEYCARD SETTINGS
 
 keycard:
@@ -180,12 +194,32 @@ keycard:
   lore: 'Opens up doors.'
   material: MUSIC_DISC_STRAD
   data: 123456
+  
+  # A list of doors that can be opened.
+  # This can be set to any valid material, but it'd be silly not to make it a door!
+  openable_doors:
+    - IRON_DOOR
+    - IRON_TRAPDOOR
+    
+# TORCH SETTINGS
+
+torch:
+  name: '&fTorch'
+  lore: 'Let there be light!'
+  material: MUSIC_DISC_WARD
+  data: 123456
 
 # GUN SETTINGS
 
 # If you use other weapons plugins, set this to false.
 # This will also disable ammo.
 enable_weapons: true
+
+# Should other players be harmed by gun fire? true|false
+damage_players: true
+
+# This is how loud the gun fire will be. 1.0 = loudest, 0.0 = silent
+gun_fire_volume: 0.5
 
 weapons:
   99p:
@@ -256,7 +290,8 @@ ammo:
   Pistol:
     name: '&fPistol Bullet'
     lore: '&fBullets for Pistols, obviously.'
-    # Custom model data will allow you to add a texture to the ammo
+    # Custom model data will allow you to add a texture to the ammo.
+    # Bullets are modelled from Snowballs.
     custom_model_data: 1
   Revolver:
     name: '&fRevolver Bullet'
@@ -268,7 +303,7 @@ ammo:
     custom_model_data: 2
   Shotgun:
     name: '&fShotgun Shell'
-    lore: '&fShells for a shotgun.'
+    lore: '&fShells for a shotguns.'
     custom_model_data: 3
   Sniper:
     name: '&fSniper Bullet'
