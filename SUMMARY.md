@@ -14,6 +14,7 @@
   * [Message Settings](configuration/config.yml/message-settings.md)
   * [Enchant Settings](configuration/config.yml/enchant-settings.md)
   * [Infection Settings](configuration/config.yml/infection-settings.md)
+  * [Zombie Guts Settings](configuration/config.yml/zombie-guts-settings.md)
   * [Barbed Wire Settings](configuration/config.yml/barbed-wire-settings.md)
   * [Reward Settings](configuration/config.yml/reward-settings.md)
   * [Mob Settings](configuration/config.yml/mob-settings.md)
