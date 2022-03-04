@@ -43,6 +43,20 @@ infection:
   # enabled by default
   enabled: true
   
+  # List of the effects produced by the infection
+  # Intensity of the effects can be set by the amplifer option below.
+  # Any effect listed by the Spigot API can be used here.
+  # Here is the list of effects on the Spigot API
+  # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+  infection_symptoms:
+    - POISON
+    - HARM
+    - SLOW
+    - SLOW_DIGGING
+    - HUNGER
+    - INCREASE_DAMAGE
+    - DAMAGE_RESISTANCE
+  
   # duration in seconds
   # If empty, or not set, the duration will be 120 seconds.
   duration: 120
@@ -54,7 +68,40 @@ infection:
   # Options: damage_only|all.
   # Option must be surrounded by apostrophes (ex. 'all').
   # If damage_only is set, then all other effects will use the default amplification setting of 10.
+  # Defaults to all
   amplify_effect: 'all'
+  
+  # milk cures effects
+  # Milk will not cure effects by default
+  cure_with_milk: false
+  
+# ZOMBIE GUTS
+  
+zombie_guts:
+  enabled: true
+    
+  # Chance
+  # Determine the chances that Zombie Guts are dropped as a percentage.
+  # Defaults to 3% chance.
+  # Chance must be from 1 to 100. If the value is set to less than one or more than 100, then it will default to 3.
+  # If you do not want players to have zombie guts, then set 'enabled' to true.
+  chance: 3
+  
+  # Timer
+  # How long should zombie effects last, if enabled?
+  # If timer is disabled, then the zombie guts will not lose durability over time, except for natural use.
+  
+  timer:
+    # min and max refer to the minimum time and maximum time, in seconds, that the zombie guts should exist while being worn
+    min: 5
+    max: 120
+      
+  # fade_in_water determines if the zombie guts should lose durability quicker in water (giving the effect that the water is washing away the smell of the guts)
+  # If enabled, then the zombie guts will fade quicker based on the multiplier set below. Default is 2, which means that the zombie guts will lose durability twice as fast as normal.
+  # If enabled, zombie guts will break if the player starts to swim
+  fade_in_water:
+    enabled: true
+    multiplier: 2
 
 # BARBED WIRE SETTINGS
 # Set to -1.0 to disable.
@@ -67,32 +114,48 @@ barbed_wire:
 
 # REWARD SETTINGS
 
-# Currency to award player for killing a zombie.
-kill_reward: 10
+# Rewards configured here are given when the player kills a zombie.
 
-# Reward if player gets a head shot (will not work when using a shotgun).
-kill_reward_head_shot: 15
+rewards:
 
-# Choose to reward player either: instantly when a zombie is killed, or by dropping cash when the zombie is killed
-# Use one of these options:
-# - instant (default)
-# - mobdrop # Only use 'mobdrop' if you are using an item-based economy
-reward_kill: 'instant'
+  # Set a reward type
+  # Types: 'fixed' or 'random'.
+  # Reward type defaults to fixed.
+  # If set to random, then kill_reward will be ignored. kill_reward_head_shot will also be ignored and will instead default to x1.5 the kill_reward
 
-# Only use these settings if you reward_kill is set to 'mobdrop'.
-# If you don't use an item-based economy, then you can remove the 'reward_item' settings from this config file.
+  reward_type: 'fixed'
 
-# Your custom item currency material
-reward_item_material: 'emerald'
+  # Reward boundaries
+  # Set the minimum and maximum rewards that you'd like the players to receive
+  
+  min_kill_reward: 5 # defaults to 5
+  max_kill_reward: 25 # default to 25
 
-# Your custom item name
-reward_item_name: 'Emerald'
+  kill_reward: 10
 
-# Your custom item lore
-reward_item_lore: 'Currency'
+  # Reward if player gets a head shot (will not work when using a shotgun).
+  kill_reward_head_shot: 15
 
-# Your custom item CustomModelData
-reward_item_data: 123456
+  # Choose to reward player either: instantly when a zombie is killed, or by dropping cash when the zombie is killed
+  # Use one of these options:
+  # - instant (default)
+  # - mobdrop # Only use 'mobdrop' if you are using an item-based economy, or you won't get the reward
+  reward_kill: 'instant'
+
+  # Only use these settings if you reward_kill is set to 'mobdrop'.
+  # If you don't use an item-based economy, then you can remove the 'reward_item' settings from this config file.
+
+  # Your custom item currency material
+  reward_item_material: 'emerald'
+
+  # Your custom item name
+  reward_item_name: 'Emerald'
+
+  # Your custom item lore
+  reward_item_lore: 'Currency'
+
+  # Your custom item CustomModelData
+  reward_item_data: 123456
 
 # MOB SETTINGS
 
@@ -151,6 +214,8 @@ attract_zombie_chance: 70
 
 # THIRST SETTINGS
 
+# Set enable_thirst to false to prevent players from gaining XP levels when they use the consumables listed below.
+# If enable_thirst is set to true then it is recommended to disable allow_enchants and drop_exp. 
 enable_thirst: true
 dehydration_rate: 90 # Rate (in seconds) at which thirst will drop by 1%.
 
@@ -209,6 +274,14 @@ keycard:
   openable_doors:
     - IRON_DOOR
     - IRON_TRAPDOOR
+    
+# TORCH SETTINGS
+
+torch:
+  name: '&fTorch'
+  lore: 'Let there be light!'
+  material: MUSIC_DISC_WARD
+  data: 123456
 
 # GUN SETTINGS
 
