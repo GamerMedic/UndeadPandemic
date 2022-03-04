@@ -44,4 +44,8 @@ The multiplier will determine how quickly guts will be used in water.
 <mark style="color:orange;">**This option does not work in v2.4.2 but was accidentally included in the config.yml file on release. It will work in future versions.**</mark>
 {% endhint %}
 
+{% hint style="info" %}
+**Future versions will allow you to customise the zombie guts item and texture.**
+{% endhint %}
+
 And that's all, folks! This completes the Zombie Guts settings in the configuration file.
