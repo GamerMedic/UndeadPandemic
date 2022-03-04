@@ -12,6 +12,22 @@ Whether or not to enable zombie bite infections.
 
 This is `true` by default.
 
+**`infection_symptoms`**:
+
+This is a list of buffers that will be applied to the player when they are infected by a zombie. These buffers should be listed using the `PotionEffectType` given by the [Spigot API](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html).
+
+The default list is:
+
+```
+- POISON
+- HARM
+- SLOW
+- SLOW_DIGGING
+- HUNGER
+- INCREASE_DAMAGE
+- DAMAGE_RESISTANCE
+```
+
 **`duration`**:
 
 How long should the effects of infection last? This is set in seconds, and is set to 120 seconds by default.
@@ -35,3 +51,11 @@ This will determine how the infection will affect players.
 Setting this option to `damage_only` will apply the `amplifier` value only to the damage effects to the player. All other infection symptoms will be amplified by 10.
 
 `all` will amplify all symptoms equally.
+
+**`cure_with_milk`**:
+
+This option determines whether or not players can cure buffers with milk. This is the vanilla Minecraft action of milk. UndeadPandemic will disable curing buffers with milk by default.
+
+`true|false`
+
+This is `false` by default.
