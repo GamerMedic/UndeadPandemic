@@ -14,11 +14,11 @@ player_name:
   zombie_head_shots: 0
 ```
 
-{% hint style="danger" %}
+{% hint style="info" %}
 This data is where PlaceholderAPI pulls the data from, so changing this will show if you are displaying a scoreboard.
 {% endhint %}
 
-If you try to change the parameter values (i.e. `zombie_kills`), then the plugin will register the parameter as missing and will create a new line. This will also reset the count.
+If you try to change the parameter names (i.e. `zombie_kills`), then the plugin will register the parameter as missing and will create a new line. This will reset the count.
 
 You can update the player's scores, but this file is otherwise not configurable.
 

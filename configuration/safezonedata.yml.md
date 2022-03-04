@@ -6,10 +6,12 @@ The safeZoneData.yml is a storage file.
 
 This file stores the number of plots that a player currently has to create a safezone.
 
-{% hint style="warning" %}
-**UUIDS**: You will notice that this file uses player UUIDS instead of display names, this is because WorldGuard offers unique protected based on UUIDS.
+SafeZones are given as a WorldGuard protected chunk, and each player is given 4 by default. The default number cannot be changed, but the number of chunks each player has can be changed using the [`/safezone` command](../commands/safezone/) or by directly editing the safeZoneData.yml file.
 
-Player display names are not currently stored in this file, but this will in the future.
+{% hint style="warning" %}
+**UUIDS**: You will notice that this file uses player UUIDS instead of display names, this is because WorldGuard offers unique protection based on UUIDS.
+
+Player display names are not currently stored in this file, but this will be added in the future.
 
 In the meantime, you can use [this resource](https://mcuuid.net) to find out what a player's UUID is, so that you can alter this file accurately.
 {% endhint %}
