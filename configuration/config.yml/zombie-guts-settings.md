@@ -14,6 +14,12 @@ Zombie Guts, when stored, will not decompose, so if they're not being worn, they
 
 This is set to true by default. Setting to false will stop zombie guts from working in the game.
 
+**`chance`**:
+
+The `chance` option decides the percentage chance that zombie guts are dropped. This will default to 3% (given as `3`).
+
+Valid values are `1 - 100`. `0` (zero) is not a valid option because this means that guts will never be dropped. If you don't want zombie guts to drop when a zombie is killed then set `enabled` to `false`.
+
 **`timer`**:
 
 The timer dictates how long it will take for the guts to decompose. The times set here are all in seconds. A minimum and maximum time must be set, and if one is not given, then the default value will be used.
