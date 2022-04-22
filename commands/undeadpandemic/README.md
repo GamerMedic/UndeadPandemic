@@ -16,6 +16,14 @@ _**F**_**YI**: An argument is any value entered after the root command. For exam
 All arguments are separated by a space.
 {% endhint %}
 
+{% hint style="danger" %}
+**IMPORTANT!**
+
+Commands that require permissions will not work if `require_perms` is set to `true` _**and**_ there is no permissions plugin installed.
+
+If you do not have a permissions plugin installed, set `require_perms` to `false` to make the commands work.
+{% endhint %}
+
 #### Valid Arguments
 
 * [give](give/)
