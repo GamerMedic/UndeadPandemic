@@ -47,6 +47,7 @@
 
 ## Permissions
 
+* [Permissions](permissions/permissions.md)
 * [undeadpandemic.\*](permissions/undeadpandemic..md)
 * [undeadpandemic.firstaid](permissions/undeadpandemic.firstaid/README.md)
   * [undeadpandemic.firstaid.give](permissions/undeadpandemic.firstaid/undeadpandemic.firstaid.give.md)
