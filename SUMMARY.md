@@ -79,6 +79,7 @@
 ## Systems
 
 * [Thirst System](systems/thirst-system.md)
+* [Safe Zones](systems/safe-zones.md)
 
 ## Changelogs
 
