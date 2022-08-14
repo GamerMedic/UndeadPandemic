@@ -12,7 +12,7 @@ The config.yml is a configuration file!
 
 ## Default config.yml
 
-```yaml
+```
 # CORE SETTINGS
 
 # When set to false, players will not require any permissions to use commands or items
@@ -21,9 +21,6 @@ require_perms: true
 # UndeadPandemic will not function in the worlds listed here.
 disable_in_worlds:
 #  - 'world'
-
-# Set to false if you do not want the plugin to remind you of new updates. You will always receive an update check when the plugin is enabled on the server
-check_for_updates: true
 
 # MESSAGE SETTINGS
 
@@ -78,45 +75,16 @@ infection:
   # Milk will not cure effects by default
   cure_with_milk: false
   
-# ZOMBIES
-
-# The higher the spawn rate is, the slower your server will be. Be careful with this setting.
-# The default is 5, this should be enough to occasionally cause herds.
-# Set the spawn rate to -1 to disable it. This will not disable Zombie spawning, it will simply prevent more Zombies from spawning.
-# You should restart your server after changing this setting as it may not work when reloading the config.
-
-zombie_spawn_rate: 5
-
-# Zombies are attracted by the sound of guns. This is how many will spawn within your defined radius when a gun is fired.
-# The higher this rate is, the slower your server will be. Be careful with this setting.
-attract_zombie_rate: 2
-
-# Attract zombies after a gunshot within this radius of blocks.
-attract_zombie_radius: 5
-
-# Chance that a zombie will be attracted by gun fire. chance%
-attract_zombie_chance: 70
-
 # ZOMBIE GUTS
   
 zombie_guts:
   enabled: true
-  
-  # Customise the zombie guts item and texture
-    
-  guts:
-    name: 'Zombie Guts'
-    # A separate 'Use Left' line is added to the lore when dropped by a zombie. This line will contain the guts timer.
-    lore:
-      - '&4A gross disguise.'
-    material: GOLDEN_CHESTPLATE # Don't forget to update your resource pack
-    data: 123456 # Custom model data
     
   # Chance
   # Determine the chances that Zombie Guts are dropped as a percentage.
   # Defaults to 3% chance.
   # Chance must be from 1 to 100. If the value is set to less than one or more than 100, then it will default to 3.
-  # If you do not want players to have zombie guts, then set 'enabled' to false.
+  # If you do not want players to have zombie guts, then set 'enabled' to true.
   chance: 3
   
   # Timer
@@ -162,8 +130,6 @@ rewards:
   
   min_kill_reward: 5 # defaults to 5
   max_kill_reward: 25 # default to 25
-  
-  reward_multiplier: 1.5
 
   kill_reward: 10
 
@@ -229,6 +195,23 @@ disable_mobs:
   - WITHER
   - WITHER_SKELETON
 
+# The higher the spawn rate is, the slower your server will be. Be careful with this setting.
+# The default is 5, this should be enough to occasionally cause herds.
+# Set the spawn rate to -1 to disable it. This will not disable Zombie spawning, it will simply prevent more Zombies from spawning.
+# You should restart your server after changing this setting as it may not work when reloading the config.
+
+zombie_spawn_rate: 5
+
+# Zombies are attracted by the sound of guns. This is how many will spawn within your defined radius when a gun is fired.
+# The higher this rate is, the slower your server will be. Be careful with this setting.
+attract_zombie_rate: 2
+
+# Attract zombies after a gunshot within this radius of blocks.
+attract_zombie_radius: 5
+
+# Chance that a zombie will be attracted by gun fire. chance%
+attract_zombie_chance: 70
+
 # THIRST SETTINGS
 
 # Set enable_thirst to false to prevent players from gaining XP levels when they use the consumables listed below.
@@ -252,78 +235,6 @@ consumables:
   ROTTEN_FLESH: -15
   SUSPICIOUS_STEW: -10
   WATER_BOTTLE: 75
-  
-# SAFE ZONES
-
-safezone:
-
-  # Set default number of chunks given to players on first login
-  default_plots: 4
-  
-  # Set the defaults settings for the safe zone plots.
-  set_flags:
-  
-    # All other WorldGuard region flags that are not listed here will have a default setting, or will be set to make the most realistic world.
-    # You can change all other settings by using the worldguard:region commands.
-    # Region flags wiki: https://worldguard.enginehub.org/en/latest/regions/flags/#flag-listing
-  
-    # Can players pvp inside safe zones?
-    pvp: false
-    # Which mobs, if any, should not be allowed to spawn within the safe zone?
-    # This option will not allow disabled mobs to spawn
-    deny_spawn:
-      - 'ZOMBIE'
-      - 'ZOMBIE_VILLAGER'
-    # Will TNT explode inside safe zones?
-    tnt: false
-    # Can mobs cause damage?
-    mob_damage: false
-    # Can players rotate item frames?
-    rotate_item_frames: false
-    # Can players destroy item frames?
-    destory_item_frames: false
-    # Can players destroy paintings?
-    destory_painting: false
-    # LEAVE THIS AS FALSE UNLESS YOU DON'T WANT TO PROTECT THE WORLDGUARD REGION
-    passthrough: false
-    # This should be left as false so that only the members of the safe zone can build.
-    build: false
-    # Can blocks be mined?
-    block-break: false
-    # Can blocks be placed?
-    block-place: false
-    # Should players, other than safe zone members, be allowed to use doors, levers, and vehicles?
-    interact: true
-    # Should players be allowed to use doors or levers, etc?
-    use: true
-    # Can animals be harmed?
-    damage_animals: true
-    # Can chests and inventories be accessed?
-    chest_access: true
-    # Can vehicles and animals be mounted?
-    ride: true
-    # Can players sleep in a bed?
-    sleep: true
-    # can respawn anchors be used?
-    respawn_anchors: true
-    # Can vehicles be placed?
-    vehicle_place: true
-    # Can vehicles be destroyed?
-    vehicle_destory: true
-    # Can lighters (flint and steel) be used?
-    lighter: true
-    # Can blocks be trampled?
-    block_trampling: true
-    # Will frost walker boots work?
-    frosted_ice_form: true
-    # Can fireworks cause damage?
-    firework_damage: true
-    # Can anvils be used?
-    use_anvil: true
-    # Can dripleaves be used?
-    use_dripleaf: true
-    # Can pistons be used?
-    use_pistons: true
 
 # HEALTH SETTINGS
 
@@ -385,12 +296,6 @@ damage_players: true
 gun_fire_volume: 0.5
 
 weapons:
-
-  # Use the default UndeadPandemic weapons
-  # Setting use_default to false will enable the QualityArmory plugin weapons instead.
-  use_default: true
-
-  # USE THESE SETTINGS TO MODIFY THE DEFAULT WEAPONS
   99p:
     # The type of weapon can be changed to use different ammo.
     type: 'Pistol'
@@ -477,5 +382,5 @@ ammo:
   Sniper:
     name: '&fSniper Bullet'
     lore: '&fMoly-coated.'
-    custom_model_data: 2yam
+    custom_model_data: 2
 ```

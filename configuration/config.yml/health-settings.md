@@ -38,3 +38,13 @@ If you try to set this option, it will just be ignored.
 **`data`**:
 
 Data sets the custom model data for the item. You can set this to whatever you want, but it will need to correspond to your resource pack. If you have not set up your own resource pack, then you can use the UndeadPandemic resource pack. Items will be already be set up to work with the config.
+
+#### Here is an example item.
+
+```yaml
+adrenaline:
+  name: 'Adrenaline'
+  lore: 'Temporarily Cure an Infection'
+  material: MUSIC_DISC_MALL
+  data: 123456
+```

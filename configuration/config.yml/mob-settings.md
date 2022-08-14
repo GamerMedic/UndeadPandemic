@@ -49,6 +49,10 @@ The mobs above will not appear in the world. You can remove, or comment out, the
 # - BLAZE
 ```
 
+{% hint style="warning" %}
+The below settings have been moved to [Zombie Settings](zombie-settings.md).
+{% endhint %}
+
 &#x20;**`zombie_spawn_rate`**:
 
 You can determine how many zombies will spawn in the world using this setting.

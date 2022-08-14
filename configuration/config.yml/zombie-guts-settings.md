@@ -50,8 +50,32 @@ The multiplier will determine how quickly guts will be used in water.
 <mark style="color:orange;">**This option does not work in v2.4.2 but was accidentally included in the config.yml file on release. It will work in future versions.**</mark>
 {% endhint %}
 
-{% hint style="info" %}
-**Future versions will allow you to customise the zombie guts item and texture.**
-{% endhint %}
+**`guts`:**
+
+You can use this setting to customise the zombie guts item.
+
+`name`:
+
+The name of the zombie guts. This is set to '`Zombie Guts`' by default.
+
+`lore`:
+
+You can set the lore using a list.
+
+&#x20; \-  'You can add lines'
+
+&#x20; \-  'by adding lines'
+
+&#x20; \-  'Minecraft &4<mark style="color:red;">colour</mark> &1<mark style="color:blue;">codes</mark> will work!'
+
+`material`:
+
+You can set the desired material to whatever you wish using the standard [Spigot Materials List](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html).
+
+This is set to `GOLDEN_CHESTPLATE` by default.
+
+`data`:
+
+Use this setting to configure the `CustomModelData` setting. This is set to `123456` by default.
 
 And that's all, folks! This completes the Zombie Guts settings in the configuration file.

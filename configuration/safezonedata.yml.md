@@ -13,7 +13,7 @@ SafeZones are given as a WorldGuard protected chunk, and each player is given 4 
 
 Player display names are not currently stored in this file, but this will be added in the future.
 
-In the meantime, you can use [this resource](https://mcuuid.net) to find out what a player's UUID is, so that you can alter this file accurately.
+In the meantime, you can use [this resource](https://mcuuid.net/) to find out what a player's UUID is, so that you can alter this file accurately.
 {% endhint %}
 
 The file will look like the file below.
@@ -24,7 +24,7 @@ a1b2c345-678d-901e-f234-5gh678h90123:
 ```
 
 {% hint style="warning" %}
-_**FUTURE UPDATES**_: This file will be converted into a JSON storage file in a future update.&#x20;
+_**FUTURE UPDATES**_: This file may be converted into a JSON storage file in a future update.&#x20;
 
 The data contained in this file will be converted automatically.
 {% endhint %}

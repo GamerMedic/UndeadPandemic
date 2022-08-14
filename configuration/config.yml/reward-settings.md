@@ -26,7 +26,7 @@ This is the maximum kill reward that you wish to give to the player. It is set t
 
 **`reward_multiplier`**:
 
-A `reward_multiplier` option will be added in the future. This will allow you to decide on the reward given for a head shot. The `reward_multiplier` was set to 1.5x the given reward by default in v2.4.2.
+This will allow you to decide on the reward given for a head shot. The `reward_multiplier` was set to 1.5x the given reward by default in v2.4.2.
 
 **`kill_reward`**:
 
@@ -52,11 +52,9 @@ If you do use an item-based economy, then you can use the following settings to 
 
 This is whatever item material names that your custom item uses. Only valid 1.16+ items can be used.
 
-[You can use this site for a list of 1.16 materials](https://minecraftitemids.org).
+It is recommended that you use the standard [Spigot Materials List](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) for your currency.
 
-[You can use this site for a list of 1.17 materials](https://minecraftitemids.com).
-
-You can exlude the "minecraft:" part of the material name.
+You can exclude the "minecraft:" part of the material name.
 
 The default material is 'emerald'.
 
