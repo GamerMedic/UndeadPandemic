@@ -12,20 +12,40 @@ The config.yml is a configuration file!
 
 ## Default config.yml
 
-```
+```yaml
 # CORE SETTINGS
+
+#### DOCUMENTATION: https://docs.stevezr963.me/
+
+# Set default language
+# See the documentation (link above) to find the available languages and the appropriate language code.
+language: 'en'
 
 # When set to false, players will not require any permissions to use commands or items
 require_perms: true
+# When set to false you will no longer receive an update notification on join.
+prompt_on_join: true
 
 # UndeadPandemic will not function in the worlds listed here.
 disable_in_worlds:
-#  - 'world'
+#  - 'world_nether'
+#  - 'world_end'
+
+# The plugin will check for updates in the background and let you know of any updates in the console.
+# Set to false if you do not want the plugin to remind you of new updates.
+# You will always receive an update check when the plugin is enabled on the server
+check_for_updates: true
+# If check_for_updates is true, the game will regularly check for new updates.
+# This value will tell the plugin how often to check for updates, in hours.
+# If this value is less than 1 then it will check for updates every 3 hours by default.
+# If this value is set greater than 672 hours (one month) then it will default to 672 hours.
+# Set 'check_for_updates' to false to disable this feature.
+check_updates_duration: 3
 
 # MESSAGE SETTINGS
 
 show_message: true # If the headshot message should appear
-head_shot_actionbar_text: '&bYou got a headshot!'
+# head_shot_actionbar_text can now be found in the language files.
 show_message_length: 3 # How long the head shot message show appear on screen for, in seconds.
 
 # ENCHANT SETTINGS
@@ -36,12 +56,46 @@ allow_enchants: false
 
 drop_exp: false
 
+# CRAFTING SETTINGS
+
+## List any items that you do not want players to craft.
+
+crafting_blacklist:
+  - LEATHER_HELMET
+  - LEATHER_CHESTPLATE
+  - LEATHER_LEGGINGS
+  - LEATHER_BOOTS
+  - IRON_HELMET
+  - IRON_CHESTPLATE
+  - IRON_LEGGINGS
+  - IRON_BOOTS
+  - GOLDEN_HELMET
+  - GOLDEN_CHESTPLATE
+  - GOLDEN_LEGGINGS
+  - GOLDEN_BOOTS
+  - DIAMOND_HELMET
+  - DIAMOND_CHESTPLATE
+  - DIAMOND_LEGGINGS
+  - DIAMOND_BOOTS
+  - CHAINMAIL_HELMET
+  - CHAINMAIL_CHESTPLATE
+  - CHAINMAIL_LEGGINGS
+  - CHAINMAIL_BOOTS
+  - NETHERITE_HELMET
+  - NETHERITE_CHESTPLATE
+  - NETHERITE_LEGGINGS
+  - NETHERITE_BOOTS
+  - SHIELD
+
 # INFECTION SETTINGS
 
 infection:
   
   # enabled by default
   enabled: true
+  
+  # Chance of infection
+  chance: 40
   
   # List of the effects produced by the infection
   # Intensity of the effects can be set by the amplifer option below.
@@ -54,8 +108,8 @@ infection:
     - SLOW
     - SLOW_DIGGING
     - HUNGER
-    - INCREASE_DAMAGE
     - DAMAGE_RESISTANCE
+    - CONFUSION
   
   # duration in seconds
   # If empty, or not set, the duration will be 120 seconds.
@@ -75,16 +129,99 @@ infection:
   # Milk will not cure effects by default
   cure_with_milk: false
   
+# ZOMBIES
+
+# The higher the spawn rate is, the slower your server will be. Be careful with this setting.
+# The default is 5, this should be enough to occasionally cause herds.
+# Set the spawn rate to -1 to disable it. This will not disable Zombie spawning, it will simply prevent more Zombies from spawning.
+# You should restart your server after changing this setting as it may not work when reloading the config.
+
+zombie_spawn_rate: 5
+
+# Zombies are attracted by the sound of guns. This is how many will spawn within your defined radius when a gun is fired.
+# The higher this rate is, the slower your server will be. Be careful with this setting.
+attract_zombie_rate: 2
+
+# Attract zombies after a gunshot within this radius of blocks.
+attract_zombie_radius: 5
+
+# Chance that a zombie will be attracted by gun fire. chance%
+attract_zombie_chance: 70
+
+zombie_types:
+  
+  # Vanilla zombie values:
+  # speed: 0.23
+  # damage: 2.0
+  # health: 20.0
+  # knockback: 0.0 // This is how resistant zombies are to attacks, explosions, and projectiles. Max is 1.0 (fully resistant)
+  
+  # 28 Days Later Zombies
+  fast:
+    enabled: true # Determines if this zombie types appears in the game.
+    name: 'Fast Zombie' # Change the name of the zombie.
+    spawn_rate: 25.0 # Determines how common zombies are using a weighting.
+    speed: 0.75
+    damage: 1.0
+    health: 20.0
+    knockback: 0.0
+  # Resident Evil Zombies
+  strong:
+    enabled: true
+    name: 'Strong Zombie'
+    spawn_rate: 25.0
+    speed: 0.25
+    damage: 5.0
+    health: 50.0
+    knockback: 0.7
+    wearArmour:
+      helmet: 'LEATHER_HELMET'
+      chestplate: 'LEATHER_CHESTPLATE;DURABILITY:3;PROTECTION_FIRE:1'
+      leggings: 'LEATHER_LEGGINGS'
+      boots: 'LEATHER_BOOTS'
+  # The Walking Dead Zombies
+  slow:
+    enabled: true
+    name: 'Slow Zombie'
+    spawn_rate: 25.0
+    speed: 0.1
+    damage: 2.0
+    health: 20.0
+    knockback: 0.5
+  # Shaun of the Dead Zombies
+  stupid:
+    enabled: true
+    name: 'Stupid Zombie'
+    spawn_rate: 25.0
+    speed: 0.23
+    damage: 1.0
+    health: 20.0
+    knockback: 0.0
+    isStupid: true
+    breakDoors: false
+    
+  isStupid_chance: 60 # Chance that the stupid zombies will forget that the player is there
+
 # ZOMBIE GUTS
   
 zombie_guts:
   enabled: true
+  
+  # Customise the zombie guts item and texture
+    
+  guts:
+    name: 'Zombie Guts'
+    # A separate 'Use Left' line is added to the lore when dropped by a zombie. This line will contain the guts timer.
+    lore:
+      - '&4A gross disguise.'
+    material: GOLDEN_CHESTPLATE # Don't forget to update your resource pack
+    data: 123456 # Custom model data
     
   # Chance
   # Determine the chances that Zombie Guts are dropped as a percentage.
   # Defaults to 3% chance.
   # Chance must be from 1 to 100. If the value is set to less than one or more than 100, then it will default to 3.
-  # If you do not want players to have zombie guts, then set 'enabled' to true.
+  # If you do not want players to have zombie guts, then set 'enabled' to false.
   chance: 3
   
   # Timer
@@ -130,6 +267,8 @@ rewards:
   
   min_kill_reward: 5 # defaults to 5
   max_kill_reward: 25 # default to 25
+  
+  reward_multiplier: 1.5
 
   kill_reward: 10
 
@@ -195,23 +334,6 @@ disable_mobs:
   - WITHER
   - WITHER_SKELETON
 
-# The higher the spawn rate is, the slower your server will be. Be careful with this setting.
-# The default is 5, this should be enough to occasionally cause herds.
-# Set the spawn rate to -1 to disable it. This will not disable Zombie spawning, it will simply prevent more Zombies from spawning.
-# You should restart your server after changing this setting as it may not work when reloading the config.
-
-zombie_spawn_rate: 5
-
-# Zombies are attracted by the sound of guns. This is how many will spawn within your defined radius when a gun is fired.
-# The higher this rate is, the slower your server will be. Be careful with this setting.
-attract_zombie_rate: 2
-
-# Attract zombies after a gunshot within this radius of blocks.
-attract_zombie_radius: 5
-
-# Chance that a zombie will be attracted by gun fire. chance%
-attract_zombie_chance: 70
-
 # THIRST SETTINGS
 
 # Set enable_thirst to false to prevent players from gaining XP levels when they use the consumables listed below.
@@ -235,6 +357,78 @@ consumables:
   ROTTEN_FLESH: -15
   SUSPICIOUS_STEW: -10
   WATER_BOTTLE: 75
+  
+# SAFE ZONES
+
+safezone:
+
+  # Set default number of chunks given to players on first login
+  default_plots: 4
+  
+  # Set the defaults settings for the safe zone plots.
+  set_flags:
+  
+    # All other WorldGuard region flags that are not listed here will have a default setting, or will be set to make the most realistic world.
+    # You can change all other settings by using the worldguard:region commands.
+    # Region flags wiki: https://worldguard.enginehub.org/en/latest/regions/flags/#flag-listing
+  
+    # Can players pvp inside safe zones?
+    pvp: false
+    # Which mobs, if any, should not be allowed to spawn within the safe zone?
+    # This option will not allow disabled mobs to spawn
+    deny_spawn:
+      - 'ZOMBIE'
+      - 'ZOMBIE_VILLAGER'
+    # Will TNT explode inside safe zones?
+    tnt: false
+    # Can mobs cause damage?
+    mob_damage: false
+    # Can players rotate item frames?
+    rotate_item_frames: false
+    # Can players destroy item frames?
+    destory_item_frames: false
+    # Can players destroy paintings?
+    destory_painting: false
+    # LEAVE THIS AS FALSE UNLESS YOU DON'T WANT TO PROTECT THE WORLDGUARD REGION
+    passthrough: false
+    # This should be left as false so that only the members of the safe zone can build.
+    build: false
+    # Can blocks be mined?
+    block-break: false
+    # Can blocks be placed?
+    block-place: false
+    # Should players, other than safe zone members, be allowed to use doors, levers, and vehicles?
+    interact: true
+    # Should players be allowed to use doors or levers, etc?
+    use: true
+    # Can animals be harmed?
+    damage_animals: true
+    # Can chests and inventories be accessed?
+    chest_access: true
+    # Can vehicles and animals be mounted?
+    ride: true
+    # Can players sleep in a bed?
+    sleep: true
+    # can respawn anchors be used?
+    respawn_anchors: true
+    # Can vehicles be placed?
+    vehicle_place: true
+    # Can vehicles be destroyed?
+    vehicle_destory: true
+    # Can lighters (flint and steel) be used?
+    lighter: true
+    # Can blocks be trampled?
+    block_trampling: true
+    # Will frost walker boots work?
+    frosted_ice_form: true
+    # Can fireworks cause damage?
+    firework_damage: true
+    # Can anvils be used?
+    use_anvil: true
+    # Can dripleaves be used?
+    use_dripleaf: true
+    # Can pistons be used?
+    use_pistons: true
 
 # HEALTH SETTINGS
 
@@ -296,7 +490,9 @@ damage_players: true
 gun_fire_volume: 0.5
 
 weapons:
-  99p:
+
+  # USE THESE SETTINGS TO MODIFY THE DEFAULT WEAPONS
+  p99:
     # The type of weapon can be changed to use different ammo.
     type: 'Pistol'
     name: '&fWither 99P'
@@ -309,6 +505,8 @@ weapons:
     head_shot_damage: 20
     # Clip-size is how many bullets the weapon can hold.
     clip-size: 16
+    # How long it takes (in seconds) to reload this weapon. Set to -1 for instant reload.
+    reload_delay: 3
     # Custom model data will allow you to add a texture to the weapon
     custom_model_data: 2
   ak-47:

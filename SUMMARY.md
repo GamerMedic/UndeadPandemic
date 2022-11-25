@@ -13,6 +13,7 @@
   * [Core Settings](configuration/config.yml/core-settings.md)
   * [Message Settings](configuration/config.yml/message-settings.md)
   * [Enchant Settings](configuration/config.yml/enchant-settings.md)
+  * [Crafting Settings](configuration/config.yml/crafting-settings.md)
   * [Infection Settings](configuration/config.yml/infection-settings.md)
   * [Zombie Settings](configuration/config.yml/zombie-settings.md)
   * [Zombie Guts Settings](configuration/config.yml/zombie-guts-settings.md)
