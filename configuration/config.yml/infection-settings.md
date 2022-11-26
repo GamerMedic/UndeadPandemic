@@ -12,6 +12,12 @@ Whether or not to enable zombie bite infections.
 
 This is `true` by default.
 
+**`chance`**:
+
+This is the chance that a player will be infected.
+
+`40 by default`
+
 **`infection_symptoms`**:
 
 This is a list of buffers that will be applied to the player when they are infected by a zombie. These buffers should be listed using the `PotionEffectType` given by the [Spigot API](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html).

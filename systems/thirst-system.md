@@ -4,6 +4,10 @@ description: What is the thirst system? And how does it work?
 
 # Thirst System
 
+{% hint style="danger" %}
+The thirst system will change drastically in v2.6.0 and information on this page will be moved to the Health System page.
+{% endhint %}
+
 ### What is the thirst system?
 
 The thirst system allows players to experience thirst within the game.
@@ -28,4 +32,4 @@ A player can restore their hydration levels, and become well again, by using con
 
 The main, and most significant, consequence of using the thirst system is that players can easily obtain XP by using consumables.
 
-It is, therefore, recommended that you <mark style="color:red;">**disable the **</mark>[_<mark style="color:red;">**enchant settings**</mark>_](../configuration/config.yml/enchant-settings.md) while using the thirst system.
+It is, therefore, recommended that you <mark style="color:red;">**disable the**</mark> [_<mark style="color:red;">**enchant settings**</mark>_](../configuration/config.yml/enchant-settings.md) while using the thirst system.

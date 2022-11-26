@@ -29,3 +29,7 @@ Players with admin permissions can use the[ safezone:plots command](../commands/
 Server admins can also choose to give plots in other ways, as rewards, or as token currency. This is recommended, but at the discretion of admins.
 
 [CraftBook](https://www.spigotmc.org/resources/craftbook.2083/) is recommended to use plots as tokens.
+
+### Cautions
+
+It's best not to use Safe Zones if you are using a plugin such as Towny or Factions, because the plot protection may conflict with those plugins. The Safe Zone feature is designed to be used as a standalone plot protection system so its use it optional when using other protection plugins.

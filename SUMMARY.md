@@ -83,11 +83,28 @@
 
 * [Safe Zones](systems/safe-zones.md)
 * [Thirst System](systems/thirst-system.md)
+* [Health System](systems/health-system.md)
+* [Zombies](systems/zombies/README.md)
+  * [Zombie Infections](systems/zombies/zombie-infections.md)
+  * [Zombie Attributes](systems/zombies/zombie-attributes.md)
+
+## Placeholder API
+
+* [Placeholders](placeholder-api/placeholders.md)
 
 ## Changelogs
 
 * [Changelogs](changelogs/changelogs/README.md)
+  * [v2.6.0](changelogs/changelogs/v2.6.0.md)
+  * [v2.5.0](changelogs/changelogs/v2.5.0.md)
   * [v2.4.3](changelogs/changelogs/v2.4.3.md)
   * [v2.4.2](changelogs/changelogs/v2.4.2.md)
   * [v2.3.2](changelogs/changelogs/v2.3.2.md)
   * [v2.3.1](changelogs/changelogs/v2.3.1.md)
+
+## Languages
+
+* [Using Translations](languages/using-translations/README.md)
+  * [English](languages/using-translations/english.md)
+  * [Deutsch](languages/using-translations/deutsch.md)
+  * [Nederlands](languages/using-translations/nederlands.md)

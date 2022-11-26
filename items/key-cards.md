@@ -1,10 +1,10 @@
 # Key Cards
 
-![Default Key Card Texture](../.gitbook/assets/keycard.png)
+<figure><img src="../.gitbook/assets/keycard.png" alt="A 16x16 pixel white card with a short green and black stripe centred at the top of the card."><figcaption><p>Default Key Card Texture</p></figcaption></figure>
 
 ### Description
 
-A key card is an item which can open doors. This will usually be iron doors and trapdoors as these doors require red stone functionality to open normally.
+A key card is an item which can open doors. This will usually be iron doors and trapdoors as these doors require red stone functionality to open normally. However, what items can be opened is configurable.
 
 ### Obtaining Key Cards
 
@@ -20,4 +20,8 @@ Players can use key cards by right clicking on [openable doors that are set in t
 
 If the door does not open when the key card is used, then the key card does not work on that door.
 
-Players who craft key cards should define a custom [<mark style="color:red;">\[keycard description\]</mark>](../commands/undeadpandemic/keycard.md#command-structure) parameter when crafting the key card, doing so wiill help other players know what door will open using the key card.
+Players who craft key cards should define a custom [<mark style="color:red;">\[keycard description\]</mark>](../commands/undeadpandemic/keycard.md#command-structure) parameter when crafting the key card, doing so will help other players know what door will open using the key card.
+
+### How Key Cards Work
+
+Key cards work by opening an [openable door](../configuration/config.yml/key-card-settings.md) on the block to which the key card is programmed. The key card is not set to a specific openable door.

@@ -1,0 +1,22 @@
+# Zombie Infections
+
+When a zombie attacks a player there is a chance (set in config.yml, or 40% by default) that the player will be infected with the zombie virus.
+
+Being infected causes the following symptoms:
+
+* Poisoned
+* Pain
+* Lethargy
+* Increase appetite
+* Weakness
+* Confusion
+
+These system can be changed in the config.yml file, but if no symptoms exist then the above symptoms will take effect.
+
+These symptoms will last for 2 minutes by default, but this can also be set in the settings.
+
+Pain will cause harm to the player so the player will die if they cannot treat the symptoms before they lose their health.
+
+By default, infections cannot be cured with milk, which is the default vanilla format. This can be changed in the config.yml file. Infections can be cured using antibiotics.
+
+While being infected is a bad situation to be in, the biggest advantage is that zombies will no longer attack the player because they will mistake the infected player as another zombie. Confused or stupid zombies may still attack the player.

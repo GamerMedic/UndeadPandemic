@@ -1,3 +1,7 @@
+---
+layout: landing
+---
+
 # UndeadPandemic
 
 UndeadPandemic is Spigot plugin that turns your SMP Minecraft Server into Zombie-infested post-apocalyptic world!
