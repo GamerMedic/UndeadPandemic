@@ -96,6 +96,7 @@
 
 * [Changelogs](changelogs/changelogs/README.md)
   * [v2.6.0](changelogs/changelogs/v2.6.0.md)
+  * [v2.5.1](changelogs/changelogs/v2.5.1.md)
   * [v2.5.0](changelogs/changelogs/v2.5.0.md)
   * [v2.4.3](changelogs/changelogs/v2.4.3.md)
   * [v2.4.2](changelogs/changelogs/v2.4.2.md)
