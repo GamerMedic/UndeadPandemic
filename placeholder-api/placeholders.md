@@ -24,6 +24,10 @@ Get the number of zombies killed by head shots by the player.
 
 `{undeadpandemic_zombie_head_shots}`
 
+{% hint style="danger" %}
+The below placeholders will appear in a future version and will not work on versions 2.5.1 and below.
+{% endhint %}
+
 ### undeadpandemic\_thirst
 
 Get the percentage thirst level for the player.
