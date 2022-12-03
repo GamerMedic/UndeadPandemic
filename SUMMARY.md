@@ -92,10 +92,6 @@
 
 * [Placeholders](placeholder-api/placeholders.md)
 
-## files
-
-* [playerData.yml](files/playerdata.yml.md)
-
 ## Changelogs
 
 * [Changelogs](changelogs/changelogs/README.md)

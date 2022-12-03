@@ -6,7 +6,7 @@ The `/safezone` command is used to create safezone plots, destroy them, and to g
 
 `/safezone <parameter>`
 
-_**Valid **_**Parameters**
+_**Valid**_** Parameters**
 
 * build
 * destroy

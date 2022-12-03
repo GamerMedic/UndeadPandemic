@@ -17,7 +17,7 @@ It is _**strongly recommended**_ to set `enable_thirst` to `false` if you have e
 This settings dictates how quickly (in seconds) a player's thirst will reduce by 1%. It is set to 90 seconds by default, but you can set this to whatever you want. The higher this value is, the slower a player will become thirsty.
 
 {% hint style="info" %}
-_**Future Update**: Increasing/Decreasing thirst based on the player's current biome is being considered. _
+_**Future Update**: Increasing/Decreasing thirst based on the player's current biome is being considered._&#x20;
 {% endhint %}
 
 **`consumables`**:
