@@ -16,7 +16,7 @@ Plots are equal to one Minecraft chunk (x1 16x16 block extending from Bedrock to
 
 Players can create a safe zone by building a plot, or a collection of plots adjacent to each other, which is achieved by using the [`safezone:build` command](../commands/safezone/build.md).
 
-A Safe Zone does not allow Zombies to spawn within its borders, however, Zombies and other Players can invade Safe Zones. Safe Zones cannot be controlled by other players, but can be looted.
+A Safe Zone does not allow Zombies to spawn within its borders.&#x20;
 
 Other players cannot destroy blocks that are protected by Safe Zones.
 
@@ -30,6 +30,13 @@ Server admins can also choose to give plots in other ways, as rewards, or as tok
 
 [CraftBook](https://www.spigotmc.org/resources/craftbook.2083/) is recommended to use plots as tokens.
 
+### Are plots protected from players?
+
+In older versions of the plugin, you will need to change the flags in the `config.yml` file. The newest version will prevent other players from opening doors, however, chests are not protected by default.
+
+{% hint style="danger" %}
 ### Cautions
 
 It's best not to use Safe Zones if you are using a plugin such as Towny or Factions, because the plot protection may conflict with those plugins. The Safe Zone feature is designed to be used as a standalone plot protection system so its use it optional when using other protection plugins.
+{% endhint %}
+
