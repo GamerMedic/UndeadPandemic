@@ -8,7 +8,7 @@ description: A list and description of available placeholders.
 
 Get the number of zombies killed by the player.
 
-`Useage:`
+`Usage:`
 
 `%undeadpandemic_zombie_kills%`
 
@@ -18,7 +18,7 @@ Get the number of zombies killed by the player.
 
 Get the number of zombies killed by head shots by the player.
 
-`Useage:`
+`Usage:`
 
 `%undeadpandemic_zombie_head_shots%`
 
@@ -32,15 +32,19 @@ The below placeholders will appear in a future version and will not work on vers
 
 Get the percentage thirst level for the player.
 
-`Useage:`
+`Usage:`
 
 `%undeadpandemic_thirst%`
 
 `{undeadpandemic_thirst}`
 
+{% hint style="warning" %}
+The placeholders below have not yet been implemented as of v2.6.0.
+{% endhint %}
+
 ### undeadpendemic\_health\_status
 
-`Useage:`
+`Usage:`
 
 `%undeadpandemic_health_status%`
 
@@ -48,7 +52,7 @@ Get the percentage thirst level for the player.
 
 ### undeadpandemic\_health\_condition
 
-`Useage:`
+`Usage:`
 
 `%undeadpandemic_health_condition%`
 

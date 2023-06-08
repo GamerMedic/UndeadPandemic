@@ -21,9 +21,14 @@ A list of currently supported languages:
 |  (British) English |       en      |
 |  (Deutsch) German  |       de      |
 | (Nederlands) Dutch |       nl      |
+|  (Français) French |       fr      |
 
 ### Editing Language Files
 
 You can freely edit the desired language files. Use of Minecraft colour codes is supported in language files. [Click here to view a Minecraft Colour Codes list](https://minecraftitemids.com/color-codes).
 
 The standard usage for colours code within the plugin is: `&{colourCode}` . Example: `&4`.
+
+#### Contributors
+
+The French language file was translated by Minecraft Player Lucachinou

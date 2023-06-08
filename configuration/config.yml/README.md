@@ -52,7 +52,7 @@ show_message_length: 3 # How long the head shot message show appear on screen fo
 
 allow_enchants: false
 
-# Should mobs drop Exp? It is recommended that this is set to false if you have the thirst system enabled, otherwise the thirst system will not work as intended.
+# Should mobs drop Exp?
 
 drop_exp: false
 
@@ -129,6 +129,9 @@ infection:
   # Milk will not cure effects by default
   cure_with_milk: false
   
+  # If true, eating Rotten Flesh will infect the player
+  infected_rotten_flesh: true
+  
 # ZOMBIES
 
 # The higher the spawn rate is, the slower your server will be. Be careful with this setting.
@@ -136,7 +139,7 @@ infection:
 # Set the spawn rate to -1 to disable it. This will not disable Zombie spawning, it will simply prevent more Zombies from spawning.
 # You should restart your server after changing this setting as it may not work when reloading the config.
 
-zombie_spawn_rate: 5
+zombie_spawn_rate: 2
 
 # Zombies are attracted by the sound of guns. This is how many will spawn within your defined radius when a gun is fired.
 # The higher this rate is, the slower your server will be. Be careful with this setting.
@@ -156,11 +159,17 @@ zombie_types:
   # health: 20.0
   # knockback: 0.0 // This is how resistant zombies are to attacks, explosions, and projectiles. Max is 1.0 (fully resistant)
   
+  # Disable custom zombie spawns
+  enable_custom_zombies: true
+  
+  # Disable show_zombie_names to remove the name tags on Zombies.
+  show_zombie_names: true
+  
   # 28 Days Later Zombies
   fast:
     enabled: true # Determines if this zombie types appears in the game.
     name: 'Fast Zombie' # Change the name of the zombie.
-    spawn_rate: 25.0 # Determines how common zombies are using a weighting.
+    spawn_rate: 0.25 # Determines how common zombies are using a weighting.
     speed: 0.75
     damage: 1.0
     health: 20.0
@@ -169,7 +178,7 @@ zombie_types:
   strong:
     enabled: true
     name: 'Strong Zombie'
-    spawn_rate: 25.0
+    spawn_rate: 0.1
     speed: 0.25
     damage: 5.0
     health: 50.0
@@ -183,7 +192,7 @@ zombie_types:
   slow:
     enabled: true
     name: 'Slow Zombie'
-    spawn_rate: 25.0
+    spawn_rate: 2.0
     speed: 0.1
     damage: 2.0
     health: 20.0
@@ -192,7 +201,7 @@ zombie_types:
   stupid:
     enabled: true
     name: 'Stupid Zombie'
-    spawn_rate: 25.0
+    spawn_rate: 2.0
     speed: 0.23
     damage: 1.0
     health: 20.0
@@ -336,27 +345,29 @@ disable_mobs:
 
 # THIRST SETTINGS
 
-# Set enable_thirst to false to prevent players from gaining XP levels when they use the consumables listed below.
-# If enable_thirst is set to true then it is recommended to disable allow_enchants and drop_exp. 
-enable_thirst: true
-dehydration_rate: 90 # Rate (in seconds) at which thirst will drop by 1%.
+thirst:
 
-# Set replenishing thirst level for consumables
+  # Disabling thirst will remove the boss bar when players rejoin the server.
+  # You will need to restart your server if you change the thirst settings
+  enable_thirst: true
+  dehydration_rate: 90 # Rate (in seconds) at which thirst will drop by dehydration_qty%.
+  dehydration_qty: 5 # as a percentage. Minimum 1%, maxmimum 99%. Just because you CAN set it to 995, doesn't mean you should!
 
-consumables:
-  APPLE: 2
-  BEETROOT_SOUP: 50
-  CARROT: 5
-  GOLDEN_CARROT: 15
-  HONEY_BOTTLE: 15
-  MELON_SLICE: 10
-  MILK_BUCKET: 75
-  MUSHROOM_STEW: 50
-  POTION: 75
-  RABBIT_STEW: 50
-  ROTTEN_FLESH: -15
-  SUSPICIOUS_STEW: -10
-  WATER_BOTTLE: 75
+  # Set replenishing thirst level for consumables
+  consumables:
+    APPLE: 2
+    BEETROOT_SOUP: 50
+    CARROT: 5
+    GOLDEN_CARROT: 15
+    HONEY_BOTTLE: 15
+    MELON_SLICE: 10
+    MILK_BUCKET: 75
+    MUSHROOM_STEW: 50
+    POTION: 75
+    RABBIT_STEW: 50
+    ROTTEN_FLESH: -15
+    SUSPICIOUS_STEW: -10
+    WATER_BOTTLE: 75
   
 # SAFE ZONES
 
@@ -398,9 +409,9 @@ safezone:
     # Can blocks be placed?
     block-place: false
     # Should players, other than safe zone members, be allowed to use doors, levers, and vehicles?
-    interact: true
+    interact: false
     # Should players be allowed to use doors or levers, etc?
-    use: true
+    use: false
     # Can animals be harmed?
     damage_animals: true
     # Can chests and inventories be accessed?
@@ -476,6 +487,7 @@ torch:
   lore: 'Let there be light!'
   material: MUSIC_DISC_WARD
   data: 123456
+  duration: 1 # How long a torch will light up an area (in seconds) per unit of battery. Min 1 second. Max 90 seconds.
 
 # GUN SETTINGS
 
@@ -490,6 +502,11 @@ damage_players: true
 gun_fire_volume: 0.5
 
 weapons:
+
+  # Kill a mob instantly with a headshot
+  headshot_kill: true
+  # Decide if zombies must be killed by a head shot
+  force_headshot: true
 
   # USE THESE SETTINGS TO MODIFY THE DEFAULT WEAPONS
   p99:

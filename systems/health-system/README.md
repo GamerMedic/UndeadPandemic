@@ -12,8 +12,7 @@ This page will take effect from v2.6.0. Information on existing systems will not
 
 The health system encompasses the following variables:
 
-* Thirst
-* Hunger
+* [Thirst](thirst-system.md)
 * Illness / Injury
 
 ### Health Status
@@ -36,7 +35,7 @@ If the health status is unhealthy then the player will have potion effects appli
 ### Thirst
 
 {% hint style="danger" %}
-Please refer to the [thirst system](thirst-system.md) if you are using any version pre-v2.6.0.
+Please refer to the [thirst system](../thirst-system-legacy.md) if you are using any version pre-v2.6.0.
 {% endhint %}
 
 The thirst system works largely in the same way as it did before, except the players thirst can be displayed in a boss bar or using PAPI placeholders instead of the XP bar.

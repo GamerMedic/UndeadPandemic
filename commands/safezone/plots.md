@@ -2,7 +2,7 @@
 
 ### Command Structure
 
-`/safezone`` `<mark style="color:blue;">`<give|take>`</mark>` ```` `<mark style="color:orange;">`<player>`</mark>` ```` `<mark style="color:green;">`<quantity>`</mark>
+`/safezone`` `<mark style="color:blue;">`<give|take>`</mark> <mark style="color:orange;">`<player>`</mark> <mark style="color:green;">`<quantity>`</mark>
 
 ### Command Description
 

@@ -8,7 +8,7 @@ Use this command to give players an UndeadPandemic structured item. The command 
 
 `[optional parameter]`
 
-`/undeadpandemic`` `<mark style="color:blue;">`give`</mark>` ```` `<mark style="color:purple;">`<player>`</mark>` ```` `<mark style="color:orange;">`<item type>`</mark>` ```` `<mark style="color:yellow;">`<item>`</mark>` `<mark style="color:green;">`[quantity]`</mark>
+`/undeadpandemic`` `<mark style="color:blue;">`give`</mark> <mark style="color:purple;">`<player>`</mark> <mark style="color:orange;">`<item type>`</mark> <mark style="color:yellow;">`<item>`</mark>` `<mark style="color:green;">`[quantity]`</mark>
 
 Players may receive one of three items using this command.
 

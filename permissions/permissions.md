@@ -14,6 +14,8 @@ If you do not have a permissions plugin installed, set `require_perms` to `false
 
 [undeadpandemic.firstaid](undeadpandemic.firstaid/)
 
+[undeadpandemic.guts](undeadpandemic.guts/)
+
 [undeadpandemic.immune](undeadpandemic.immune.md)
 
 [undeadpandemic.keycard](undeadpandemic.keycard/)

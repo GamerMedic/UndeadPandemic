@@ -55,6 +55,8 @@
 * [undeadpandemic.firstaid](permissions/undeadpandemic.firstaid/README.md)
   * [undeadpandemic.firstaid.give](permissions/undeadpandemic.firstaid/undeadpandemic.firstaid.give.md)
   * [undeadpandemic.firstaid.use](permissions/undeadpandemic.firstaid/undeadpandemic.firstaid.use.md)
+* [undeadpandemic.guts](permissions/undeadpandemic.guts/README.md)
+  * [undeadpandemic.guts.use](permissions/undeadpandemic.guts/undeadpandemic.guts.use.md)
 * [undeadpandemic.immune](permissions/undeadpandemic.immune.md)
 * [undeadpandemic.keycard](permissions/undeadpandemic.keycard/README.md)
   * [undeadpandemic.keycard.craft](permissions/undeadpandemic.keycard/undeadpandemic.keycard.craft.md)
@@ -78,15 +80,22 @@
   * [Bandage](items/first-aid-items/bandage.md)
   * [First Aid Kit](items/first-aid-items/first-aid-kit.md)
 * [Key Cards](items/key-cards.md)
+* [Rotten Flesh](items/rotten-flesh.md)
 
 ## Systems
 
 * [Safe Zones](systems/safe-zones.md)
-* [Thirst System](systems/thirst-system.md)
-* [Health System](systems/health-system.md)
+* [Thirst System (Legacy)](systems/thirst-system-legacy.md)
+* [Health System](systems/health-system/README.md)
+  * [Thirst System](systems/health-system/thirst-system.md)
 * [Zombies](systems/zombies/README.md)
   * [Zombie Infections](systems/zombies/zombie-infections.md)
   * [Zombie Attributes](systems/zombies/zombie-attributes.md)
+
+## Premium
+
+* [Premium Features](premium/premium-features.md)
+* [Infected Animals](premium/infected-animals.md)
 
 ## Placeholder API
 
@@ -109,3 +118,4 @@
   * [English](languages/using-translations/english.md)
   * [Deutsch](languages/using-translations/deutsch.md)
   * [Nederlands](languages/using-translations/nederlands.md)
+  * [Français](languages/using-translations/francais.md)

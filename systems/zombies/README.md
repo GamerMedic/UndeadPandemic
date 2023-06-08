@@ -14,8 +14,28 @@ You can enable and disable zombie types in the config. The plugin will default t
 
 To create a new type of zombie you just need to [add the configuration settings in config.yml](../../configuration/config.yml/zombie-settings.md).
 
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>Strong Zombie</td><td></td><td></td><td><a href="../../.gitbook/assets/strong_zombie.webp">strong_zombie.webp</a></td></tr><tr><td>Stupid Zombie</td><td></td><td></td><td><a href="../../.gitbook/assets/stupid_zombie.webp">stupid_zombie.webp</a></td></tr><tr><td>Hoard</td><td></td><td></td><td><a href="../../.gitbook/assets/hoarde.webp">hoarde.webp</a></td></tr></tbody></table>
+
 ### Hordes
 
 So, a lot of work has gone into organising hordes to make gameplay that much more challenging. Before the v2.5.0 update horde technology largely relied on spawn rates which meant that hordes were common.
 
 In the v2.5.0 update hordes are more orchestrated and more aggressively attack players, no matter what type of zombie. Zombie types in hordes will generate as per the odds set in the config.yml file.
+
+### Infections
+
+Zombies have a chance of infecting the player. These minor infections are curable using antibiotics, but the infections will slowly kill the player.
+
+{% content-ref url="zombie-infections.md" %}
+[zombie-infections.md](zombie-infections.md)
+{% endcontent-ref %}
+
+### Attributes
+
+Since v2.5.0 zombies are hugely customisable. You can create your own zombies that can be powerful or weak and slow.
+
+You can even put your zombies in a suit of armour. Be sure to strike the balance between challenging gameplay and overpowered zombie mutants!
+
+{% content-ref url="zombie-attributes.md" %}
+[zombie-attributes.md](zombie-attributes.md)
+{% endcontent-ref %}
