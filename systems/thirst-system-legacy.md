@@ -2,7 +2,7 @@
 description: What is the thirst system? And how does it work?
 ---
 
-# Thirst System (Legacy)
+# 🚰 Thirst System (Legacy)
 
 {% hint style="danger" %}
 The thirst system changed drastically in v2.6.0. Please visit the [Health System](health-system/) for more information.

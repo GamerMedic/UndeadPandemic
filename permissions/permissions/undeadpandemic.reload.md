@@ -1,4 +1,4 @@
-# undeadpandemic.reload
+# 🔄 undeadpandemic.reload
 
 This node will allow a player to reload the config.yml file.
 

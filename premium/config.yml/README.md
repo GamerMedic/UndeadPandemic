@@ -375,6 +375,7 @@ thirst:
   enable_thirst: true
   dehydration_rate: 90 # Rate (in seconds) at which thirst will drop by dehydration_qty%.
   dehydration_qty: 5 # as a percentage. Minimum 1%, maxmimum 99%. Just because you CAN set it to 995, doesn't mean you should!
+  purify_water: true # Allow water to be purified in a cauldron. Setting this to false will also turn off contaminated water
 
   # Set replenishing thirst level for consumables
   consumables:

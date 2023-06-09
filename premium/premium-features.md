@@ -2,7 +2,7 @@
 description: The features described here will only appear in premium versions of the game.
 ---
 
-# Premium Features
+# 💰 Premium Features
 
 {% hint style="info" %}
 Premium updates will usually be released up to a week before the free version, but updates on the premium version do not take priority.
@@ -12,4 +12,8 @@ Premium updates will usually be released up to a week before the free version, b
 
 {% content-ref url="infected-animals.md" %}
 [infected-animals.md](infected-animals.md)
+{% endcontent-ref %}
+
+{% content-ref url="contaminated-water.md" %}
+[contaminated-water.md](contaminated-water.md)
 {% endcontent-ref %}

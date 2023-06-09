@@ -2,7 +2,7 @@
 description: Information about infected animals.
 ---
 
-# Infected Animals
+# 🐄 Infected Animals
 
 ### What happens?
 

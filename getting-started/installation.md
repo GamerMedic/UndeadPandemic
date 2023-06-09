@@ -1,4 +1,4 @@
-# Installation
+# ➕ Installation
 
 1. [Download UndeadPandemic from Spigot](https://www.spigotmc.org/resources/undeadpandemic.95385/).
 2. Place the UndeadPandemic.jar file into your `/plugins` server folder.

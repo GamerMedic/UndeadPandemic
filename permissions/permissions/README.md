@@ -1,4 +1,4 @@
-# Permissions
+# 🔐 Permissions
 
 {% hint style="danger" %}
 **IMPORTANT!**

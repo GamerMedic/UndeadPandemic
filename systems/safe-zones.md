@@ -2,7 +2,7 @@
 description: What are Safe Zones, and how do they work?
 ---
 
-# Safe Zones
+# 🏠 Safe Zones
 
 ### What is a Safe Zone?
 

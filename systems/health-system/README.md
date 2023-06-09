@@ -2,7 +2,7 @@
 description: What is the Health System? And how does it work?
 ---
 
-# Health System
+# 💊 Health System
 
 {% hint style="warning" %}
 This page will take effect from v2.6.0. Information on existing systems will not be included on this page until v2.6.0 is released.

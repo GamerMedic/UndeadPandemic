@@ -1,4 +1,4 @@
-# undeadpandemic.use
+# 👐 undeadpandemic.use
 
 This node will allow players to interact with the UndeadPandemic plugin.
 

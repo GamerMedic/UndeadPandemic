@@ -1,4 +1,4 @@
-# undeadpandemic.immune
+# 💉 undeadpandemic.immune
 
 A player with this command cannot be infected by zombies.
 

@@ -1,4 +1,4 @@
-# Features
+# 🧰 Features
 
 This is a list of features that are currently available on the UndeadPandemic plugin.
 

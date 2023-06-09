@@ -1,4 +1,4 @@
-# safeZoneData.yml
+# 🏗 safeZoneData.yml
 
 {% hint style="success" %}
 The safeZoneData.yml is a storage file.

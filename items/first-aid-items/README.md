@@ -1,12 +1,12 @@
-# First Aid Items
+# 🏥 First Aid Items
 
 ### Obtaining First Aid Items
 
-Players with the[ firstaid.give permission](../../permissions/undeadpandemic.firstaid/undeadpandemic.firstaid.give.md) can use the [`give firstaid` command](../../commands/undeadpandemic/give/firstaid.md) to give first aid items to themselves or other players.
+Players with the[ firstaid.give permission](../../permissions/permissions/undeadpandemic.firstaid/undeadpandemic.firstaid.give.md) can use the [`give firstaid` command](../../commands/undeadpandemic/give/firstaid.md) to give first aid items to themselves or other players.
 
 ### Using First Aid Items
 
-Players with the [firstaid.use permission](../../permissions/undeadpandemic.firstaid/undeadpandemic.firstaid.use.md) can right-click on a first aid item that they have in their hand to use it.
+Players with the [firstaid.use permission](../../permissions/permissions/undeadpandemic.firstaid/undeadpandemic.firstaid.use.md) can right-click on a first aid item that they have in their hand to use it.
 
 ### Available First Aid Items
 

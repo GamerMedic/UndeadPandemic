@@ -1,4 +1,4 @@
-# undeadpandemic.updates
+# ⬆ undeadpandemic.updates
 
 This command will show a plugin udpate message to players when a new update is available.
 

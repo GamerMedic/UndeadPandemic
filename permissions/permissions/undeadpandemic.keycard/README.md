@@ -1,4 +1,4 @@
-# undeadpandemic.keycard
+# 🔑 undeadpandemic.keycard
 
 {% content-ref url="undeadpandemic.keycard.craft.md" %}
 [undeadpandemic.keycard.craft.md](undeadpandemic.keycard.craft.md)

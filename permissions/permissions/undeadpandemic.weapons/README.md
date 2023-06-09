@@ -1,4 +1,4 @@
-# undeadpandemic.weapons
+# 🗡 undeadpandemic.weapons
 
 {% content-ref url="undeadpandemic.weapons.give.md" %}
 [undeadpandemic.weapons.give.md](undeadpandemic.weapons.give.md)

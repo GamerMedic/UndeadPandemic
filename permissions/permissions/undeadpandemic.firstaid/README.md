@@ -1,4 +1,4 @@
-# undeadpandemic.firstaid
+# 💊 undeadpandemic.firstaid
 
 {% content-ref url="undeadpandemic.firstaid.give.md" %}
 [undeadpandemic.firstaid.give.md](undeadpandemic.firstaid.give.md)

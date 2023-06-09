@@ -2,7 +2,7 @@
 description: What is the thirst system? And how does it work?
 ---
 
-# Thirst System
+# 🚰 Thirst System
 
 ### What is the thirst system?
 

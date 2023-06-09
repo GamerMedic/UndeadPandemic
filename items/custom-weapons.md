@@ -1,4 +1,4 @@
-# Custom Weapons
+# 🗡 Custom Weapons
 
 You can create a custom weapon by using the options described in '[Weapon Settings](../configuration/config.yml/weapon-settings.md)'.
 

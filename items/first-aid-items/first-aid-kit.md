@@ -6,7 +6,7 @@ A first aid kit is a bag (chest) full of first aid items.
 
 ### Obtaining a First Aid Kit
 
-Players with the [firstaid.give permission](../../permissions/undeadpandemic.firstaid/undeadpandemic.firstaid.give.md) can use the [`give firstaid` command](../../commands/undeadpandemic/give/firstaid.md) to give kits to a player.
+Players with the [firstaid.give permission](../../permissions/permissions/undeadpandemic.firstaid/undeadpandemic.firstaid.give.md) can use the [`give firstaid` command](../../commands/undeadpandemic/give/firstaid.md) to give kits to a player.
 
 ### Using First Aid Kits
 

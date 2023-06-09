@@ -1,4 +1,4 @@
-# undeadpandemic.\*
+# 🌍 undeadpandemic.\*
 
 {% hint style="danger" %}
 &#x20;                                        <mark style="color:yellow;">**THIS IS AN ADMIN PERMISSION !**</mark>

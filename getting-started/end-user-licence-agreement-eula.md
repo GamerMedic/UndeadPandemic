@@ -4,7 +4,7 @@ description: >-
   by this EULA.
 ---
 
-# End-User Licence Agreement ("EULA")
+# 📃 End-User Licence Agreement ("EULA")
 
 This page will dictate the terms attached to the use of the UndeadPandemic.jar Spigot/Paper Plugin.
 
