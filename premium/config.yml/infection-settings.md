@@ -73,3 +73,21 @@ This option will cause the player to become infected if they eat rotten flesh.
 `true|false`
 
 This is `true` by default.
+
+**`enable_infected_animals`**:
+
+This option will determine if animals have a chance of dropping `rotten flesh` instead of their usual mob drops.
+
+`true|false`
+
+**`chance_animal_infected`**:
+
+This option will determine the chance of an animal being infected.
+
+Accepted value is a number (integer) between `1 and 99`.
+
+**`chance_animal_infected_type`**:
+
+This option will determine if `chance_animal_infected` is a fixed value or random.
+
+`fixed|random`
