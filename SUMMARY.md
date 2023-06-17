@@ -99,6 +99,7 @@
 ## 🪙 Premium
 
 * [💰 Premium Features](premium/premium-features.md)
+* [🔓 Premium Releases](premium/premium-releases.md)
 * [🛠 config.yml](premium/config.yml/README.md)
   * [Core Settings](premium/config.yml/core-settings.md)
   * [Message Settings](premium/config.yml/message-settings.md)
