@@ -8,7 +8,7 @@ A key card is an item which can open doors. This will usually be iron doors and 
 
 ### Obtaining Key Cards
 
-Use the [`keycard` command](../commands/undeadpandemic/keycard.md) to craft key cards.
+Use the [`keycard` command](../commands/keycard.md) to craft key cards.
 
 Key cards can only be crafted by players with the [keycard.craft permission](../permissions/permissions/undeadpandemic.keycard/undeadpandemic.keycard.craft.md).
 
@@ -20,7 +20,7 @@ Players can use key cards by right clicking on [openable doors that are set in t
 
 If the door does not open when the key card is used, then the key card does not work on that door.
 
-Players who craft key cards should define a custom [<mark style="color:red;">\[keycard description\]</mark>](../commands/undeadpandemic/keycard.md#command-structure) parameter when crafting the key card, doing so will help other players know what door will open using the key card.
+Players who craft key cards should define a custom [<mark style="color:red;">\[keycard description\]</mark>](../commands/keycard.md#command-structure) parameter when crafting the key card, doing so will help other players know what door will open using the key card.
 
 ### How Key Cards Work
 

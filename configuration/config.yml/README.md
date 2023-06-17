@@ -158,6 +158,21 @@ attract_zombie_radius: 5
 # Chance that a zombie will be attracted by gun fire. chance%
 attract_zombie_chance: 70
 
+### Setting this to false will prevent vanilla zombies from spawning so that only custom zombies spawn.
+### This setting will override to true if enable_custom_zombies = false
+allow_vanilla_zombies: true
+
+# Disable custom zombie spawns
+enable_custom_zombies: true
+
+# Disable show_zombie_names to remove the name tags on Zombies.
+show_zombie_names: true
+
+# Disable baby zombies
+allow_baby_zombies: true
+ 
+isStupid_chance: 60 # Chance that the stupid zombies will forget that the player is ther
+
 zombie_types:
   
   # Vanilla zombie values:
@@ -165,15 +180,6 @@ zombie_types:
   # damage: 2.0
   # health: 20.0
   # knockback: 0.0 // This is how resistant zombies are to attacks, explosions, and projectiles. Max is 1.0 (fully resistant)
-  
-  # Disable custom zombie spawns
-  enable_custom_zombies: true
-  
-  # Disable show_zombie_names to remove the name tags on Zombies.
-  show_zombie_names: true
-  
-  # Disable baby zombies
-  allow_baby_zombies: true
   
   # 28 Days Later Zombies
   fast:
@@ -222,8 +228,6 @@ zombie_types:
     isStupid: true
     breakDoors: false
     canBreakDoors: false
-    
-  isStupid_chance: 60 # Chance that the stupid zombies will forget that the player is there
 
 # ZOMBIE GUTS
   
@@ -268,7 +272,6 @@ zombie_guts:
 barbed_wire:
 
   enabled: true
- 
   # 1 = half a heart.
   damage: 2
 
@@ -466,28 +469,32 @@ safezone:
 
 # HEALTH SETTINGS
 
-adrenaline:
-  name: 'Adrenaline'
-  lore: 'Temporarily Cure an Infection'
-  material: MUSIC_DISC_MALL # Changing the material will require an updated resource pack
-  data: 123456
+health:
 
-antibiotics:
-  name: 'Antibiotics'
-  lore: 'Cure an Infection'
-  material: MUSIC_DISC_MELLOHI
-  data: 123456
+  items:
+    adrenaline:
+      name: 'Adrenaline'
+      lore: 'Temporarily Cure an Infection'
+      material: MUSIC_DISC_MALL # Changing the material will require an updated resource pack
+      data: 123456
 
-bandage:
-  name: 'Bandage'
-  lore: 'Heal Infection Wound'
-  material: MUSIC_DISC_STAL
-  data: 123456
+    antibiotics:
+      name: 'Antibiotics'
+      lore: 'Cure an Infection'
+      material: MUSIC_DISC_MELLOHI
+      data: 123456
+
+    bandage:
+      name: 'Bandage'
+      lore: 'Heal Infection Wound'
+      material: MUSIC_DISC_STAL
+      data: 123456
   
-first_aid_kit:
-  name: '&4First Aid Kit'
-  lore: '&f&oAn emergency first aid kit!'
-  data: 2
+    first_aid_kit:
+      ### Player is given a chest with one of all 3 items contained inside
+      name: '&4First Aid Kit'
+      lore: '&f&oAn emergency first aid kit!'
+      data: 2
   
 # KEYCARD SETTINGS
 

@@ -4,13 +4,15 @@ description: >-
   Traduction)
 ---
 
-# Français
+# 🇫🇷 Français
 
 {% code title="fr.yml" overflow="wrap" lineNumbers="true" %}
 ```yaml
 #############################################################
 #
 #  You can get an updated translation from https://docs.stevezr963.me/getting-started/undeadpandemic/languages/using-translations/french
+#
+#  Translation by Lucachinou
 #
 #############################################################
 head_shot_actionbar_text: '&bVous avez reçu une balle dans la tête!'
@@ -90,5 +92,8 @@ guts_creation_err: 'Impossible de créer des tripes de zombies.'
 guts_drop_err: 'Impossible de laisser tomber les tripes de zombies.'
 new_version_msg: '&d&lMISE À JOUR TROUVÉE! La version {new_version} est désormais disponible !'
 no_update_msg: 'Pas de mise a jour disponible'
+sent_torch: 'Vous avez envoyé une torche à {player}!'
+sent_torch_err: 'Il y a eu un problème lors de la livraison de la torche.'
+received_torch: 'Vous avez reçu une torche de {player}'
 ```
 {% endcode %}

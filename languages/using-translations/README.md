@@ -29,6 +29,14 @@ You can freely edit the desired language files. Use of Minecraft colour codes is
 
 The standard usage for colours code within the plugin is: `&{colourCode}` . Example: `&4`.
 
+_<mark style="color:yellow;">Do not</mark>_ edit any variable names because the variable will not work if changed.
+
+**Example of a variable:**
+
+```yaml
+{player}
+```
+
 #### Contributors
 
 The French language file was translated by Minecraft Player Lucachinou

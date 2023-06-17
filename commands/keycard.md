@@ -1,6 +1,6 @@
-# :keycard
+# /keycard
 
-![Key Card Texture](../../.gitbook/assets/keycard.png)
+![Key Card Texture](../.gitbook/assets/keycard.png)
 
 ### Command Structure
 
@@ -8,9 +8,9 @@
 
 `[optional parameter]`
 
-`/undeadpandemic`` `<mark style="color:blue;">`keycard`</mark> <mark style="color:purple;">`<cut>`</mark> <mark style="color:orange;">`<X co-ordinate>`</mark> <mark style="color:orange;">`<Y co-ordinate> <Z co-ordinate>`</mark> <mark style="color:red;">`[keycard description]`</mark> <mark style="color:yellow;">`[uses]`</mark> <mark style="color:green;">`[quantity]`</mark>
+`/keycard`<mark style="color:purple;">`<cut>`</mark> <mark style="color:orange;">`<X co-ordinate>`</mark> <mark style="color:orange;">`<Y co-ordinate> <Z co-ordinate>`</mark> <mark style="color:red;">`[keycard description]`</mark> <mark style="color:yellow;">`[uses]`</mark> <mark style="color:green;">`[quantity]`</mark>
 
-![](../../.gitbook/assets/keycard\_cmd.png)
+![](../.gitbook/assets/keycard\_cmd.png)
 
 ### Parameter Descriptions
 

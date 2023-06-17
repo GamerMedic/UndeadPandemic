@@ -24,7 +24,6 @@ All arguments are separated by a space.
   * [weapon](give/weapon.md)
 * [help](help.md)
 * [info](https://app.gitbook.com/s/-MkmqA2L8IV\_3KNSRbUJ/c/sFIpnbJFxK0U9sAK4WRI/documentation/commands/undeadpandemic/info)
-* [keycard](keycard.md)
 * [reload](reload.md)
 * [website](website.md)
 

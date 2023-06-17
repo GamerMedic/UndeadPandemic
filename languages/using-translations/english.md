@@ -2,10 +2,15 @@
 description: The default YAML file for the English language.
 ---
 
-# English
+# 🇬🇧 English
 
 {% code title="en.yml" overflow="wrap" lineNumbers="true" %}
 ```yaml
+#############################################################
+#
+#  You can get an updated translation from https://docs.stevezr963.me/getting-started/undeadpandemic/languages/using-translations/english
+#
+#############################################################
 head_shot_actionbar_text: '&bYou got a head shot!'
 execution: '&4EXECUTION!'
 reload_weapon: '&c&lRELOAD YOUR WEAPON!'
@@ -18,7 +23,7 @@ died_of_thirst: '&7&oYou died of thirst! Dummy.'
 dehydrated: '&4&lDEHYDRATION HAS MADE YOU CONFUSED. DRINK SOMETHING, NOW!'
 no_door: '&4Door doesn''t exist.'
 broken_key: '&eOops! The key card snapped in the lock and is now unusable!'
-infected: '&5&lYOU''VE BEEN INFECTED BY A ZOMBIE!!!'
+infected: '&5&lYOU''VE BEEN INFECTED!!!'
 no_ammo: '&g&oYou don''t have any bullets to reload.'
 no_abx: '&4You are not holding any antibiotics.'
 no_adx: '&4You are not holding any adrenaline.'
@@ -81,5 +86,10 @@ guts_no_change: 'Could not change zombie guts data.'
 guts_save_err: 'Could not save zombie guts data.'
 guts_creation_err: 'Could not create zombie guts.'
 guts_drop_err: 'Could not drop zombie guts.'
+new_version_msg: '&d&lUPDATE FOUND! Version {new_version} is now available!'
+no_update_msg: 'No updates available.'
+sent_torch: 'You have sent a torch to {player}!'
+sent_torch_err: 'There was a problem delivering the torch.'
+received_torch: 'You have received a torch from {player}'
 ```
 {% endcode %}

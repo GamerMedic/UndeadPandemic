@@ -1,6 +1,8 @@
 # Health Settings
 
-These settings will determine what items are used as the three health restoring items.
+These settings will determine what items can be used and how health is affected by the plugin.
+
+**`items`**:
 
 1. _Adrenaline_
 2. _Antibiotics_
@@ -42,9 +44,11 @@ Data sets the custom model data for the item. You can set this to whatever you w
 #### Here is an example item.
 
 ```yaml
-adrenaline:
-  name: 'Adrenaline'
-  lore: 'Temporarily Cure an Infection'
-  material: MUSIC_DISC_MALL
-  data: 123456
+health:
+  items:
+    adrenaline:
+      name: 'Adrenaline'
+      lore: 'Temporarily Cure an Infection'
+      material: MUSIC_DISC_MALL
+      data: 123456
 ```

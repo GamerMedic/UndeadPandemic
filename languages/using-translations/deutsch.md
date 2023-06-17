@@ -4,10 +4,15 @@ description: >-
   bereitgestellt)
 ---
 
-# Deutsch
+# 🇩🇪 Deutsch
 
 {% code title="de.yml" overflow="wrap" lineNumbers="true" %}
 ```yaml
+#############################################################
+#
+#  Sie können eine aktualisierte Übersetzung von erhalten https://docs.stevezr963.me/getting-started/undeadpandemic/languages/using-translations/deutsch
+#
+#############################################################
 head_shot_actionbar_text: '&bDu hast einen Kopfschuss!'
 execution: '&4HINRICHTUNG!'
 reload_weapon: '&c&lLADEN SIE IHRE WAFFE NEU!'
@@ -83,5 +88,10 @@ guts_no_change: 'Zombie-Eingeweide-Daten konnten nicht geändert werden.'
 guts_save_err: 'Zombie-Eingeweide-Daten konnten nicht gespeichert werden.'
 guts_creation_err: 'Konnte Zombie-Eingeweide nicht erschaffen.'
 guts_drop_err: 'Konnte keine Zombie-Eingeweide fallen lassen.'
+new_version_msg: '&d&lUPDATE GEFUNDEN! Version {new_version} ist jetzt verfügbar!'
+no_update_msg: 'Keine Updates verfügbar.'
+sent_torch: 'Du hast eine Taschenlampe geschickt {player}!'
+sent_torch_err: 'Bei der Lieferung der Taschenlampe ist ein Problem aufgetreten.'
+received_torch: 'Du hast eine Taschenlampe von erhalten {player}'
 ```
 {% endcode %}

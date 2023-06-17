@@ -4,10 +4,16 @@ description: >-
   Translate)
 ---
 
-# Nederlands
+# 🇳🇱 Nederlands
 
 {% code title="nl.yml" overflow="wrap" lineNumbers="true" %}
 ```yaml
+#############################################################
+#
+#  U kunt een bijgewerkte vertaling krijgen van https://docs.stevezr963.me/getting-started/undeadpandemic/languages/using-translations/nederlands
+#
+#############################################################
+
 head_shot_actionbar_text: '&bJe hebt een hoofdschot!'
 execution: '&4EXECUTIE!'
 reload_weapon: '&c&lHERLAAD JE WAPEN!'
@@ -83,5 +89,10 @@ guts_no_change: 'Kan gegevens over zombie-lef niet wijzigen.'
 guts_save_err: 'Kon gegevens over zombie-lef niet opslaan.'
 guts_creation_err: 'Kon geen zombie-lef creëren.'
 guts_drop_err: 'Kon zombie-lef niet laten vallen.'
+new_version_msg: '&d&lUPDATE GEVONDEN! Versie {new_version} is nu beschikbaar!'
+no_update_msg: 'Geen updates beschikbaar.'
+sent_torch: 'Je hebt een fakkel gestuurd naar {player}!'
+sent_torch_err: 'Er is een probleem opgetreden bij het leveren van de zaklamp.'
+received_torch: 'Je hebt een zaklamp gekregen van {player}'
 ```
 {% endcode %}

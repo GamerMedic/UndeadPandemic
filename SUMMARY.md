@@ -36,11 +36,12 @@
     * [::ammo](commands/undeadpandemic/give/ammo.md)
     * [::firstaid](commands/undeadpandemic/give/firstaid.md)
     * [::weapon](commands/undeadpandemic/give/weapon.md)
+    * [::torch](commands/undeadpandemic/give/torch.md)
   * [:help](commands/undeadpandemic/help.md)
   * [:info](commands/undeadpandemic/info.md)
-  * [:keycard](commands/undeadpandemic/keycard.md)
   * [:reload](commands/undeadpandemic/reload.md)
   * [:website](commands/undeadpandemic/website.md)
+* [/keycard](commands/keycard.md)
 * [/safezone](commands/safezone/README.md)
   * [:build](commands/safezone/build.md)
   * [:destroy](commands/safezone/destroy.md)
@@ -69,6 +70,8 @@
   * [🗡 undeadpandemic.weapons](permissions/permissions/undeadpandemic.weapons/README.md)
     * [undeadpandemic.weapons.give](permissions/permissions/undeadpandemic.weapons/undeadpandemic.weapons.give.md)
     * [undeadpandemic.weapons.use](permissions/permissions/undeadpandemic.weapons/undeadpandemic.weapons.use.md)
+  * [🔦 undeadpandemic.items](permissions/permissions/undeadpandemic.items/README.md)
+    * [undeadpandemic.items.use](permissions/permissions/undeadpandemic.items/undeadpandemic.items.use.md)
 
 ## 🧰 Items
 
@@ -81,6 +84,7 @@
   * [First Aid Kit](items/first-aid-items/first-aid-kit.md)
 * [🔑 Key Cards](items/key-cards.md)
 * [🍖 Rotten Flesh](items/rotten-flesh.md)
+* [🔦 Torch](items/torch.md)
 
 ## 🔧 Systems
 
@@ -122,6 +126,7 @@
 ## 📂 Changelogs
 
 * [Changelogs](changelogs/changelogs/README.md)
+  * [v2.6.1](changelogs/changelogs/v2.6.1.md)
   * [v2.6.0](changelogs/changelogs/v2.6.0.md)
   * [v2.5.1](changelogs/changelogs/v2.5.1.md)
   * [v2.5.0](changelogs/changelogs/v2.5.0.md)

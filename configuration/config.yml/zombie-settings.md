@@ -36,6 +36,12 @@ You can create a new type of zombie by using the configuration attributes below.
 You cannot change the settings for vanilla zombies. They will automatically have a weighting of 25.0. They will still result in a 100% chance if no other types exist.
 {% endhint %}
 
+**`allow_vanilla_zombies`**:
+
+Enabled/disable vanilla zombies. This is useful when vanilla zombies are stronger than custom zombies.
+
+This setting is set to `true` by default. `allow_vanilla_zombies` and `enable_custom_zombies` cannot both be set to false. If they are then `allow_vanilla_zombies` will be overriden and set to `true`.
+
 **`isStupid_chance`**:
 
 Set the chance that stupid zombies will forget that the player is there. Default is 60.
