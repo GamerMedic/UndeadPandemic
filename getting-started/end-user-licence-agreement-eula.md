@@ -17,7 +17,7 @@ This page will dictate the terms attached to the use of the UndeadPandemic.jar S
 {% endhint %}
 
 {% hint style="warning" %}
-&#x20; 3\. You should report any bugs that you encounter by opening a [new issue](https://github.com/GamerMedic/UndeadPandemic/issues) with specific details, and instructions on how to re-produce the bug.
+&#x20; 3\. You should report any bugs that you encounter by opening a [new issue](https://github.com/GamerMedic/UndeadPandemic/issues) on GitHub or on Discord with specific details, and instructions on how to re-produce the bug.
 {% endhint %}
 
 {% hint style="danger" %}

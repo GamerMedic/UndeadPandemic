@@ -1,4 +1,5 @@
 ---
+description: Can you survive the human extinction event?
 layout: landing
 ---
 
@@ -14,6 +15,22 @@ Use any weapons and all the ammo that you can get your hands on, and use medicat
 
 {% content-ref url="getting-started/installation.md" %}
 [installation.md](getting-started/installation.md)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}

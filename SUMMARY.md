@@ -2,7 +2,7 @@
 
 ## Getting Started!
 
-* [🧟♂ 🧟♂ UndeadPandemic](README.md)
+* [🧟♂ UndeadPandemic](README.md)
 * [➕ Installation](getting-started/installation.md)
 * [🧰 Features](getting-started/features.md)
 * [📃 End-User Licence Agreement ("EULA")](getting-started/end-user-licence-agreement-eula.md)
@@ -26,7 +26,7 @@
   * [Key Card Settings](configuration/config.yml/key-card-settings.md)
   * [Weapon Settings](configuration/config.yml/weapon-settings.md)
   * [Ammunition Settings](configuration/config.yml/ammunition-settings.md)
-* [👩🔧 👩🔧 playerData.yml](configuration/playerdata.yml.md)
+* [👩🔧 👩🔧 👩🔧 playerData.yml](configuration/playerdata.yml.md)
 * [🏗 safeZoneData.yml](configuration/safezonedata.yml.md)
 
 ## 💬 Commands
@@ -92,9 +92,33 @@
 * [🚰 Thirst System (Legacy)](systems/thirst-system-legacy.md)
 * [💊 Health System](systems/health-system/README.md)
   * [🚰 Thirst System](systems/health-system/thirst-system.md)
-* [🧟♂ 🧟♂ Zombies](systems/zombies/README.md)
+* [🧟♂ 🧟♂ 🧟♂ Zombies](systems/zombies/README.md)
   * [☣ Zombie Infections](systems/zombies/zombie-infections.md)
   * [🔢 Zombie Attributes](systems/zombies/zombie-attributes.md)
+
+## 🖼 Placeholder API
+
+* [Placeholders](placeholder-api/placeholders.md)
+
+## 📂 Changelogs
+
+* [Changelogs](changelogs/changelogs/README.md)
+  * [v2.6.1](changelogs/changelogs/v2.6.1.md)
+  * [v2.6.0](changelogs/changelogs/v2.6.0.md)
+  * [v2.5.1](changelogs/changelogs/v2.5.1.md)
+  * [v2.5.0](changelogs/changelogs/v2.5.0.md)
+  * [v2.4.3](changelogs/changelogs/v2.4.3.md)
+  * [v2.4.2](changelogs/changelogs/v2.4.2.md)
+  * [v2.3.2](changelogs/changelogs/v2.3.2.md)
+  * [v2.3.1](changelogs/changelogs/v2.3.1.md)
+
+## 💬 Languages
+
+* [Using Translations](languages/using-translations/README.md)
+  * [🇬🇧 🇬🇧 🇬🇧 English](languages/using-translations/english.md)
+  * [🇩🇪 🇩🇪 🇩🇪 Deutsch](languages/using-translations/deutsch.md)
+  * [🇳🇱 🇳🇱 🇳🇱 Nederlands](languages/using-translations/nederlands.md)
+  * [🇫🇷 🇫🇷 🇫🇷 Français](languages/using-translations/francais.md)
 
 ## 🪙 Premium
 
@@ -119,27 +143,3 @@
   * [Ammunition Settings](premium/config.yml/ammunition-settings.md)
 * [🐄 Infected Animals](premium/infected-animals.md)
 * [🚱 Contaminated Water](premium/contaminated-water.md)
-
-## 🖼 Placeholder API
-
-* [Placeholders](placeholder-api/placeholders.md)
-
-## 📂 Changelogs
-
-* [Changelogs](changelogs/changelogs/README.md)
-  * [v2.6.1](changelogs/changelogs/v2.6.1.md)
-  * [v2.6.0](changelogs/changelogs/v2.6.0.md)
-  * [v2.5.1](changelogs/changelogs/v2.5.1.md)
-  * [v2.5.0](changelogs/changelogs/v2.5.0.md)
-  * [v2.4.3](changelogs/changelogs/v2.4.3.md)
-  * [v2.4.2](changelogs/changelogs/v2.4.2.md)
-  * [v2.3.2](changelogs/changelogs/v2.3.2.md)
-  * [v2.3.1](changelogs/changelogs/v2.3.1.md)
-
-## 💬 Languages
-
-* [Using Translations](languages/using-translations/README.md)
-  * [🇬🇧 🇬🇧 English](languages/using-translations/english.md)
-  * [🇩🇪 🇩🇪 Deutsch](languages/using-translations/deutsch.md)
-  * [🇳🇱 🇳🇱 Nederlands](languages/using-translations/nederlands.md)
-  * [🇫🇷 🇫🇷 Français](languages/using-translations/francais.md)
