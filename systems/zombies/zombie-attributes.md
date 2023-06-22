@@ -4,7 +4,7 @@ description: >-
   file.
 ---
 
-# Zombie Attributes
+# 🔢 Zombie Attributes
 
 ### Speed
 

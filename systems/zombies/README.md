@@ -2,7 +2,7 @@
 description: Everything you need to know about Zombies.
 ---
 
-# Zombies
+# 🧟♂ Zombies
 
 You can add an unlimited number of different zombie types.
 
@@ -18,13 +18,15 @@ To create a new type of zombie you just need to [add the configuration settings 
 
 ### Hordes
 
-So, a lot of work has gone into organising hordes to make gameplay that much more challenging. Before the v2.5.0 update horde technology largely relied on spawn rates which meant that hordes were common.
+Hoards currently rely on spawn rates and are not controllable. But there will be better hoarde functionality introduced into v2.7.0.
 
-In the v2.5.0 update hordes are more orchestrated and more aggressively attack players, no matter what type of zombie. Zombie types in hordes will generate as per the odds set in the config.yml file.
+In the v2.7.0 update hoards will more orchestrated and more aggressively attack players, no matter what type of zombie. Zombie types in hordes will generate as per the odds set in the [`config.yml`](../../configuration/config.yml/) file.
+
+Hoards will be configuration in the config file and can be timed, or appear at random. And players with permission will also be able to start a hoard using a new command.
 
 ### Infections
 
-Zombies have a chance of infecting the player. These minor infections are curable using antibiotics, but the infections will slowly kill the player.
+Zombies have a chance of infecting the player. These minor infections are curable using antibiotics, but the infections will slowly kill the player if left untreated.
 
 {% content-ref url="zombie-infections.md" %}
 [zombie-infections.md](zombie-infections.md)
@@ -32,7 +34,7 @@ Zombies have a chance of infecting the player. These minor infections are curabl
 
 ### Attributes
 
-Since v2.5.0 zombies are hugely customisable. You can create your own zombies that can be powerful or weak and slow.
+Since v2.5.0 zombies are almost entirely customisable. You can create your own zombies that can be powerful or weak and slow, or stupid.
 
 You can even put your zombies in a suit of armour. Be sure to strike the balance between challenging gameplay and overpowered zombie mutants!
 

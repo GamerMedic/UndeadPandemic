@@ -93,8 +93,8 @@
 * [💊 Health System](systems/health-system/README.md)
   * [🚰 Thirst System](systems/health-system/thirst-system.md)
 * [🧟♂ Zombies](systems/zombies/README.md)
-  * [Zombie Infections](systems/zombies/zombie-infections.md)
-  * [Zombie Attributes](systems/zombies/zombie-attributes.md)
+  * [☣ Zombie Infections](systems/zombies/zombie-infections.md)
+  * [🔢 Zombie Attributes](systems/zombies/zombie-attributes.md)
 
 ## 🪙 Premium
 

@@ -1,4 +1,4 @@
-# Zombie Infections
+# ☣ Zombie Infections
 
 When a zombie attacks - or a player eats [`Rotten Flesh`](../../items/rotten-flesh.md) - a player there is a chance (set in config.yml, or 40% by default) that the player will be infected with the zombie virus.
 
