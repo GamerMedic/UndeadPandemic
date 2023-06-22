@@ -18,5 +18,3 @@ These symptoms will last for 2 minutes by default, but this can also be set in t
 Pain will cause harm to the player so the player will die if they cannot treat the symptoms before they lose their health.
 
 By default, infections cannot be cured with milk, which is the default vanilla format. This can be changed in the config.yml file. Infections can be cured using antibiotics.
-
-While being infected is a bad situation to be in, the biggest advantage is that zombies will no longer attack the player because they will mistake the infected player as another zombie. Confused or stupid zombies may still attack the player.
