@@ -85,6 +85,7 @@
 * [🔑 Key Cards](items/key-cards.md)
 * [🍖 Rotten Flesh](items/rotten-flesh.md)
 * [🔦 Torch](items/torch.md)
+* [🚱 Contaminated Water](items/contaminated-water.md)
 
 ## 🔧 Systems
 
@@ -92,9 +93,10 @@
 * [🚰 Thirst System (Legacy)](systems/thirst-system-legacy.md)
 * [💊 Health System](systems/health-system/README.md)
   * [🚰 Thirst System](systems/health-system/thirst-system.md)
-* [🧟♂ 🧟♂ 🧟♂ Zombies](systems/zombies/README.md)
+* [🧟♂ Zombies](systems/zombies/README.md)
   * [☣ Zombie Infections](systems/zombies/zombie-infections.md)
   * [🔢 Zombie Attributes](systems/zombies/zombie-attributes.md)
+* [🐄 Infected Animals](systems/infected-animals.md)
 
 ## 🖼 Placeholder API
 
@@ -103,7 +105,8 @@
 ## 📂 Changelogs
 
 * [Changelogs](changelogs/changelogs/README.md)
-  * [v2.6.1](changelogs/changelogs/v2.6.1.md)
+  * [v2.7.5](changelogs/changelogs/v2.6.1.md)
+  * [v2.6.1](changelogs/changelogs/v2.6.1-1.md)
   * [v2.6.0](changelogs/changelogs/v2.6.0.md)
   * [v2.5.1](changelogs/changelogs/v2.5.1.md)
   * [v2.5.0](changelogs/changelogs/v2.5.0.md)
@@ -119,27 +122,3 @@
   * [🇩🇪 🇩🇪 🇩🇪 Deutsch](languages/using-translations/deutsch.md)
   * [🇳🇱 🇳🇱 🇳🇱 Nederlands](languages/using-translations/nederlands.md)
   * [🇫🇷 🇫🇷 🇫🇷 Français](languages/using-translations/francais.md)
-
-## 🪙 Premium
-
-* [💰 Premium Features](premium/premium-features.md)
-* [🔓 Premium Releases](premium/premium-releases.md)
-* [🛠 config.yml](premium/config.yml/README.md)
-  * [Core Settings](premium/config.yml/core-settings.md)
-  * [Message Settings](premium/config.yml/message-settings.md)
-  * [Enchant Settings](premium/config.yml/enchant-settings.md)
-  * [Crafting Settings](premium/config.yml/crafting-settings.md)
-  * [Infection Settings](premium/config.yml/infection-settings.md)
-  * [Zombie Settings](premium/config.yml/zombie-settings.md)
-  * [Zombie Guts Settings](premium/config.yml/zombie-guts-settings.md)
-  * [Barbed Wire Settings](premium/config.yml/barbed-wire-settings.md)
-  * [Reward Settings](premium/config.yml/reward-settings.md)
-  * [Mob Settings](premium/config.yml/mob-settings.md)
-  * [Thirst Settings](premium/config.yml/thirst-settings.md)
-  * [Safe Zone Settings](premium/config.yml/safe-zone-settings.md)
-  * [Health Settings](premium/config.yml/health-settings.md)
-  * [Key Card Settings](premium/config.yml/key-card-settings.md)
-  * [Weapon Settings](premium/config.yml/weapon-settings.md)
-  * [Ammunition Settings](premium/config.yml/ammunition-settings.md)
-* [🐄 Infected Animals](premium/infected-animals.md)
-* [🚱 Contaminated Water](premium/contaminated-water.md)

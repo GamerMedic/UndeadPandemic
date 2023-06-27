@@ -34,10 +34,14 @@ If the health status is unhealthy then the player will have potion effects appli
 
 ### Thirst
 
-{% hint style="danger" %}
-Please refer to the [thirst system](../thirst-system-legacy.md) if you are using any version pre-v2.6.0.
+{% hint style="info" %}
+See `Thirst System (Legacy)` if you are using versions below v2.6.0
 {% endhint %}
 
-The thirst system works largely in the same way as it did before, except the players thirst can be displayed in a boss bar or using PAPI placeholders instead of the XP bar.
+{% content-ref url="thirst-system.md" %}
+[thirst-system.md](thirst-system.md)
+{% endcontent-ref %}
 
-Previously, player effects were applied based on the level of thirst. From v2.6.0 effects will instead be applied based on the player's health status.
+{% content-ref url="../thirst-system-legacy.md" %}
+[thirst-system-legacy.md](../thirst-system-legacy.md)
+{% endcontent-ref %}

@@ -6,7 +6,7 @@ description: Information about contaminated water.
 
 ### What is contaminated water?
 
-When you fill a container with water from a body of water (i.e. river, ocean, lake, ect) you will get `Contaminated Water`.
+When you fill a container with water from a body of water (i.e. river, ocean, lake, ect) you will get a `Contaminated Water` item which will look like a normal water bottle.
 
 If the player drinks contaminated water they will become infected.
 
