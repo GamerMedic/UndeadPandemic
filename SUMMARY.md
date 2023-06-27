@@ -24,9 +24,7 @@
   * [Safe Zone Settings](configuration/config.yml/safe-zone-settings.md)
   * [Health Settings](configuration/config.yml/health-settings.md)
   * [Key Card Settings](configuration/config.yml/key-card-settings.md)
-  * [Weapon Settings](configuration/config.yml/weapon-settings.md)
-  * [Ammunition Settings](configuration/config.yml/ammunition-settings.md)
-* [👩🔧 👩🔧 👩🔧 playerData.yml](configuration/playerdata.yml.md)
+* [👩🔧 playerData.yml](configuration/playerdata.yml.md)
 * [🏗 safeZoneData.yml](configuration/safezonedata.yml.md)
 
 ## 💬 Commands
@@ -75,8 +73,6 @@
 
 ## 🧰 Items
 
-* [🏹 Custom Ammunition](items/custom-ammunition.md)
-* [🗡 Custom Weapons](items/custom-weapons.md)
 * [🏥 First Aid Items](items/first-aid-items/README.md)
   * [Adrenaline](items/first-aid-items/adrenaline.md)
   * [Antibiotics](items/first-aid-items/antibiotics.md)

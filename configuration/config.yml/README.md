@@ -171,7 +171,7 @@ show_zombie_names: true
 # Disable baby zombies
 allow_baby_zombies: true
  
-isStupid_chance: 60 # Chance that the stupid zombies will forget that the player is ther
+isStupid_chance: 60 # Chance that the stupid zombies will forget that the player is there
 
 zombie_types:
   
@@ -294,7 +294,7 @@ rewards:
   min_kill_reward: 5 # defaults to 5
   max_kill_reward: 25 # default to 25
   
-  reward_multiplier: 1.5
+  multiplier: 1.5
 
   kill_reward: 10
 
@@ -312,13 +312,10 @@ rewards:
 
   # Your custom item currency material
   reward_item_material: 'emerald'
-
   # Your custom item name
   reward_item_name: 'Emerald'
-
   # Your custom item lore
   reward_item_lore: 'Currency'
-
   # Your custom item CustomModelData
   reward_item_data: 123456
 
@@ -378,6 +375,7 @@ thirst:
   enable_thirst: true
   dehydration_rate: 90 # Rate (in seconds) at which thirst will drop by dehydration_qty%.
   dehydration_qty: 5 # as a percentage. Minimum 1%, maxmimum 99%. Just because you CAN set it to 995, doesn't mean you should!
+  purify_water: true # Allow water to be purified in a cauldron. Setting this to false will also turn off contaminated water
 
   # Set replenishing thirst level for consumables
   consumables:
@@ -518,114 +516,4 @@ torch:
   material: MUSIC_DISC_WARD
   data: 123456
   duration: 1 # How long a torch will light up an area (in seconds) per unit of battery. Min 1 second. Max 90 seconds.
-
-# GUN SETTINGS
-
-# If you use other weapons plugins, set this to false.
-# This will also disable ammo.
-enable_weapons: true
-
-# Should other players be harmed by gun fire? true|false
-damage_players: true
-
-# This is how loud the gun fire will be. 1.0 = loudest, 0.0 = silent
-gun_fire_volume: 0.5
-
-weapons:
-
-  # Kill a mob instantly with a headshot
-  headshot_kill: true
-  # Decide if zombies must be killed by a head shot
-  force_headshot: true
-
-  # USE THESE SETTINGS TO MODIFY THE DEFAULT WEAPONS
-  p99:
-    # The type of weapon can be changed to use different ammo.
-    type: 'Pistol'
-    name: '&fWither 99P'
-    lore: '&fAn effective pistol.'
-    # Material ID - We used https://www.digminecraft.com/lists/item_id_list_pc.php and recommend that you use it too. Use Minecraft ID NAME (NOT numeric ID). Be careful! You'll have to update the resource pack if you change this option.
-    material: MUSIC_DISC_11
-    # damage: 20 = 10 Hearts. This should be enough, but you can set it to anything. THIS CANNOT BE ZERO OR NEGATIVE - negative and zero values will default to a damage value of 10
-    damage: 20
-    # Head shot damage a bonus damage amount that is applied when a player gets head shot. It's recommended that the additional damage is enough to kill the target entity.
-    head_shot_damage: 20
-    # Clip-size is how many bullets the weapon can hold.
-    clip-size: 16
-    # How long it takes (in seconds) to reload this weapon. Set to -1 for instant reload.
-    reload_delay: 3
-    # Custom model data will allow you to add a texture to the weapon
-    custom_model_data: 2
-  ak-47:
-    type: 'Rifle'
-    name: '&fAK-47'
-    lore: '&fCheap and effective... sometimes.'
-    material: MUSIC_DISC_13
-    damage: 20
-    head_shot_damage: 20 # Head shot damage is ignored for the AK-47.
-    clip-size: 32
-    custom_model_data: 2
-  barcine:
-    type: 'Rifle'
-    name: '&fBarcine'
-    lore: '&fA powerful semi-automatic rifle.'
-    material: MUSIC_DISC_BLOCKS
-    damage: 20
-    head_shot_damage: 20
-    clip-size: 32
-    custom_model_data: 2
-  mk31:
-    type: 'Sniper'
-    name: '&fRimmington MK31'
-    lore: '&fA military-grade sniper rifle.'
-    material: MUSIC_DISC_CAT
-    damage: 20
-    head_shot_damage: 20
-    clip-size: 12
-    custom_model_data: 2
-  nuck:
-    type: 'Shotgun'
-    name: '&fNuck Shotgun'
-    lore: '&fA shotgun fitting for a farmer, and his mum.'
-    material: MUSIC_DISC_CHIRP
-    damage: 20
-    head_shot_damage: 20
-    clip-size: 8
-    custom_model_data: 2
-  revolver:
-    type: 'Revolver'
-    name: '&fMagnus Revolver'
-    lore: '&fThe classic 6-shot pistol.'
-    material: MUSIC_DISC_FAR
-    damage: 20
-    head_shot_damage: 20
-    clip-size: 6
-    custom_model_data: 2
-    
-# AMMO SETTINGS
-
-ammo:
-  # ammo type names are case-sensitive
-  Pistol:
-    name: '&fPistol Bullet'
-    lore: '&fBullets for Pistols, obviously.'
-    # Custom model data will allow you to add a texture to the ammo.
-    # Bullets are modelled from Snowballs.
-    custom_model_data: 1
-  Revolver:
-    name: '&fRevolver Bullet'
-    lore: '&fBullets for Revolvers.'
-    custom_model_data: 1
-  Rifle:
-    name: '&fRifle Bullet'
-    lore: '&fBullets for rifles and sniper rifles.'
-    custom_model_data: 2
-  Shotgun:
-    name: '&fShotgun Shell'
-    lore: '&fShells for a shotguns.'
-    custom_model_data: 3
-  Sniper:
-    name: '&fSniper Bullet'
-    lore: '&fMoly-coated.'
-    custom_model_data: 2
 ```
