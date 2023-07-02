@@ -37,7 +37,7 @@ You can add new lines to the key lore by adding a pipe ( | ) to the key card des
 {% hint style="success" %}
 Example:
 
-`/undead keycard cut ~ ~ ~+1 This_key_will_open|a_special_door! 5`
+`/keycard cut ~ ~ ~+1 This_key_will_open|a_special_door! 5`
 {% endhint %}
 
 _**Uses**_
