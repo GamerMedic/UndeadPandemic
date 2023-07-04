@@ -32,6 +32,9 @@ disable_in_worlds:
 #  - 'world_nether'
 #  - 'world_end'
 
+## Set this to true if you'd like the worlds blacklist to be treated as a whitelist instead
+use_whitelist: false
+
 # The plugin will check for updates in the background and let you know of any updates in the console.
 # Set to false if you do not want the plugin to remind you of new updates.
 # You will always receive an update check when the plugin is enabled on the server
@@ -191,6 +194,7 @@ zombie_types:
     health: 20.0
     knockback: 0.0
     canBreakDoors: false # Sets whether this zombie can break doors.
+    boss: false # Is this zombie a boss zombie (boss zombies can be recognised as a boss zombie for quests/rewards) || this is a planned feature.
   # Resident Evil Zombies
   strong:
     enabled: true
@@ -392,6 +396,64 @@ thirst:
     ROTTEN_FLESH: -15
     SUSPICIOUS_STEW: -10
     WATER_BOTTLE: 75
+
+# INFECTED WATER SETTINGS
+
+infected_water:
+  
+  enabled: true # When set to false water will never be infected
+  purify_water: true # Allow water to be purified in a cauldron. Setting this to false will also turn off contaminated water
+  infection_chance: 0.8 # Choose a value between 0.0 and 1.0. This will represent the percentage chance. e.g. 0.3 = 30%
+  
+  dirty_bucket:
+    name: '&5Dirty Water Bucket'
+    lore: '&fThis water looks a bit off.'
+    custom_model_data: 12345
+  
+  ## Customise the item when collecting infected water
+  dirty_water_bottle:
+    material: POTION
+    name: '&2Suspicious Water'
+    lore: '&4This water looks strange.'
+    potion_type: POISON # This is how the potion will look. The default is POISON. A common choice may be WATER
+    custom_model_data: 12345
+  
+  ## Customise the item when collecting clean water
+  clean_water_bottle:
+    material: POTION
+    name: '&2Clean Water'
+    lore: '&9Safe to drink.'
+    custom_model_data: 67890
+    
+  ##heat_sources: [] ## use this if you want the heat_sources list to be empty
+  heat_sources:
+    - MAGMA_BLOCK
+    - CAMPIRE
+    - LAVA
+    
+# INFECTED ANIMALS SETTINGS
+
+infected_animals:
+
+  enabled: true # set to false if you do not want animals to drop rotten flesh instead of meat
+  infection_chance: 0.8 # A percentage chance that the animal will drop rotten flesh instead. Must be a value between 0.0 and 1.0.
+  
+  ## Customise name for infected meat
+  ## {mob} will be replaced with the name of the mob.
+  name: '&2Suspicious {mob} Flesh'
+  ## You can remove or add animals that drop meat to this list.
+  ## Uncomment the line below and remove the uncommented line to leave the list blank.
+  ## infected_animals: []
+  animals:
+    - PIG
+    - HOGLIN
+    - COW
+    - MUSHROOM_COW
+    - CHICKEN
+    - SHEEP
+    - RABBIT
+    - SALMON
+    - COD
   
 # SAFE ZONES
 

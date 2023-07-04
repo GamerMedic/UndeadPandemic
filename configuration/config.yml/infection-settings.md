@@ -12,6 +12,12 @@ Whether or not to enable zombie bite infections.
 
 This is `true` by default.
 
+**`ignore_admin`**:
+
+Determines whether infections should ignore the admin permission. When set to `true` admins will be infected.
+
+This option is `false` by default.
+
 **`chance`**:
 
 This is the chance that a player will be infected.

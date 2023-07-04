@@ -21,6 +21,8 @@
   * [Reward Settings](configuration/config.yml/reward-settings.md)
   * [Mob Settings](configuration/config.yml/mob-settings.md)
   * [Thirst Settings](configuration/config.yml/thirst-settings.md)
+  * [Infected Water Settings](configuration/config.yml/infected-water-settings.md)
+  * [Infected Animals Settings](configuration/config.yml/infected-animals-settings.md)
   * [Safe Zone Settings](configuration/config.yml/safe-zone-settings.md)
   * [Health Settings](configuration/config.yml/health-settings.md)
   * [Key Card Settings](configuration/config.yml/key-card-settings.md)
@@ -101,6 +103,7 @@
 ## 📂 Changelogs
 
 * [Changelogs](changelogs/changelogs/README.md)
+  * [v2.7.8](changelogs/changelogs/v2.7.8.md)
   * [v2.7.5](changelogs/changelogs/v2.7.5.md)
   * [v2.6.1](changelogs/changelogs/v2.6.1-1.md)
   * [v2.6.0](changelogs/changelogs/v2.6.0.md)

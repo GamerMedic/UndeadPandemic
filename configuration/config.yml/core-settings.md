@@ -18,6 +18,12 @@ The `disabled_in_worlds` setting is used to stop UndeadPandemic from working in 
 
 This option uses a string list to specify world names, and each world name should be surrounded by apostrophes, for example, 'world'.
 
+**`use_whitelist`**:
+
+Turn `disable_in_worlds` into a whitelist instead of a blacklist.
+
+This option is set to `false` by default.
+
 **`check_for_updates`**:
 
 The **`check_for_updates`** setting determines whether or not the plugin will check for updates. This is true by default.
