@@ -10,6 +10,10 @@ Players with the [firstaid.give permission](../../permissions/permissions/undead
 
 ### Using First Aid Kits
 
-Place the first aid bag on the ground, and then take the individual items out.
+Place the first aid bag on the ground and the items will then fall out.
 
 The items can then be used as normal.
+
+{% hint style="info" %}
+You will notice that you will get the first aid kit back. This is intentioned. The chest will be empty and you can use it in storage!
+{% endhint %}
