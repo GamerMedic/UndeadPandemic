@@ -16,4 +16,14 @@ If the player drinks contaminated water they will become infected.
 
 ### How to get drinkable water?
 
-Place a campfire under a cauldron and fill the cauldron with water. Then collect water from the cauldron as normal.
+Place [#heat-sources](contaminated-water.md#heat-sources "mention") under a cauldron and fill the cauldron with water. Then collect water from the cauldron as normal.
+
+#### Heat Sources
+
+By default there are 3 valid heat source blocks.
+
+* Magma Block
+* Campfire
+* Lava
+
+You can add and remove any block(s) that you like. See the [`config settings`](../configuration/config.yml/infected-water-settings.md) for more information.

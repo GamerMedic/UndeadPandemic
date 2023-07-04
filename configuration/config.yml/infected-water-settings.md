@@ -38,46 +38,6 @@ The `dirty_bucket` can use the `name`, `lore`, and `custom_model_data` options.
 
 This setting will configure the standard water bottle (potion) when it contains cleaned/purified water.
 
-The `clean_water_bottle` can use the `material`, `name`, `lore`, and `custom_model_data` options.
-
-**`filtered_cauldron`**:
-
-This setting will configure the filtered cauldron item.
-
-The `filter_cauldron` can use the `material`, `name`, `lore`, `custom_model_data`, and `requires_heat` options.
-
-**`options`**:
-
-&#x20;   `material`:
-
-&#x20;       Any valid minecraft material. You can check the [spigot list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html) to check the proper names.
-
-&#x20;   `name`:
-
-&#x20;       Any name that you like. You can use Minecraft colour codes as normal.
-
-&#x20;   `lore`:
-
-&#x20;       Any description that you like. You can use Minecraft colour codes as normal. This does not yet support multi-line lores.
-
-&#x20;   `customer_model_data`:
-
-&#x20;       Any whole number that you'd like to use. This is only relevant when changing textures.
-
-&#x20;   `potion_type`:
-
-&#x20;       Any potion type that is available from the [spigot API list](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionType.html).
-
-&#x20;       The default type is `POISON`, though `WATER` is a recognised type and may be the universal choice.
-
-&#x20;       `poison_type` only works for the `dirty_water_bottle`.
-
-&#x20;   `requires_heat`:
-
-&#x20;       Determine whether the player needs to place a valid heat source underneath the cauldron. This is set to `true` by default.
-
-&#x20;       Valid heat sources are set in the `heat_sources` setting.
-
 **`heat_sources`**:
 
 This setting is used to configure a list of valid heat sources for the `filtered_cauldron`. You can use any valid block found on the [spigot list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html). If you do not want to set any heat sources then set this option as `heat_sources: []`.
@@ -85,7 +45,7 @@ This setting is used to configure a list of valid heat sources for the `filtered
 If this option is missing from `config.yml` then the plugin will set the following items as heat sources by default.
 
 ```yaml
-Magma Block
-Campfire
-Lava
+ - MAGMA_BLOCK
+ - CAMPFIRE
+ - LAVA
 ```
