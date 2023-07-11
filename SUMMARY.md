@@ -103,6 +103,7 @@
 ## 📂 Changelogs
 
 * [Changelogs](changelogs/changelogs/README.md)
+  * [v2.7.10](changelogs/changelogs/v2.7.10.md)
   * [v2.7.9](changelogs/changelogs/v2.7.9.md)
   * [v2.7.8](changelogs/changelogs/v2.7.8.md)
   * [v2.7.5](changelogs/changelogs/v2.7.5.md)
