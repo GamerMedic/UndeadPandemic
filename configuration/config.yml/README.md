@@ -285,6 +285,8 @@ barbed_wire:
 
 rewards:
 
+  enable: true
+
   # Set a reward type
   # Types: 'fixed' or 'random'.
   # Reward type defaults to fixed.
@@ -380,6 +382,7 @@ thirst:
   dehydration_rate: 90 # Rate (in seconds) at which thirst will drop by dehydration_qty%.
   dehydration_qty: 5 # as a percentage. Minimum 1%, maxmimum 99%. Just because you CAN set it to 995, doesn't mean you should!
   purify_water: true # Allow water to be purified in a cauldron. Setting this to false will also turn off contaminated water
+  disable_bossbar: false # Disable the thirst boss bar. This will prevent the bossbar from loading and will leave the thirst placeholder as the only way to visualise thirst.
 
   # Set replenishing thirst level for consumables
   consumables:
@@ -421,14 +424,15 @@ infected_water:
   ## Customise the item when collecting clean water
   clean_water_bottle:
     material: POTION
-    name: '&2Clean Water'
-    lore: '&9Safe to drink.'
+    name: '&bClean Water'
+    lore: '&fSafe to drink.'
+    potion_type: WATER # This is how the potion will look. The default is POISON. A common choice may be WATER
     custom_model_data: 67890
     
   ##heat_sources: [] ## use this if you want the heat_sources list to be empty
   heat_sources:
     - MAGMA_BLOCK
-    - CAMPIRE
+    - CAMPFIRE
     - LAVA
     
 # INFECTED ANIMALS SETTINGS
@@ -455,9 +459,9 @@ infected_animals:
     - SALMON
     - COD
   
-# SAFE ZONES
+# CAMPS
 
-safezone:
+camps:
 
   # Set default number of chunks given to players on first login
   default_plots: 4
