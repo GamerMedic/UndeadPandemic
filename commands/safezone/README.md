@@ -1,6 +1,6 @@
-# /safezone
+# /camp
 
-The `/safezone` command is used to create safezone plots, destroy them, and to give or take plots to or from other players.
+The `/camp` command is used to create safezone plots, destroy them, and to give or take plots to or from other players.
 
 ### Command Structure
 

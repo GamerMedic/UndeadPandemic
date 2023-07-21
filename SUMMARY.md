@@ -42,7 +42,7 @@
   * [:reload](commands/undeadpandemic/reload.md)
   * [:website](commands/undeadpandemic/website.md)
 * [/keycard](commands/keycard.md)
-* [/safezone](commands/safezone/README.md)
+* [/camp](commands/safezone/README.md)
   * [:build](commands/safezone/build.md)
   * [:destroy](commands/safezone/destroy.md)
   * [:help](commands/safezone/help.md)
@@ -87,7 +87,7 @@
 
 ## 🔧 Systems
 
-* [🏠 Safe Zones](systems/safe-zones.md)
+* [🏕 Camps](systems/safe-zones.md)
 * [🚰 Thirst System (Legacy)](systems/thirst-system-legacy.md)
 * [💊 Health System](systems/health-system/README.md)
   * [🚰 Thirst System](systems/health-system/thirst-system.md)

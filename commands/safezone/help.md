@@ -2,8 +2,8 @@
 
 ### Command Structure
 
-`/safezone help`
+`/camp help`
 
 ### Command Description
 
-The help command will display command hints for the `/safezone` command.
+The help command will display command hints for the `/camp` command.

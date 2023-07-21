@@ -4,9 +4,9 @@ description: Information about infected animals.
 
 # 🐄 Infected Animals
 
-{% hint style="danger" %}
-Not yet implemented (as of v2.7.5).
-{% endhint %}
+###
+
+{% embed url="https://youtu.be/XP-cFgnUrQw" %}
 
 ### What happens?
 

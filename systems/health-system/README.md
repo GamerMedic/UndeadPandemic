@@ -8,6 +8,10 @@ description: What is the Health System? And how does it work?
 This page will take effect from v2.6.0. Information on existing systems will not be included on this page until v2.6.0 is released.
 {% endhint %}
 
+###
+
+{% embed url="https://youtu.be/XP-cFgnUrQw" %}
+
 ### What is the Health System?
 
 The health system encompasses the following variables:

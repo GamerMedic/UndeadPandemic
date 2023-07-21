@@ -2,6 +2,10 @@
 
 <figure><img src="../.gitbook/assets/keycard.png" alt="A 16x16 pixel white card with a short green and black stripe centred at the top of the card."><figcaption><p>Default Key Card Texture</p></figcaption></figure>
 
+###
+
+{% embed url="https://youtu.be/0jqrIf9KJfU" %}
+
 ### Description
 
 A key card is an item which can open doors. This will usually be iron doors and trapdoors as these doors require red stone functionality to open normally. However, what items can be opened is configurable.

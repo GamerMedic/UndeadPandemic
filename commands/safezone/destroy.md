@@ -2,8 +2,8 @@
 
 ### Command Structure
 
-`/safezone destroy`
+`/camp destroy`
 
 ### Command Description
 
-This command will destroy the WorldGuard protected chunk created using `/safezone build`.
+This command will destroy the WorldGuard protected chunk created using `/camp build`.

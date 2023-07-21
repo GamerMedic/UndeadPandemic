@@ -10,6 +10,8 @@ You can add an unlimited number of different zombie types.
 You can enable and disable zombie types in the config. The plugin will default to using vanilla zombies if all zombies are disabled.
 {% endhint %}
 
+{% embed url="https://youtu.be/_eBsZLwDPvQ" %}
+
 ### Creating a New Type
 
 To create a new type of zombie you just need to [add the configuration settings in config.yml](../../configuration/config.yml/zombie-settings.md).

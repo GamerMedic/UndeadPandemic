@@ -1,5 +1,7 @@
 # 🏥 First Aid Items
 
+{% embed url="https://youtu.be/HfS7d30YzB4" %}
+
 ### Obtaining First Aid Items
 
 Players with the[ firstaid.give permission](../../permissions/permissions/undeadpandemic.firstaid/undeadpandemic.firstaid.give.md) can use the [`give firstaid` command](../../commands/undeadpandemic/give/firstaid.md) to give first aid items to themselves or other players.
@@ -17,6 +19,5 @@ The available first aid items are:
 3. [Bandage](bandage.md)
 4. [Kit](first-aid-kit.md)
 
-![](../../.gitbook/assets/give\_cmd\_firstaid\_selector.png)
-
 Click on an item in the list to read about the item.
+

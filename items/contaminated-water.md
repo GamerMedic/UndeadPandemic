@@ -4,9 +4,9 @@ description: Information about contaminated water.
 
 # 🚱 Contaminated Water
 
-{% hint style="danger" %}
-Not yet implemented (as of v2.7.5).
-{% endhint %}
+###
+
+{% embed url="https://youtu.be/XP-cFgnUrQw" %}
 
 ### What is contaminated water?
 

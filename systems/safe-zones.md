@@ -1,26 +1,26 @@
 ---
-description: What are Safe Zones, and how do they work?
+description: What are Camps, and how do they work?
 ---
 
-# 🏠 Safe Zones
+# 🏕 Camps
 
-### What is a Safe Zone?
+### What is a Camp?
 
-Safe Zones are a collection of plots where Zombies will not spawn.
+Camps (formerly called Safe Zones) are a collection of plots where Zombies will not spawn.
 
 #### What are plots?
 
 Plots are equal to one Minecraft chunk (x1 16x16 block extending from Bedrock to the Ceiling (build limit).
 
-### How do Safe Zones work?
+### How do Camps work?
 
-Players can create a safe zone by building a plot, or a collection of plots adjacent to each other, which is achieved by using the [`safezone:build` command](../commands/safezone/build.md).
+Players can build a camp by building a plot, or a collection of plots adjacent to each other, which is achieved by using the [`safezone:build` command](../commands/safezone/build.md).
 
-A Safe Zone does not allow Zombies to spawn within its borders.&#x20;
+A Camp does not allow Zombies to spawn within its borders.&#x20;
 
-Other players cannot destroy blocks that are protected by Safe Zones.
+Other players cannot destroy blocks that are protected by Camps.
 
-Safe Zones can be dismantled by using the [safezone:destroy command](../commands/safezone/destroy.md).
+Camps can be dismantled by using the [safezone:destroy command](../commands/safezone/destroy.md).
 
 ### How do you get plots?
 
@@ -37,6 +37,6 @@ In older versions of the plugin, you will need to change the flags in the `confi
 {% hint style="danger" %}
 ### Cautions
 
-It's best not to use Safe Zones if you are using a plugin such as Towny or Factions, because the plot protection may conflict with those plugins. The Safe Zone feature is designed to be used as a standalone plot protection system so its use it optional when using other protection plugins.
+It's best not to use Camps if you are using a plugin such as Towny or Factions, because the plot protection may conflict with those plugins. The Camps feature is designed to be used as a standalone plot protection system so its use it optional when using other protection plugins.
 {% endhint %}
 

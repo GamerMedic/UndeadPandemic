@@ -4,6 +4,10 @@ description: A list and description of available placeholders.
 
 # Placeholders
 
+###
+
+{% embed url="https://youtu.be/74qDrUn_yfU" %}
+
 ### zombie\_kills
 
 Get the number of zombies killed by the player.
@@ -24,8 +28,8 @@ Get the number of zombies killed by head shots by the player.
 
 `{undeadpandemic_zombie_head_shots}`
 
-{% hint style="danger" %}
-The below placeholders will appear in a future version and will not work on versions 2.5.1 and below.
+{% hint style="warning" %}
+The below placeholders not work on versions 2.5.1 and below.
 {% endhint %}
 
 ### undeadpandemic\_thirst
