@@ -14,7 +14,7 @@ The torch allows a player to see in the dark. It applies the night vision effect
 
 ### How is a Torch obtained?
 
-A torch can only be given using the [`/undeadpandemic give`](../../commands/undeadpandemic/give/) command. This means that server admins can decide how many torches are in the game.
+A torch can only be given using the [`/undeadpandemic give`](../commands/undeadpandemic/give/) command. This means that server admins can decide how many torches are in the game.
 
 (Future versions will included craftable torches).
 

@@ -17,6 +17,11 @@ The config.yml is a configuration file!
 
 #### DOCUMENTATION: https://docs.stevezr963.me/
 
+# Please do not alter the version number.
+# This number identifies the version of the config
+# and in future versions this will determine if your config file needs updating.
+version: 3
+
 # Set default language
 # See the documentation (link above) to find the available languages and the appropriate language code.
 # The plugin will default to English
@@ -28,7 +33,7 @@ require_perms: true
 prompt_on_join: true
 
 # UndeadPandemic will not function in the worlds listed here.
-disable_in_worlds:
+disable_in_worlds: []
 #  - 'world_nether'
 #  - 'world_end'
 
@@ -53,12 +58,11 @@ show_message: true # If the headshot message should appear
 show_message_length: 3 # How long the head shot message show appear on screen for, in seconds.
 
 # ENCHANT SETTINGS
+xp:
 
-allow_enchants: false
-
-# Should mobs drop Exp?
-
-drop_exp: false
+  allow_enchants: false
+  # Should mobs drop Exp?
+  drop_exp: false
 
 # CRAFTING SETTINGS
 
@@ -99,6 +103,13 @@ infection:
   
   # enabled by default
   enabled: true
+  
+  # Allow new players to be protected from infection
+  join_protection:
+  
+    enabled: true
+    # Protection duration (in seconds)
+    duration: 180
   
   # Chance of infection
   chance: 40
@@ -149,32 +160,36 @@ infection:
 # Set the spawn rate to -1 to disable it. This will not disable Zombie spawning, it will simply prevent more Zombies from spawning.
 # You should restart your server after changing this setting as it may not work when reloading the config.
 
-zombie_spawn_rate: 2
-
-# Zombies are attracted by the sound of guns. This is how many will spawn within your defined radius when a gun is fired.
-# The higher this rate is, the slower your server will be. Be careful with this setting.
-attract_zombie_rate: 2
-
-# Attract zombies after a gunshot within this radius of blocks.
-attract_zombie_radius: 5
-
-# Chance that a zombie will be attracted by gun fire. chance%
-attract_zombie_chance: 70
-
-### Setting this to false will prevent vanilla zombies from spawning so that only custom zombies spawn.
-### This setting will override to true if enable_custom_zombies = false
-allow_vanilla_zombies: true
-
-# Disable custom zombie spawns
-enable_custom_zombies: true
-
-# Disable show_zombie_names to remove the name tags on Zombies.
-show_zombie_names: true
-
-# Disable baby zombies
-allow_baby_zombies: true
- 
-isStupid_chance: 60 # Chance that the stupid zombies will forget that the player is there
+zombies: # new zombies section.
+  
+  # Protect villagers from being attacked by zombies
+  # (this will stop villagers from taking damage from zombies, but will not stop zombies going after villagers)
+  protect_villagers: true
+  
+  hordes:
+    # Increase the rate of the randomly chosen zombie type during a horde.
+    # The default setting is 2, which doubles the number of zombies of the chosen type.
+    increase_rate: 2
+    
+  spawn_rate: 2
+  # Zombies are attracted by the sound of guns. This is how many will spawn within your defined radius when a gun is fired.
+  # The higher this rate is, the slower your server will be. Be careful with this setting.
+  attraction_rate: 2
+  # Attract zombies after a gunshot within this radius of blocks.
+  attraction_radius: 5
+  # Chance that a zombie will be attracted by gun fire. chance%
+  attraction_chance: 70
+  ### Setting this to false will prevent vanilla zombies from spawning so that only custom zombies spawn.
+  ### This setting will override to true if enable_custom_zombies = false
+  allow_vanilla: true
+  # Disable custom zombie spawns
+  enable_custom_types: true
+  # Disable show_zombie_names to remove the name tags on Zombies.
+  show_names: true
+  # Disable baby zombies
+  allow_babies: true
+  # Chance that the stupid zombies will forget that the player is there
+  isStupid_chance: 60
 
 zombie_types:
   
@@ -553,33 +568,54 @@ health:
       lore: 'Heal Infection Wound'
       material: MUSIC_DISC_STAL
       data: 123456
+
+    paracetamol:
+      name: 'Paracetamol'
+      lore: 'Take the pain away.'
+      material: MUSIC_DISC_CHIRP
+      data: 123456
+      duration: 60 #in seconds
+
+    codeine:
+      name: 'Codeine'
+      lore: 'An opioid for the pain.'
+      material: MUSIC_DISC_STRAD
+      data: 123456
+      duration: 120
   
     first_aid_kit:
       ### Player is given a chest with one of all 3 items contained inside
       name: '&4First Aid Kit'
       lore: '&f&oAn emergency first aid kit!'
       data: 2
-  
-# KEYCARD SETTINGS
 
-keycard:
-  name: 'Key Card'
-  lore: 'Opens up doors.'
-  material: MUSIC_DISC_STRAD
-  data: 123456
-  
-  # A list of doors that can be opened.
-  # This can be set to any valid material, but it'd be silly not to make it a door!
-  openable_doors:
-    - IRON_DOOR
-    - IRON_TRAPDOOR
+items:
+
+  # KEYCARD SETTINGS
+  keycard:
+    name: 'Key Card'
+    lore: 'Opens up doors.'
+    material: MUSIC_DISC_STRAD
+    data: 123456
+    # A list of doors that can be opened.
+    # This can be set to any valid material, but it'd be silly not to make it a door!
+    openable_doors:
+      - IRON_DOOR
+      - IRON_TRAPDOOR
     
-# TORCH SETTINGS
-
-torch:
-  name: '&fTorch'
-  lore: 'Let there be light!'
-  material: MUSIC_DISC_WARD
-  data: 123456
-  duration: 1 # How long a torch will light up an area (in seconds) per unit of battery. Min 1 second. Max 90 seconds.
+  # TORCH SETTINGS
+  torch:
+    name: '&fTorch'
+    lore: 'Let there be light!'
+    material: MUSIC_DISC_WARD
+    data: 123456
+    duration: 1 # How long a torch will light up an area (in seconds) per unit of battery. Min 1 second. Max 90 seconds.
+    
+  # BATTERY SETTINGS
+  battery:
+    name: '&eBattery'
+    lore: 'AA. Would probably fit in a torch.'
+    material: MUSIC_DISC_WAIT
+    data: 123456
+  
 ```

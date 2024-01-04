@@ -84,7 +84,7 @@
 * [🧟♂ Zombie Mask](items/key-cards-1.md)
 * [🩸 Zombie Guts](items/key-cards-2.md)
 * [🍖 Rotten Flesh](items/rotten-flesh.md)
-* [🔦 Torch](items/torch/README.md)
+* [🔦 Torch](items/torch.md)
   * [🔋 Batteries](items/torch/torch.md)
 * [✂ Wire Cutters](items/torch-1.md)
 * [🕸 Barbed Wire](items/torch-2.md)
@@ -104,7 +104,7 @@
 
 ## 🖼 Placeholder API
 
-* [Placeholders](placeholder-api/placeholders/README.md)
+* [Placeholders](placeholder-api/placeholders.md)
   * [zombie\_kills](placeholder-api/placeholders/zombie\_kills.md)
   * [zombie\_head\_shots](placeholder-api/placeholders/zombie\_head\_shots.md)
   * [thirst](placeholder-api/placeholders/thirst.md)
@@ -138,8 +138,8 @@
 * [Using Translations](languages/using-translations/README.md)
   * [🇩🇪 🇩🇪 Deutsch](languages/using-translations/deutsch.md)
   * [🇬🇧 🇬🇧 English](languages/using-translations/english.md)
-  * [🇪🇸 🇪🇸 Español](languages/using-translations/francais.md)
-  * [🇫🇷 🇫🇷 Français](languages/using-translations/francais-1.md)
+  * [🇪🇸 🇪🇸 Español](<languages/using-translations/francais (1).md>)
+  * [🇫🇷 🇫🇷 Français](languages/using-translations/francais.md)
   * [🇳🇱 🇳🇱 Nederlands](languages/using-translations/nederlands.md)
   * [🇵🇹 🇵🇹 Português](languages/using-translations/francais-2.md)
   * [🇨🇳 🇨🇳 Zhōngguó rén](languages/using-translations/francais-3.md)
