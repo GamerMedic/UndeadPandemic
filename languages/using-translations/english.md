@@ -2,7 +2,7 @@
 description: The default YAML file for the English language.
 ---
 
-# 🇬🇧 English
+# 🇬🇧 🇬🇧 English
 
 {% code title="en.yml" overflow="wrap" lineNumbers="true" %}
 ```yaml
@@ -48,25 +48,25 @@ sent_adx: '&2{player} has received their adrenaline (x{amount})!'
 sent_adx_err: '&4Adrenaline could not be sent to {player}.'
 first_aid_kit_err: '&eCould not create kit.'
 invalid_first_aid_kit: '&4{kit} is not a valid item.'
-safezone_exists: '&eSafe Zone could not be created because one of the same name already exists.'
+safezone_exists: '&ecamp could not be created because one of the same name already exists.'
 invalid_safezone_region: '&4Could not determine existing regions.'
 missing_plots: '&4Could not fetch your remaining plots.'
 update_plots_err: '&cCould not update plot count. Please notify an admin.'
 claimed_plot_err: '&cYou cannot claim foreign land.'
-building_safezone: '&eBuilding your safe zone. Please wait...'
-safezone_created: '&eYour safe zone has been created!'
-safezone_created_err: '&4Could not create safe zone.'
-safezone_info: '------------- &c&l[SafeZones Info] &r&f-------------'
+building_safezone: '&eBuilding your camp. Please wait...'
+safezone_created: '&eYour camp has been created!'
+safezone_created_err: '&4Could not create camp.'
+safezone_info: '------------- &c&l[Camps Info] &r&f-------------'
 safezone_info_msg: 'Could not fetch your remaining blocks.'
 safezone_plot_count: 'You have &2{plots} &r&fplots left. Use them wisely.'
-insufficient_plots: '&fYou do not have enough plots to extend your safe zone.'
-destroy_safezone_err: '&5This is not your safe zone.'
-safezone_destroyed: '&eYour Safe Zone is no longer safe.'
-safezone_destroyed_err: '&cYour Safe Zone could not be destroyed.'
-wrong_safezone_err: '&5This is not your safe zone.'
+insufficient_plots: '&fYou do not have enough plots to extend your camp.'
+destroy_safezone_err: '&5This is not your camp.'
+safezone_destroyed: '&eYour camp is no longer safe.'
+safezone_destroyed_err: '&cYour camp could not be destroyed.'
+wrong_safezone_err: '&5This is not your camp.'
 safezone_cmd_no_player: '&4You must select a player.'
 safezone_cmd_no_amount: '&4You must choose how many plots to give to {player}.'
-safezone_cmd_no_neg: '&eYou cannot use negative numbers in the /safezone command.'
+safezone_cmd_no_neg: '&eYou cannot use negative numbers in the /camp command.'
 cmd_no_console_err: '&4You cannot execute this command from the console.'
 cmd_give_param_err: '&4An invalid quantity value was provided in the give command.'
 cmd_help_err: '&4Invalid Usage. Usage: /undeadpandemic give <{player}> <ammo|firstaid|torch|weapon> [{amount}]'
@@ -91,5 +91,7 @@ no_update_msg: 'No updates available.'
 sent_torch: 'You have sent a torch to {player}!'
 sent_torch_err: 'There was a problem delivering the torch.'
 received_torch: 'You have received a torch from {player}'
+join_protection: '&f* A mist surrounds you *&e You feel stronger and your skin is like stone. This feeling probably won''t last long.'
+join_protection_failed: '&4Hey! Don''t let yourself get bitten by a Zombie!'
 ```
 {% endcode %}

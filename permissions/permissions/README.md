@@ -28,4 +28,4 @@ If you do not have a permissions plugin installed, set `require_perms` to `false
 
 [undeadpandemic.udpates](undeadpandemic.updates.md)
 
-[undeadpandemic.weapons](undeadpandemic.weapons/)
+[undeadpandemic.items](undeadpandemic.items/)
