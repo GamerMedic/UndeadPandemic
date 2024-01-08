@@ -69,7 +69,8 @@
   * [⬆ undeadpandemic.updates](permissions/permissions/undeadpandemic.updates.md)
   * [🔦 undeadpandemic.items](permissions/permissions/undeadpandemic.items/README.md)
     * [undeadpandemic.items.use](permissions/permissions/undeadpandemic.items/undeadpandemic.items.use.md)
-    * [undeadpandemic.items.wire\_cutters](permissions/permissions/undeadpandemic.items/undeadpandemic.items.use-1.md)
+    * [undeadpandemic.items.give](permissions/permissions/undeadpandemic.items/undeadpandemic.items.give.md)
+    * [undeadpandemic.items.wire\_cutters](permissions/permissions/undeadpandemic.items/undeadpandemic.items.wire\_cutters.md)
 
 ## 🧰 Items
 
@@ -78,21 +79,21 @@
   * [Antibiotics](items/first-aid-items/antibiotics.md)
   * [Bandage](items/first-aid-items/bandage.md)
   * [First Aid Kit](items/first-aid-items/first-aid-kit.md)
-  * [Paracetamol](items/first-aid-items/adrenaline-1.md)
-  * [Codeine](items/first-aid-items/adrenaline-2.md)
+  * [Paracetamol](items/first-aid-items/paracetamol.md)
+  * [Codeine](items/first-aid-items/codeine.md)
 * [🔑 Key Cards](items/key-cards.md)
-* [🧟♂ Zombie Mask](items/key-cards-1.md)
-* [🩸 Zombie Guts](items/key-cards-2.md)
+* [🧟♂ Zombie Mask](items/zombie-mask.md)
+* [🩸 Zombie Guts](items/zombie-guts.md)
 * [🍖 Rotten Flesh](items/rotten-flesh.md)
 * [🔦 Torch](items/torch.md)
-  * [🔋 Batteries](items/torch/torch.md)
-* [✂ Wire Cutters](items/torch-1.md)
-* [🕸 Barbed Wire](items/torch-2.md)
+  * [🔋 Batteries](items/torch/batteries.md)
+* [✂ Wire Cutters](items/wire-cutters.md)
+* [🕸 Barbed Wire](items/barbed-wire.md)
 * [🚱 Contaminated Water](items/contaminated-water.md)
 
 ## 🔧 Systems
 
-* [🏕 Camps](systems/safe-zones.md)
+* [🏕 Camps](systems/camps.md)
 * [🚰 Thirst System (Legacy)](systems/thirst-system-legacy.md)
 * [💊 Health System](systems/health-system/README.md)
   * [🚰 Thirst System](systems/health-system/thirst-system.md)
@@ -100,7 +101,7 @@
   * [☣ Zombie Infections](systems/zombies/zombie-infections.md)
   * [🔢 Zombie Attributes](systems/zombies/zombie-attributes.md)
 * [🐄 Infected Animals](systems/infected-animals.md)
-* [🌾 Tainted crops](systems/infected-animals-1.md)
+* [🌾 Tainted crops](systems/tainted-crops.md)
 
 ## 🖼 Placeholder API
 
@@ -111,7 +112,7 @@
 
 ## 🎭 Events
 
-* [🎈 Introduction](events/placeholders.md)
+* [🎈 Introduction](events/introduction.md)
 * [🌑 Blood Moon](events/blood-moon.md)
 * [🧟♀ Hordes](events/hordes.md)
 
@@ -119,6 +120,7 @@
 
 * [Changelogs](changelogs/changelogs/README.md)
   * [👑 v3.0.0](changelogs/changelogs/v3.0.0.md)
+  * [v2.7.16](changelogs/changelogs/v2.7.16.md)
   * [v2.7.15](changelogs/changelogs/v2.7.15.md)
   * [v2.7.10](changelogs/changelogs/v2.7.10.md)
   * [v2.7.9](changelogs/changelogs/v2.7.9.md)
@@ -138,8 +140,8 @@
 * [Using Translations](languages/using-translations/README.md)
   * [🇩🇪 🇩🇪 Deutsch](languages/using-translations/deutsch.md)
   * [🇬🇧 🇬🇧 English](languages/using-translations/english.md)
-  * [🇪🇸 🇪🇸 Español](<languages/using-translations/francais (1).md>)
-  * [🇫🇷 🇫🇷 Français](languages/using-translations/francais.md)
+  * [🇪🇸 🇪🇸 Español](languages/using-translations/espanol.md)
+  * [🇫🇷 🇫🇷 Français](<languages/using-translations/francais (1).md>)
   * [🇳🇱 🇳🇱 Nederlands](languages/using-translations/nederlands.md)
-  * [🇵🇹 🇵🇹 Português](languages/using-translations/francais-2.md)
-  * [🇨🇳 🇨🇳 Zhōngguó rén](languages/using-translations/francais-3.md)
+  * [🇵🇹 🇵🇹 Português](languages/using-translations/portugues.md)
+  * [🇨🇳 🇨🇳 Zhōngguó rén](languages/using-translations/chinese.md)

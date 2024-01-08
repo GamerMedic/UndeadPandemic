@@ -6,7 +6,7 @@ description: >-
 
 # 🇵🇹 🇵🇹 Português
 
-{% code title="pt.yml" overflow="wrap" lineNumbers="true" %}
+{% code title="pt.yml" %}
 ```yaml
 #############################################################
 #

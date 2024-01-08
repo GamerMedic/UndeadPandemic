@@ -4,7 +4,7 @@ description: Zhōngwén de mòrèn YAML wénjiàn. (Yóu gǔgē fānyì tígōng
 
 # 🇨🇳 🇨🇳 Zhōngguó rén
 
-{% code title="zh.yml" overflow="wrap" lineNumbers="true" %}
+{% code title="zh.yml" %}
 ```yaml
 head_shot_actionbar_text: "&b你完成了一次爆头！"
 execution: "&4处决！"
