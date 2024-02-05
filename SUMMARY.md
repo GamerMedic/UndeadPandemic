@@ -120,6 +120,7 @@
 
 * [Changelogs](changelogs/changelogs/README.md)
   * [👑 v3.0.0](changelogs/changelogs/v3.0.0.md)
+  * [v2.7.17](changelogs/changelogs/v2.7.17.md)
   * [v2.7.16](changelogs/changelogs/v2.7.16.md)
   * [v2.7.15](changelogs/changelogs/v2.7.15.md)
   * [v2.7.10](changelogs/changelogs/v2.7.10.md)
