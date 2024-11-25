@@ -6,6 +6,58 @@ description: >-
 
 # 🇵🇹 🇵🇹 Português
 
+<details>
+
+<summary><code>pt.yml</code></summary>
+
+```yaml
+messages:
+  zombie-guts-effect-worn-off: "O efeito Zombie Guts acabou."
+  zombie-guts-removed-rain: "O efeito Zombie Guts foi removido devido à chuva."
+  zombie-guts-removed-water: "O efeito Zombie Guts foi removido devido ao contato com a água."
+  welcome-premium: "Bem-vindo, {playerName}!"
+  upgrade-premium: "Faça upgrade para premium para benefícios exclusivos!"
+  no-premium: "Esta é uma funcionalidade premium!"
+  thirst-warning: "Aviso: Sua sede está baixa!"
+  thirst-buffer: "Sua sede está criticamente baixa! Você está se sentindo fraco e confuso."
+  water-purification: "Você purificou a água suja em água limpa!"
+  zombie-headshot: "Você acertou a cabeça do zumbi!"
+  zombie-bodyshot: "Você acertou o corpo do zumbi!"
+  infection-applied: "&4Você foi infectado!"
+  world-restriction-message: "Você não pode usar este plugin no mundo atual: %world%."
+  xp-restricted-world: "A coleta de XP está desativada neste mundo."
+  xp-restricted-item: "Itens relacionados a XP estão desativados neste servidor."
+  torch-used: "A tocha está agora ativa e fornece visão noturna!"
+  torch-out-of-power: "A tocha ficou sem bateria e não pode ser usada."
+  battery-empty: "Esta bateria está vazia e não pode ser usada."
+  battery-transferred: "A vida útil da bateria foi transferida para a tocha."
+  cannot-switch-during-torch-use: "Você não pode trocar de item enquanto a tocha estiver em uso."
+  analgesia-used: "Você usou Analgesia. Sua saúde foi parcialmente restaurada."
+  bandage-used: "Você usou um Curativo. A regeneração de saúde foi ativada."
+  antibiotics-used: "Você usou Antibióticos. Todos os efeitos negativos foram removidos."
+  adrenaline-used: "Você usou Adrenalina. Agora você está com saúde total e tem resistência a danos por 30 segundos."
+  crafting-success: "Você criou o item com sucesso!"
+  receipe-missing: "A receita para este item está ausente ou incompleta."
+  invalid-material: "O material para este item é inválido."
+  config-reload: "As configurações de configuração foram recarregadas."
+  no-permission: "Você não tem permissão para executar este comando."
+  players-only-cmd: "Somente jogadores podem executar este comando."
+  player-not-found: "Não foi possível encontrar o jogador."
+  invalid-item: "Item inválido. Itens disponíveis: Adrenalina, Analgesia, Antibióticos, Curativo, Tocha, Bateria."
+  invalid-qty: "Quantidade inválida. Insira um número válido."
+  no-wire-cutters: "&cVocê precisa de alicates de arame para remover o arame farpado!"
+  hurt-by-barbed-wire: "&cVocê se feriu com o arame farpado!"
+  reward-money: "Você foi recompensado com {amount} moedas!"
+  reward-items: "Você foi recompensado com x{quantity} {itemName}(s)!"
+
+```
+
+</details>
+
+<details>
+
+<summary>Legacy <code>pt.yml</code> (Pre-v3.0.0)</summary>
+
 {% code title="pt.yml" %}
 ```yaml
 #############################################################
@@ -97,3 +149,7 @@ sent_torch_err: 'Houve um problema na entrega da tocha.'
 received_torch: 'Você recebeu uma tocha de {player}'
 ```
 {% endcode %}
+
+
+
+</details>

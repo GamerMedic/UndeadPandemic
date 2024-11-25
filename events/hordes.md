@@ -1,4 +1,8 @@
-# 🧟♀ Hordes
+# 🧟‍♀️ Hordes
+
+{% hint style="danger" %}
+Hordes has been implemented as part of the Blood Moon event. Hordes will become a standalone feature in the future. Watch this space.
+{% endhint %}
 
 Hordes. This is the main event whenever a zombie apocalypse happens.
 

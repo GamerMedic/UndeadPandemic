@@ -1,4 +1,4 @@
-# 🕸 Barbed Wire
+# 🕸️ Barbed Wire
 
 ### Description
 
@@ -10,12 +10,14 @@ Barbed wire will apply damage to a player when they walk through it. It also slo
 
 ### How is Barbed wire obtained?
 
-Barbed wire can be crafted or obtained the same as cobwebs.
+Barbed wire can be only be obtained through the use of commands or customised crafting recipes.
 
-{% hint style="info" %}
+{% hint style="success" %}
 How barbed wire is obtained will be changed in future versions. It will become a craftable item, requiring a specific name and lore to work.
+
+This took effect from v3.0.0.
 {% endhint %}
 
 ### Modifying Wire Cutters
 
-Barbed wire can be disabled in the `config.yml` file. The damage that it deals to the player is also configurable.
+Barbed wire can be disabled in the [`config.yml` file](../configuration/legacy-config.yml/). The damage that it deals to the player is also configurable.

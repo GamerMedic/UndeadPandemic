@@ -1,4 +1,8 @@
-# Codeine
+# Codeine (Legacy)
+
+{% hint style="danger" %}
+This feature was removed in v3.0.0.
+{% endhint %}
 
 ### Description
 

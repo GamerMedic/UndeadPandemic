@@ -15,9 +15,12 @@ Players with the [firstaid.use permission](../../permissions/permissions/undeadp
 The available first aid items are:
 
 1. [Adrenaline](adrenaline.md)
-2. [Antibiotics](antibiotics.md)
-3. [Bandage](bandage.md)
-4. [Kit](first-aid-kit.md)
+2. [Analgesia](analgesia.md)
+3. [Antibiotics](antibiotics.md)
+4. [Bandage](bandage.md)
+5. [Kit](first-aid-kit.md)
+
+
 
 Click on an item in the list to read about the item.
 

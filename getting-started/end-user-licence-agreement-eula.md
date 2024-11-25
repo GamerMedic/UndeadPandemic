@@ -9,7 +9,7 @@ description: >-
 This page will dictate the terms attached to the use of the UndeadPandemic.jar Spigot/Paper Plugin.
 
 {% hint style="danger" %}
-1. You may not decompile or modify the source code without written permission from the author.
+1. You may not decompile or modify the source code without written permission from [SteveZR963](https://www.spigotmc.org/members/stevezr963.838513/).
 {% endhint %}
 
 {% hint style="danger" %}

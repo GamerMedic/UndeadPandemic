@@ -4,6 +4,57 @@ description: Zhōngwén de mòrèn YAML wénjiàn. (Yóu gǔgē fānyì tígōng
 
 # 🇨🇳 🇨🇳 Zhōngguó rén
 
+<details>
+
+<summary><code>zh.yml</code></summary>
+
+```yaml
+messages:
+  zombie-guts-effect-worn-off: "僵尸内脏效果已消失。"
+  zombie-guts-removed-rain: "由于下雨，僵尸内脏效果已被移除。"
+  zombie-guts-removed-water: "由于进入水中，僵尸内脏效果已被移除。"
+  welcome-premium: "欢迎，{playerName}！"
+  upgrade-premium: "升级到高级版，享受专属福利！"
+  no-premium: "这是一个高级功能！"
+  thirst-warning: "警告：您的口渴值较低！"
+  thirst-buffer: "您的口渴值已达到临界水平！您感到虚弱并且困惑。"
+  water-purification: "您已将脏水净化为干净的水！"
+  zombie-headshot: "您击中了僵尸的头部！"
+  zombie-bodyshot: "您击中了僵尸的身体！"
+  infection-applied: "&4您已被感染！"
+  world-restriction-message: "您不能在当前世界中使用此插件：%world%。"
+  xp-restricted-world: "此世界禁用XP收集。"
+  xp-restricted-item: "此服务器禁用与XP相关的物品。"
+  torch-used: "火把已激活，提供夜视！"
+  torch-out-of-power: "火把电量耗尽，无法使用。"
+  battery-empty: "此电池已耗尽，无法使用。"
+  battery-transferred: "电池电量已转移到火把上。"
+  cannot-switch-during-torch-use: "在火把使用期间，您无法更换物品。"
+  analgesia-used: "您已使用止痛药。您的健康已部分恢复。"
+  bandage-used: "您已使用绷带。健康恢复已激活。"
+  antibiotics-used: "您已使用抗生素。所有负面效果已被移除。"
+  adrenaline-used: "您已使用肾上腺素。您现在处于满血状态，并且在30秒内具有伤害抗性。"
+  crafting-success: "您已成功制作物品！"
+  receipe-missing: "此物品的配方缺失或不完整。"
+  invalid-material: "此物品的材料无效。"
+  config-reload: "配置设置已重新加载。"
+  no-permission: "您没有执行此命令的权限。"
+  players-only-cmd: "只有玩家可以执行此命令。"
+  player-not-found: "无法找到玩家。"
+  invalid-item: "无效物品。可用物品：肾上腺素、止痛药、抗生素、绷带、火把、电池。"
+  invalid-qty: "无效数量。请输入有效数字。"
+  no-wire-cutters: "&c您需要使用钢丝剪来移除铁丝网！"
+  hurt-by-barbed-wire: "&c您被铁丝网刺伤了！"
+  reward-money: "您获得了{amount}金币奖励！"
+  reward-items: "您获得了x{quantity}个{itemName}奖励！"
+```
+
+</details>
+
+<details>
+
+<summary>Legacy <code>zh.yml</code> (Pre-v3.0.0)</summary>
+
 {% code title="zh.yml" %}
 ```yaml
 head_shot_actionbar_text: "&b你完成了一次爆头！"
@@ -88,3 +139,7 @@ sent_torch_err: "发送火把时出现问题。"
 received_torch: "你接收到了一个火把，来自于 {player}"
 ```
 {% endcode %}
+
+
+
+</details>

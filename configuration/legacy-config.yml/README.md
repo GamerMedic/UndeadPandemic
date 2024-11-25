@@ -2,7 +2,11 @@
 description: Learn how to configure UndeadPandemic
 ---
 
-# 🛠 config.yml
+# 🛠️ config.yml (Legacy)
+
+{% hint style="danger" %}
+This `config.yml` file is no longer used from v3.0.0. Please use the [new `config.yml` file.](../config.yml.md)
+{% endhint %}
 
 This is the default config.yml page. The following pages will discuss, in considerable detail, how each configuration section works, and how you can edit the config.yml file to make the plugin do what you want.
 

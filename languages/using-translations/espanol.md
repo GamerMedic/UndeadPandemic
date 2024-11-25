@@ -6,6 +6,57 @@ description: >-
 
 # 🇪🇸 🇪🇸 Español
 
+<details>
+
+<summary><code>es.yml</code></summary>
+
+```yaml
+messages:
+  zombie-guts-effect-worn-off: "El efecto de Tripas de Zombie ha desaparecido."
+  zombie-guts-removed-rain: "El efecto de Tripas de Zombie ha sido eliminado debido a la lluvia."
+  zombie-guts-removed-water: "El efecto de Tripas de Zombie ha sido eliminado debido a entrar en agua."
+  welcome-premium: "¡Bienvenido, {playerName}!"
+  upgrade-premium: "¡Mejora a premium para obtener beneficios exclusivos!"
+  no-premium: "¡Esta es una característica Premium!"
+  thirst-warning: "¡Advertencia: Tu sed está baja!"
+  thirst-buffer: "¡Tu sed está críticamente baja! Te sientes débil y confundido."
+  water-purification: "¡Has purificado el agua sucia en agua limpia!"
+  zombie-headshot: "¡Has golpeado la cabeza del zombie!"
+  zombie-bodyshot: "¡Has golpeado el cuerpo del zombie!"
+  infection-applied: "&4¡Has sido infectado!"
+  world-restriction-message: "No puedes usar este plugin en el mundo actual: %world%."
+  xp-restricted-world: "La recolección de XP está deshabilitada en este mundo."
+  xp-restricted-item: "Los objetos relacionados con XP están deshabilitados en este servidor."
+  torch-used: "¡La antorcha está ahora activa y proporciona visión nocturna!"
+  torch-out-of-power: "La antorcha se ha quedado sin batería y no se puede usar."
+  battery-empty: "Esta batería está vacía y no se puede usar."
+  battery-transferred: "La energía de la batería se ha transferido a la antorcha."
+  cannot-switch-during-torch-use: "No puedes cambiar de objeto mientras la antorcha está en uso."
+  analgesia-used: "Has usado Analgesia. Tu salud se ha restaurado parcialmente."
+  bandage-used: "Has usado un Vendaje. La regeneración de salud se ha activado."
+  antibiotics-used: "Has usado Antibióticos. Todos los efectos negativos han sido eliminados."
+  adrenaline-used: "Has usado Adrenalina. Ahora estás a plena salud y tienes resistencia al daño durante 30 segundos."
+  crafting-success: "¡Has creado el objeto con éxito!"
+  receipe-missing: "La receta para este objeto falta o está incompleta."
+  invalid-material: "El material para este objeto es inválido."
+  config-reload: "La configuración ha sido recargada."
+  no-permission: "No tienes permiso para ejecutar este comando."
+  players-only-cmd: "Solo los jugadores pueden ejecutar este comando."
+  player-not-found: "No se pudo encontrar al jugador."
+  invalid-item: "Objeto inválido. Objetos disponibles: Adrenalina, Analgesia, Antibióticos, Vendaje, Antorcha, Batería."
+  invalid-qty: "Cantidad inválida. Por favor, ingresa un número válido."
+  no-wire-cutters: "&c¡Necesitas cortadores de alambre para quitar el alambre de púas!"
+  hurt-by-barbed-wire: "&c¡Te has lastimado con el alambre de púas!"
+  reward-money: "¡Has sido recompensado con {amount} monedas!"
+  reward-items: "¡Has sido recompensado con x{quantity} {itemName}(s)!"
+```
+
+</details>
+
+<details>
+
+<summary>Legacy <code>es.yml</code> (Pre-v3.0.0)</summary>
+
 {% code title="es.yml" %}
 ```yaml
 #############################################################
@@ -95,3 +146,7 @@ sent_torch_err: 'Hubo un problema al entregar la linterna.'
 received_torch: 'Has recibido una linterna de {player}'
 ```
 {% endcode %}
+
+
+
+</details>

@@ -26,10 +26,10 @@ When a player hits 5% thirst, dehydration will start taking effect. The player w
 
 #### Rehydration
 
-A player can restore their hydration levels, and become well again, by using consumables. Consumables will replenish their hydration level according to the [Consumables setting](../configuration/config.yml/thirst-settings.md).
+A player can restore their hydration levels, and become well again, by using consumables. Consumables will replenish their hydration level according to the [Consumables setting](../configuration/legacy-config.yml/thirst-settings.md).
 
 ### Consequences
 
 The main, and most significant, consequence of using the thirst system is that players can easily obtain XP by using consumables.
 
-It is, therefore, recommended that you <mark style="color:red;">**disable the**</mark> [_<mark style="color:red;">**enchant settings**</mark>_](../configuration/config.yml/enchant-settings.md) while using the thirst system.
+It is, therefore, recommended that you <mark style="color:red;">**disable the**</mark> [_<mark style="color:red;">**enchant settings**</mark>_](../configuration/legacy-config.yml/enchant-settings.md) while using the thirst system.

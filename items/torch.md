@@ -16,10 +16,12 @@ The torch allows a player to see in the dark. It applies the night vision effect
 
 A torch can only be given using the [`/undeadpandemic give`](../commands/undeadpandemic/give/) command. This means that server admins can decide how many torches are in the game.
 
-(Future versions will included craftable torches).
+{% hint style="success" %}
+Torches are craftable from v3.0.0 using custom recipes.
+{% endhint %}
 
 ### Modifying the Torch
 
-The torch can be modified in the `config.yml` file. This includes the duration (in seconds) that the night vision effect is applied per Amp-hour (Ah) of battery life.
+The torch can be modified in the [`config.yml` file](../configuration/legacy-config.yml/). This includes the duration (in seconds) that the night vision effect is applied per Amp-hour (Ah) of battery life.
 
 The name, lore, material, and custom model data can also be modified.

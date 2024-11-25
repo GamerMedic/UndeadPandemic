@@ -1,8 +1,12 @@
 ---
-description: Information about tainted crops. [Premium Version Only]
+description: Information about tainted crops.
 ---
 
 # 🌾 Tainted crops
+
+{% hint style="warning" %}
+Tainted crops is a planned feature and not been implemented yet.
+{% endhint %}
 
 ### What happens?
 

@@ -24,7 +24,7 @@ If you do not have a permissions plugin installed, set `require_perms` to `false
 
 [undeadpandemic.safezone](undeadpandemic.safezone/)
 
-[undeadpandemic.use](undeadpandemic.use.md)
+[undeadpandemic.use](undeadpandemic.use/)
 
 [undeadpandemic.udpates](undeadpandemic.updates.md)
 

@@ -14,4 +14,4 @@ Rotten flesh is obtained by killing Zombies (as usual) and when killing [Infecte
 
 ### Modifying Rotten Flesh
 
-Rotten flesh cannot be modified.
+Rotten flesh can only be modified as a zombie drop.

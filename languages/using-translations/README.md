@@ -2,15 +2,15 @@
 
 ### Enabling Language Support
 
-The plugin has multilingual support which can be utilised by changing the defined language in the config.yml file.
+The plugin has multilingual support which can be utilised by changing the defined language in the [`config.yml` file](../../configuration/config.yml.md).
 
-In the default config.yml file the `language` parameter is near the top of the file, but if missing can be added anywhere.
+In the default [`config.yml` file](../../configuration/config.yml.md) the `lang` parameter is near the top of the file, but if missing can be added anywhere.
 
 ### Defining the Desired Language
 
-The UndeadPandemic plugin utilises ISO 639-1 standard language codes ([you can find a list here](https://en.wikipedia.org/wiki/List\_of\_ISO\_639-1\_codes) - use the 639-1 column).
+The UndeadPandemic plugin utilises ISO 639-1 standard language codes ([you can find a list here](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) - use the 639-1 column).
 
-Not many languages are currently supported by the plugin as of _08/10/2022_.
+Seven languages are currently supported by the plugin as of _23/11/2024_.
 
 ### Support Languages
 
@@ -19,7 +19,7 @@ A list of currently supported languages:
 |        Language        | Language Code (639-1) |
 | :--------------------: | :-------------------: |
 |    (Deutsch) German    |           de          |
-|    (British) English   |           en          |
+|    (English) English   |           en          |
 |    (Español) Spanish   |           es          |
 |    (Français) French   |           fr          |
 |   (Nederlands) Dutch   |           nl          |
@@ -53,6 +53,10 @@ The Portuguese language file was translated by Discord User MihDrix.
 The Chinese language file was translated by Discord User 赤城.
 
 The Spanish language file was translated by Discord User ItsRea1Pers0n.
+
+{% hint style="info" %}
+Translations for v3.0.0 and above were provided by AI.
+{% endhint %}
 
 ***
 

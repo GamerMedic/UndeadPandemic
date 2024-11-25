@@ -4,6 +4,57 @@ description: The default YAML file for the English language.
 
 # 🇬🇧 🇬🇧 English
 
+<details>
+
+<summary><code>en.yml</code></summary>
+
+```yaml
+messages:
+  zombie-guts-effect-worn-off: "The Zombie Guts effect has worn off."
+  zombie-guts-removed-rain: "The Zombie Guts effect has been removed due to the rain."
+  zombie-guts-removed-water: "The Zombie Guts effect has been removed due to entering water."
+  welcome-premium: "Welcome, {playerName}!"
+  upgrade-premium: "Upgrade to premium for exclusive benefits!"
+  no-premium: "This is a Premium feature!"
+  thirst-warning: "Warning: Your thirst is low!"
+  thirst-buffer: "Your thirst is critically low! You are feeling weak and confused."
+  water-purification: "You have purified the dirty water into clean water!"
+  zombie-headshot: "You hit the zombie's head!"
+  zombie-bodyshot: "You hit the zombie's body!"
+  infection-applied: "&4You have been infected!"
+  world-restriction-message: "You cannot use this plugin in the current world: %world%."
+  xp-restricted-world: "XP collection is disabled in this world."
+  xp-restricted-item: "XP-related items are disabled on this server."
+  torch-used: "The torch is now active and provides night vision!"
+  torch-out-of-power: "The torch has run out of battery and cannot be used."
+  battery-empty: "This battery is empty and cannot be used."
+  battery-transferred: "Battery life has been transferred to the torch."
+  cannot-switch-during-torch-use: "You cannot switch items while the torch is in use."
+  analgesia-used: "You have used Analgesia. Your health has been partially restored."
+  bandage-used: "You have used a Bandage. Health regeneration has been enabled."
+  antibiotics-used: "You have used Antibiotics. All negative effects have been removed."
+  adrenaline-used: "You have used Adrenaline. You are now at full health and have damage resistance for 30 seconds."
+  crafting-success: "You have successfully crafted the item!"
+  receipe-missing: "The recipe for this item is missing or incomplete."
+  invalid-material: "The material for this item is invalid."
+  config-reload: "The configuration settings have been reloaded."
+  no-permission: "You don't have permission to perform that command."
+  players-only-cmd: "Only players can execute this command."
+  player-not-found: "Could not find player."
+  invalid-item: "Invalid item. Available items: Adrenaline, Analgesia, Antibiotics, Bandage, Torch, Battery."
+  invalid-qty: "Invalid quantity. Please enter a valid number."
+  no-wire-cutters: "&cYou need wire cutters to remove barbed wire!"
+  hurt-by-barbed-wire: "&cYou are hurt by the barbed wire!"
+  reward-money: "You've been rewarded with {amount} coins!"
+  reward-items: "You've been rewarded with x{quantity} {itemName}(s)!"
+```
+
+</details>
+
+<details>
+
+<summary>Legacy <code>en.yml(</code>Pre-v3.0.0)</summary>
+
 {% code title="en.yml" overflow="wrap" lineNumbers="true" %}
 ```yaml
 #############################################################
@@ -95,3 +146,7 @@ join_protection: '&f* A mist surrounds you *&e You feel stronger and your skin i
 join_protection_failed: '&4Hey! Don''t let yourself get bitten by a Zombie!'
 ```
 {% endcode %}
+
+
+
+</details>

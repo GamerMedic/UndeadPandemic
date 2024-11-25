@@ -24,7 +24,7 @@ When a player hits 5% thirst, dehydration will start taking effect. The player w
 
 #### Rehydration
 
-A player can restore their hydration levels, and become well again, by using consumables. Consumables will replenish their hydration level according to the [Consumables setting](../../configuration/config.yml/thirst-settings.md).
+A player can restore their hydration levels, and become well again, by using consumables. Consumables will replenish their hydration level according to the [Consumables setting](../../configuration/legacy-config.yml/thirst-settings.md).
 
 ### Consequences
 

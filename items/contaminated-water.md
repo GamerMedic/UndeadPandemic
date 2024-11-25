@@ -10,7 +10,7 @@ description: Information about contaminated water.
 
 ### What is contaminated water?
 
-When you fill a container with water from a body of water (i.e. river, ocean, lake, ect) you will get a `Contaminated Water` item which will look like a normal water bottle.
+When you fill a container with water from a body of water (i.e. river, ocean, lake, ect) you will get a `Contaminated Water` item which will look like a normal water bottle or filled bucket.
 
 If the player drinks contaminated water they will become infected.
 
@@ -26,4 +26,4 @@ By default there are 3 valid heat source blocks.
 * Campfire
 * Lava
 
-You can add and remove any block(s) that you like. See the [`config settings`](../configuration/config.yml/infected-water-settings.md) for more information.
+You can add and remove any block(s) that you like. See the [`config settings`](../configuration/legacy-config.yml/infected-water-settings.md) for more information.

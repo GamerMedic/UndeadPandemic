@@ -6,7 +6,19 @@ description: >-
 
 # 🇫🇷 🇫🇷 Français
 
-{% code title="es.yml" overflow="wrap" lineNumbers="true" %}
+<details>
+
+<summary><code>fr.yml</code></summary>
+
+
+
+</details>
+
+<details>
+
+<summary>Legacy <code>fr.yml</code> (Pre-v3.0.0)</summary>
+
+{% code title="fr.yml" overflow="wrap" lineNumbers="true" %}
 ```yaml
 #############################################################
 #
@@ -97,3 +109,5 @@ sent_torch_err: 'Il y a eu un problème lors de la livraison de la torche.'
 received_torch: 'Vous avez reçu une torche de {player}'
 ```
 {% endcode %}
+
+</details>

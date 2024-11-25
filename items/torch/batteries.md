@@ -14,6 +14,10 @@ Batteries can only be given using the [`/undeadpandemic give`](../../commands/un
 
 (Future versions will included craftable batteries).
 
+{% hint style="success" %}
+Batteries are craftable from v3.0.0 using custom recipes.
+{% endhint %}
+
 ### Modifying the Battery
 
 Batteries can be modified in the `config.yml` file. The name, lore, material, and custom model data can be modified.

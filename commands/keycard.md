@@ -1,4 +1,8 @@
-# /keycard
+# /keycard (Legacy)
+
+{% hint style="danger" %}
+This command was removed in v3.0.0.
+{% endhint %}
 
 ![Key Card Texture](../.gitbook/assets/keycard.png)
 
@@ -10,7 +14,7 @@
 
 `/keycard`<mark style="color:purple;">`<cut>`</mark> <mark style="color:orange;">`<X co-ordinate>`</mark> <mark style="color:orange;">`<Y co-ordinate> <Z co-ordinate>`</mark> <mark style="color:red;">`[keycard description]`</mark> <mark style="color:yellow;">`[uses]`</mark> <mark style="color:green;">`[quantity]`</mark>
 
-![](../.gitbook/assets/keycard\_cmd.png)
+![](../.gitbook/assets/keycard_cmd.png)
 
 ### Parameter Descriptions
 

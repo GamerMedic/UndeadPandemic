@@ -2,7 +2,11 @@
 description: '[Premium Version Only]'
 ---
 
-# 🧟♂ Zombie Mask
+# 🧟‍♂️ Zombie Mask
+
+{% hint style="warning" %}
+Zombie Masks are currently a planned feature and do not yet exist in-game.
+{% endhint %}
 
 ### Description
 
@@ -18,7 +22,7 @@ Zombie masks wash away completely in rain or when swimming.
 
 Zombie masks can be obtained at random when killing a zombie with a sword.
 
-The [`undeadpandemic.guts.use`](../permissions/permissions/undeadpandemic.guts/undeadpandemic.guts.use.md) permission is required to use Zombie Masks.
+The [`undeadpandemic.use.zombie`](../permissions/permissions/undeadpandemic.guts/undeadpandemic.guts.use.md) permission is required to use Zombie Masks.
 
 ### Modifying Zombie Masks
 

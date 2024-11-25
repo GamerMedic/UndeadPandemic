@@ -2,7 +2,11 @@
 description: What are Camps, and how do they work?
 ---
 
-# 🏕 Camps
+# 🏕️ Camps (Legacy)
+
+{% hint style="danger" %}
+This feature was removed in v3.0.0.
+{% endhint %}
 
 ### What is a Camp?
 

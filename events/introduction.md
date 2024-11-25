@@ -4,11 +4,11 @@ description: A list of available events.
 
 # 🎈 Introduction
 
-Events can be programmable (set up using `config.yml`) or happen when certain conditions are met.
+Events are currently random events that occur under very specific conditions.
 
-Events are useful tools to add challenges and to offer rewards. They're designed to keep players entertained, and on their toes.
+Anyone still alive after an event has finished deserves their reward.
 
-Be careful not to make events too frequent or too rare. You may cause fatigue or boredom amongst players.
+Rewards are customisable in the [`config.yml` file](../configuration/legacy-config.yml/).
 
 ### List of Events
 

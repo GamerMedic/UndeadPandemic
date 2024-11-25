@@ -4,7 +4,58 @@ description: >-
   Translate)
 ---
 
-# 🇳🇱 Nederlands
+# 🇳🇱 🇳🇱 Nederlands
+
+<details>
+
+<summary><code>nl.yml</code></summary>
+
+```yaml
+messages:
+  zombie-guts-effect-worn-off: "Het Zombie Guts effect is vervaagd."
+  zombie-guts-removed-rain: "Het Zombie Guts effect is verwijderd door de regen."
+  zombie-guts-removed-water: "Het Zombie Guts effect is verwijderd door het betreden van water."
+  welcome-premium: "Welkom, {playerName}!"
+  upgrade-premium: "Upgrade naar premium voor exclusieve voordelen!"
+  no-premium: "Dit is een premium functie!"
+  thirst-warning: "Waarschuwing: Je dorst is laag!"
+  thirst-buffer: "Je dorst is kritiek laag! Je voelt je zwak en verward."
+  water-purification: "Je hebt het vuile water gezuiverd naar schoon water!"
+  zombie-headshot: "Je hebt het hoofd van de zombie geraakt!"
+  zombie-bodyshot: "Je hebt het lichaam van de zombie geraakt!"
+  infection-applied: "&4Je bent geïnfecteerd!"
+  world-restriction-message: "Je kunt deze plugin niet gebruiken in de huidige wereld: %world%."
+  xp-restricted-world: "XP-verzameling is uitgeschakeld in deze wereld."
+  xp-restricted-item: "XP-gerelateerde items zijn uitgeschakeld op deze server."
+  torch-used: "De fakkel is nu actief en biedt nachtzicht!"
+  torch-out-of-power: "De fakkel is zonder batterij en kan niet worden gebruikt."
+  battery-empty: "Deze batterij is leeg en kan niet worden gebruikt."
+  battery-transferred: "Batterijvermogen is overgedragen naar de fakkel."
+  cannot-switch-during-torch-use: "Je kunt geen items wisselen terwijl de fakkel in gebruik is."
+  analgesia-used: "Je hebt Analgesie gebruikt. Je gezondheid is gedeeltelijk hersteld."
+  bandage-used: "Je hebt een Verband gebruikt. Gezondheidsregeneratie is ingeschakeld."
+  antibiotics-used: "Je hebt Antibiotica gebruikt. Alle negatieve effecten zijn verwijderd."
+  adrenaline-used: "Je hebt Adrenaline gebruikt. Je hebt nu volledige gezondheid en schadebestendigheid voor 30 seconden."
+  crafting-success: "Je hebt het item succesvol gemaakt!"
+  receipe-missing: "Het recept voor dit item ontbreekt of is incompleet."
+  invalid-material: "Het materiaal voor dit item is ongeldig."
+  config-reload: "De configuratie-instellingen zijn herladen."
+  no-permission: "Je hebt geen toestemming om deze opdracht uit te voeren."
+  players-only-cmd: "Alleen spelers kunnen deze opdracht uitvoeren."
+  player-not-found: "Speler niet gevonden."
+  invalid-item: "Ongeldig item. Beschikbare items: Adrenaline, Analgesie, Antibiotica, Verband, Fakkel, Batterij."
+  invalid-qty: "Ongeldige hoeveelheid. Voer een geldige hoeveelheid in."
+  no-wire-cutters: "&cJe hebt draadknippers nodig om het prikkeldraad te verwijderen!"
+  hurt-by-barbed-wire: "&cJe bent gewond door het prikkeldraad!"
+  reward-money: "Je bent beloond met {amount} munten!"
+  reward-items: "Je bent beloond met x{quantity} {itemName}(s)!"
+```
+
+</details>
+
+<details>
+
+<summary>Legacy <code>nl.yml</code> (Pre-v3.0.0)</summary>
 
 {% code title="nl.yml" overflow="wrap" lineNumbers="true" %}
 ```yaml
@@ -96,3 +147,8 @@ sent_torch_err: 'Er is een probleem opgetreden bij het leveren van de zaklamp.'
 received_torch: 'Je hebt een zaklamp gekregen van {player}'
 ```
 {% endcode %}
+
+
+
+</details>
+

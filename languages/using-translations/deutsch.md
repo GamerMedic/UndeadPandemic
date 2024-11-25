@@ -4,7 +4,59 @@ description: >-
   bereitgestellt)
 ---
 
-# 🇩🇪 Deutsch
+# 🇩🇪 🇩🇪 Deutsch
+
+<details>
+
+<summary>de.yml</summary>
+
+```yaml
+messages:
+  zombie-guts-effect-worn-off: "Der Zombie-Eingeweide-Effekt ist abgelaufen."
+  zombie-guts-removed-rain: "Der Zombie-Eingeweide-Effekt wurde aufgrund des Regens entfernt."
+  zombie-guts-removed-water: "Der Zombie-Eingeweide-Effekt wurde durch das Betreten von Wasser entfernt."
+  welcome-premium: "Willkommen, {playerName}!"
+  upgrade-premium: "Upgrade auf Premium für exklusive Vorteile!"
+  no-premium: "Dies ist eine Premium-Funktion!"
+  thirst-warning: "Warnung: Dein Durst ist niedrig!"
+  thirst-buffer: "Dein Durst ist kritisch niedrig! Du fühlst dich schwach und verwirrt."
+  water-purification: "Du hast das schmutzige Wasser in sauberes Wasser gereinigt!"
+  zombie-headshot: "Du hast den Kopf des Zombies getroffen!"
+  zombie-bodyshot: "Du hast den Körper des Zombies getroffen!"
+  infection-applied: "&4Du wurdest infiziert!"
+  world-restriction-message: "Du kannst dieses Plugin nicht in der aktuellen Welt verwenden: %world%."
+  xp-restricted-world: "Das Sammeln von Erfahrungspunkten ist in dieser Welt deaktiviert."
+  xp-restricted-item: "XP-bezogene Gegenstände sind auf diesem Server deaktiviert."
+  torch-used: "Die Fackel ist jetzt aktiv und bietet Nachtsicht!"
+  torch-out-of-power: "Die Fackel hat keine Energie mehr und kann nicht verwendet werden."
+  battery-empty: "Diese Batterie ist leer und kann nicht verwendet werden."
+  battery-transferred: "Die Batterieleistung wurde auf die Fackel übertragen."
+  cannot-switch-during-torch-use: "Du kannst keine Gegenstände wechseln, während die Fackel verwendet wird."
+  analgesia-used: "Du hast Analgesia verwendet. Deine Gesundheit wurde teilweise wiederhergestellt."
+  bandage-used: "Du hast einen Verband benutzt. Gesundheitsregeneration wurde aktiviert."
+  antibiotics-used: "Du hast Antibiotika verwendet. Alle negativen Effekte wurden entfernt."
+  adrenaline-used: "Du hast Adrenalin verwendet. Du bist jetzt vollständig geheilt und hast 30 Sekunden lang Schadensresistenz."
+  crafting-success: "Du hast das Item erfolgreich hergestellt!"
+  receipe-missing: "Das Rezept für dieses Item fehlt oder ist unvollständig."
+  invalid-material: "Das Material für dieses Item ist ungültig."
+  config-reload: "Die Konfigurationseinstellungen wurden neu geladen."
+  no-permission: "Du hast keine Berechtigung, diesen Befehl auszuführen."
+  players-only-cmd: "Nur Spieler können diesen Befehl ausführen."
+  player-not-found: "Spieler konnte nicht gefunden werden."
+  invalid-item: "Ungültiges Item. Verfügbare Items: Adrenalin, Analgesia, Antibiotika, Verband, Fackel, Batterie."
+  invalid-qty: "Ungültige Menge. Bitte gib eine gültige Zahl ein."
+  no-wire-cutters: "&cDu benötigst Drahtschneider, um Stacheldraht zu entfernen!"
+  hurt-by-barbed-wire: "&cDu wurdest durch den Stacheldraht verletzt!"
+  reward-money: "Du hast {amount} Münzen erhalten!"
+  reward-items: "Du hast x{quantity} {itemName}(s) erhalten!"
+
+```
+
+</details>
+
+<details>
+
+<summary>Legacy <code>de.yml</code> (Pre-v3.0.0)</summary>
 
 {% code title="de.yml" overflow="wrap" lineNumbers="true" %}
 ```yaml
@@ -95,3 +147,7 @@ sent_torch_err: 'Bei der Lieferung der Taschenlampe ist ein Problem aufgetreten.
 received_torch: 'Du hast eine Taschenlampe von erhalten {player}'
 ```
 {% endcode %}
+
+
+
+</details>
