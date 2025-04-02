@@ -123,6 +123,7 @@
 ## 📂 Changelogs
 
 * [Changelogs](changelogs/changelogs/README.md)
+  * [👑 v3.0.1](changelogs/changelogs/v3.0.1.md)
   * [👑 v3.0.0](changelogs/changelogs/v3.0.0.md)
   * [v2.7.17](changelogs/changelogs/v2.7.17.md)
   * [v2.7.16](changelogs/changelogs/v2.7.16.md)
