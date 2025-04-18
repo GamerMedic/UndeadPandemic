@@ -260,6 +260,24 @@ We still recommend playing with `xp:enabled` set to `false` because it provides 
 
 **`crafting-blacklist`** A list of items that cannot be crafted by players. You must use [valid minecraft material names](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html).
 {% endtab %}
+
+{% tab title="Camps" %}
+`campfires` Settings for campfires.
+
+<mark style="color:yellow;">`douse-in-rain`</mark> When enabled campfires will be doused when it rains.
+
+<mark style="color:yellow;">`interval`</mark> Time in seconds that campfires will be checked again to douse.
+
+<mark style="color:yellow;">`delay`</mark> A switch value that determines if there's a pause after it starts raining before campfires will be doused.
+
+`cauldrons` Settings for cauldrons.
+
+<mark style="color:yellow;">`fill-in-rain`</mark> When enabled cauldrons will fill gradually when it rains.
+
+<mark style="color:yellow;">`interval`</mark> Time in seconds that cauldrons will be checked again to fill.
+
+<mark style="color:yellow;">`delay`</mark> A switch value that determines if there's a pause after it starts raining before cauldrons will start to fill.
+{% endtab %}
 {% endtabs %}
 
 \*<mark style="color:yellow;">`this-option-is-premium-only`</mark>
@@ -293,12 +311,24 @@ premium:
 # ZOMBIE SETTINGS
 zombies:
   spawn-vanilla-zombies: true
-  custom-zombie-rate: 70 # Percentage chance of custom zombie spawning
-  spawn-rate: 5 # 1 zombie every 5 seconds.
+  custom-zombie-rate: 70 # Percentage chance of custom zombie spawning. This will apply to zombies spawning during the day,
+  spawn-rate: 5 # 5 zombies every spawn. This does not apply to zombies spawning during the day.
+  spawn-radius: 50 # Within how many blocks will custom zombies spawn?
   sun-burn: false # Set to true if Zombies should be killed in sunlight.
-  see-names: true # Set to false if you'd like to have the names visible. (Premium)
+  see-names: true # Set to false if you'd like to have the name tags removed. (Premium)
   spawn-in-daylight: true # Set to false to prevent Zombies spawning in the daylight (Premium).
+  sun-burn: false # Set zombies to burn in daylight (Premium)
+  pick-up-items: false # Allow zombies to pick up items (Premium)
+  body-damage: 0.25 # Premium - Set the amount of damage that hitting the body will inflict. Must be between 0.0 and 1.0 (100%). This is always 0.25 without premium.
   
+  # Adjust damage settings
+  kills:
+    destroy-the-brain: true # Premium - Kills zombies instantly with a single hit to the head. This is always false without premium.
+    allow-body-damage: true # Premium - Allow zombies to be killed from hits on any part of the body. This will have no effect if 'destroy-the-brain' is true. This is always true without premium.
+    headshot-difficulty: 'normal' # Premium - How easy it should be to get a head shot? Easy|Normal|Hard. Easy may appear to give a head shot on a body hit. This is always 'normal' without premium.
+    
+  
+  # Events are premium
   events:
     blood-moon:
       horde-chance: 50
@@ -347,7 +377,7 @@ zombies:
       weapon: "STICK"
 
     default:
-      name: "Default Zombie"
+      name: "" # Leave empty if you don't want to see a name tag for vanilla zombies
       health: 40.0
       speed: 0.3
       strength: 5
@@ -361,6 +391,7 @@ zombies:
       weapon: "IRON_SWORD"
 
   # Custom drops for zombies
+  disable-drops: false # When set to true zombies will not drop any items unless reward.type is 'item'.
   drops:
     - type: "ROTTEN_FLESH" # Item type
       name: "Zombie Flesh" # Display name
@@ -404,6 +435,7 @@ zombies:
     slowness-duration: 60           # Duration for the slowness effect (in seconds)
     slowness-level: 1               # Level of the slowness effect (0 = No effect, 1 = Slowness I, etc.)
     slowness-enabled: true          # Whether to apply the slowness effect or not
+    name: "&6Zombie Guts"
     lore:
       - "&7Worn to mask your scent"
       - "&7Zombies will ignore you for a while"
@@ -432,12 +464,63 @@ zombies:
     
 # ANIMAL DROP SETTINGS
 animal-drops:
-  enable: true  # Enable/disable animal mobs dropping rotten flesh
+  enabled: true  # Enable/disable animal mobs dropping rotten flesh
   drop-chance: 0.75  # Chance of dropping rotten flesh (0.0 to 1.0)
+  
+  ## Customise name for infected meat
+  ## {mob} will be replaced with the name of the mob.
+  name: '&2Suspicious {mob} Flesh'
+  ## You can remove or add animals that drop meat to this list.
+  ## Uncomment the line below and remove the uncommented line to leave the list blank.
+  ## infected_animals: []
+  animals:
+    - PIG
+    - HOGLIN
+    - COW
+    - MUSHROOM_COW
+    - CHICKEN
+    - SHEEP
+    - RABBIT
+    - SALMON
+    - COD
+  
+mobs:
+  # Passive mobs are not affected.
+  use-whitelist: true # When enabled, mob spawning will be disabled for all mobs except zombies and those listed on the whitelist.
+  whitelist: # Only those mobs listed here will spawn (except zombies which will always spawn).
+    - ZOMBIE_VILLAGER
   
 # Water collection settings
 water:
-  dirty-water-chance: 0.75 # 50% chance to collect dirty water when filling a bucket or bottle
+  enabled: true
+  dirty-water-chance: 0.75 # 50% chance to collect dirty water when filling a bucket or bottle # Premium
+  
+  dirty_bucket:
+    name: '&5Dirty Water Bucket'
+    lore: '&fThis water looks a bit off.'
+    custom_model_data: 12345
+  
+  ## Customise the item when collecting infected water
+  dirty_water_bottle:
+    material: POTION
+    name: '&2Suspicious Water'
+    lore: '&4This water looks strange.'
+    potion_type: POISON # This is how the potion will look. The default is POISON. A common choice may be WATER
+    custom_model_data: 12345
+  
+  ## Customise the item when collecting clean water
+  clean_water_bottle:
+    material: POTION
+    name: '&bClean Water'
+    lore: '&fSafe to drink.'
+    potion_type: WATER # This is how the potion will look. The default is POISON. A common choice may be WATER
+    custom_model_data: 67890
+    
+  ##heat_sources: [] ## use this if you want the heat_sources list to be empty
+  heat_sources:
+    - MAGMA_BLOCK
+    - CAMPFIRE
+    - LAVA
   
 # THIRST SETTINGS
 thirst:
@@ -459,78 +542,93 @@ thirst:
     placeholder: true           # Use PlaceholderAPI for thirst display
 
   items:
-    WATER_BOTTLE:
+    POTION:                     # Water bottle
       thirst: 20                # Amount of thirst replenished
-      custom-model-data: 1      # Custom model data for the item
+      #custom-model-data: 1      # Custom model data for the item
 
     SWEET_BERRIES:
       thirst: 10
-      custom-model-data: 2
+      #custom-model-data: 2
 
     MELON_SLICE:
       thirst: 15
-      custom-model-data: 3
+      #custom-model-data: 3
+
+    MILK:
+      thirst: 20
+      #custom-model-data: 3
       
 xp:
   enabled: false
-  
-mobs:
-  use-whitelist: true # When enabled, mob spawning will be disabled for all mobs except zombies and those listed on the whitelist.
-  whitelist: # Only those mobs listed here will spawn (except zombie which will always spawn).
-    - ZOMBIE_VILLAGER
 
 items:
   # Option to force vanilla items to override custom items with the same recipe
-  force-vanilla-overrule: true  # Set to false if you want custom items to take precedence
+  force-vanilla-override: true  # Set to false if you want custom items to take precedence
   analgesia:
     name: "Analgesia"
     lore:
-      - "Restores some health"
+      - "Stops pain and restores some health."
     custom-model-data: 1
+    recipe: "analgesia"
   bandage:
     name: "Bandage"
     material: "MUSIC_DISC_13"
     lore:
       - "Regenerates health over time"
-    model-data: 2
+    custom-model-data: 2
+    recipe: "bandage"
   antibiotics:
     name: "Antibiotics"
     material: "MUSIC_DISC_13"
     lore:
       - "Removes all negative effects"
     custom-model-data: 3
+    recipe: "antibiotics"
   adrenaline:
     name: "Adrenaline"
     material: "MUSIC_DISC_13"
     lore:
       - "Keeps you at full health for a while"
     custom-model-data: 4
+    recipe: "adrenaline"
   torch:
     name: "Torch"
     material: "BLAZE_ROD"
     lore:
       - "A source of light in the dark."
+      - "Charge: %charge%%"
     custom-model-data: 5
-    max-life: 100  # Max battery life for the torch
+    recipe: "torch"
   battery:
     name: "Battery"
-    material: "MUSIC_DISC_13"
+    material: "REDSTONE"
     lore:
       - "Powers your torch."
+      - "Charge: %charge%%"
     custom-model-data: 6
     max-life: 100  # Max battery life for the battery
+    recipe: "battery"
   barbed-wire:
     name: "Barbed Wire"
     lore:
       - "A dangerous trap."
       - "Hurts anyone who moves through it."
     custom-model-data: 12345
+    ## /************** hurts-mobs ****************
+    ## ** Can only be enabled using premium.
+    ## ** Be careful using this as it may cause lag.
+    ## ** Lag should be minimal, but if you experience lag then you can either reduce the zombie or mob spawn rates,
+    ## ** or disable this feature.
+    ## ******************************************/
+    hurts-mobs: false
+    recipe: "barbed-wire"
   wire-cutters:
     name: "Wire Cutters"
     lore:
       - "Essential tool for removing barbed wire."
       - "Only available to premium players."
     custom-model-data: 54321
+    recipe: "wire-cutters"
     
   crafting-blacklist:
     - LEATHER_HELMET
@@ -558,6 +656,16 @@ items:
     - NETHERITE_LEGGINGS
     - NETHERITE_BOOTS
     - SHIELD
+
+camps:
+  campfires:
+    douse-in-rain: true # Premium - When enabled camp fires will be doused when it rains. This requires a server restart.
+    interval: 25 # Checks for re-lit fires every n seconds.
+    delay: true # delays the check by the interval. When set to 'false' the check will happen instantly.
+  cauldrons:
+    fill-in-rain: true # Premium - When enabled caulrons will be filled with rain water. This requires a server restart.
+    interval: 25 # Fills by one level every n seconds.
+    delay: true
 ```
 {% endcode %}
 
