@@ -12,43 +12,97 @@ description: >-
 
 ```yaml
 messages:
-  zombie-guts-effect-worn-off: "Het Zombie Guts effect is vervaagd."
-  zombie-guts-removed-rain: "Het Zombie Guts effect is verwijderd door de regen."
-  zombie-guts-removed-water: "Het Zombie Guts effect is verwijderd door het betreden van water."
+  # Welcome and Premium Messages
   welcome-premium: "Welkom, {playerName}!"
   upgrade-premium: "Upgrade naar premium voor exclusieve voordelen!"
   no-premium: "Dit is een premium functie!"
+
+  # Player Health and Effects
   thirst-warning: "Waarschuwing: Je dorst is laag!"
   thirst-buffer: "Je dorst is kritiek laag! Je voelt je zwak en verward."
   water-purification: "Je hebt het vuile water gezuiverd naar schoon water!"
-  zombie-headshot: "Je hebt het hoofd van de zombie geraakt!"
-  zombie-bodyshot: "Je hebt het lichaam van de zombie geraakt!"
-  infection-applied: "&4Je bent geïnfecteerd!"
-  world-restriction-message: "Je kunt deze plugin niet gebruiken in de huidige wereld: %world%."
-  xp-restricted-world: "XP-verzameling is uitgeschakeld in deze wereld."
-  xp-restricted-item: "XP-gerelateerde items zijn uitgeschakeld op deze server."
-  torch-used: "De fakkel is nu actief en biedt nachtzicht!"
-  torch-out-of-power: "De fakkel is zonder batterij en kan niet worden gebruikt."
-  battery-empty: "Deze batterij is leeg en kan niet worden gebruikt."
-  battery-transferred: "Batterijvermogen is overgedragen naar de fakkel."
-  cannot-switch-during-torch-use: "Je kunt geen items wisselen terwijl de fakkel in gebruik is."
-  analgesia-used: "Je hebt Analgesie gebruikt. Je gezondheid is gedeeltelijk hersteld."
+  analgesia-used: "Je hebt Analgesia gebruikt. Je gezondheid is gedeeltelijk hersteld."
   bandage-used: "Je hebt een Verband gebruikt. Gezondheidsregeneratie is ingeschakeld."
-  antibiotics-used: "Je hebt Antibiotica gebruikt. Alle negatieve effecten zijn verwijderd."
-  adrenaline-used: "Je hebt Adrenaline gebruikt. Je hebt nu volledige gezondheid en schadebestendigheid voor 30 seconden."
-  crafting-success: "Je hebt het item succesvol gemaakt!"
+  antibiotics-used: "Je hebt Antibiotica gebruikt. Alle negatieve effecten zijn verwijderd!"
+  adrenaline-used: "Je hebt Adrenaline gebruikt. Je bent nu volledig gezond en hebt 30 seconden schadebestendigheid."
+  infection-applied: "&4Je bent geïnfecteerd!"
+
+  # Zombie Guts
+  zombie-guts-effect-worn-off: "Het effect van de Zombie Guts is verdwenen."
+  zombie-guts-removed-rain: "Het effect van de Zombie Guts is verwijderd door de regen."
+  zombie-guts-removed-water: "Het effect van de Zombie Guts is verwijderd door het betreden van water."
+  zombie-guts-created: "*Je hebt jezelf bedekt met die walgelijke ingewanden en nu stink je naar rotting!*"
+  zombie-guts-chestplate: "Ik heb mijn bovenkleding besmeurd met ingewanden... Bah."
+  zombie-guts-status-four: "&4Dit zou een tijdje moeten duren."
+  zombie-guts-status-three: "&cDit zou genoeg moeten duren."
+  zombie-guts-status-two: "&6Ik heb niet veel tijd meer met dit."
+  zombie-guts-status-one: "&eDit is slechts een vlek, het duurt niet lang."
+  zombie-guts-status-zero: "&7Dit heeft geen zin, je kunt hier niet verder mee."
+  zombie-guts-plate-status-four: "&4Vers en druipend..."
+  zombie-guts-plate-status-three: "&cGlad van bloed."
+  zombie-guts-plate-status-two: "&6Aan het opdrogen. De geur wordt sterker."
+  zombie-guts-plate-status-one: "&eIn ontbinding. Vliegen verzamelen zich."
+  zombie-guts-plate-status-zero: "&7Het valt uit elkaar..."
+
+  # Events
+  bloodmoon-rises: "&4☾ De Bloedmaan stijgt... ☾"
+  bloodmoon-dawns: "&7☀ De Bloedmaan verdwijnt bij het ochtendgloren... ☀"
+  bloodmoon-dread: "&7Een gevoel van angst vult de lucht..."
+
+  # Combat and Zombies
+  zombie-headshot: "&4&lHoofdschot!"
+  zombie-bodyshot: "Je hebt het lichaam van de zombie geraakt!"
+
+  # Permissions and Restrictions
+  no-permission: "Je hebt geen toestemming om dit te doen."
+  players-only-cmd: "Alleen spelers kunnen deze commando uitvoeren."
+  player-not-found: "Speler niet gevonden."
+  world-restriction-message: "Je kunt deze plugin niet gebruiken in de huidige wereld: %world%."
+  xp-restricted-world: "XP verzamelen is uitgeschakeld in deze wereld."
+  xp-restricted-item: "XP-gerelateerde items zijn uitgeschakeld op deze server."
+
+  # Inventory and Crafting
+  torch-used: "De fakkel is nu actief en biedt nachtzicht!"
+  torch-out-of-power: "De fakkel is zonder stroom en kan niet gebruikt worden."
+  battery-empty: "Deze batterij is leeg en kan niet gebruikt worden."
+  battery-transferred: "De batterij is overgedragen naar de fakkel."
+  cannot-switch-during-torch-use: "Je kunt geen items wisselen terwijl de fakkel in gebruik is."
+  crafting-success: "Je hebt het item succesvol gecreëerd!"
+  crafting-blacklist: "&4Je kunt dit item niet maken!"
   receipe-missing: "Het recept voor dit item ontbreekt of is incompleet."
   invalid-material: "Het materiaal voor dit item is ongeldig."
-  config-reload: "De configuratie-instellingen zijn herladen."
-  no-permission: "Je hebt geen toestemming om deze opdracht uit te voeren."
-  players-only-cmd: "Alleen spelers kunnen deze opdracht uitvoeren."
-  player-not-found: "Speler niet gevonden."
-  invalid-item: "Ongeldig item. Beschikbare items: Adrenaline, Analgesie, Antibiotica, Verband, Fakkel, Batterij."
-  invalid-qty: "Ongeldige hoeveelheid. Voer een geldige hoeveelheid in."
+  invalid-item: "Ongeldig item. Beschikbare items: Adrenaline, Analgesia, Antibiotica, Verband, Fakkel, Batterij."
+  invalid-qty: "Ongeldige hoeveelheid. Voer een geldig nummer in."
+
+  # Barbed Wire
   no-wire-cutters: "&cJe hebt draadknippers nodig om het prikkeldraad te verwijderen!"
   hurt-by-barbed-wire: "&cJe bent gewond door het prikkeldraad!"
+
+  # Rewards
   reward-money: "Je bent beloond met {amount} munten!"
   reward-items: "Je bent beloond met x{quantity} {itemName}(s)!"
+
+  # Configuration and Updates
+  config-reload: "De configuratie-instellingen zijn opnieuw geladen."
+  update-plots-err: "&fKon het aantal percelen van {player} niet bijwerken."
+
+  # Plot Management
+  plots-updated: '&2Het aantal percelen van {player} is aangepast met {new-plots}. Ze hebben nu {total-plots} percelen over.'
+  missing-plots: '&4Kon het resterende aantal percelen niet ophalen.'
+  missing-plots-err: '&4Je moet kiezen hoeveel percelen je aan {player} wilt geven.'
+
+  # Camp Commands
+  camp-cmd-no-player: '&4Je moet een speler selecteren.'
+  camp-cmd-no-amount: '&4Je moet kiezen hoeveel percelen je aan {player} wilt geven.'
+  camp-cmd-no-neg: '&eJe kunt geen negatieve getallen gebruiken in de /camp-commando.'
+  camp-created: '&eJe kamp is aangemaakt!'
+  camp-created-err: '&4Het kamp kon niet worden aangemaakt.'
+  camp-destroyed: '&eJe kamp is niet meer veilig.'
+  camp-destroyed-err: '&cJe kamp kon niet worden vernietigd.'
+  camp-exists: '&eHet kamp kon niet worden aangemaakt omdat er al een kamp met die naam bestaat.'
+  camp-info: '------------- &c&l[Informatie over Kampen] &r&f-------------'
+  camp-info-msg: 'Kon het resterende aantal blokken niet ophalen.'
+  camp-plot-count: 'Je hebt &2{plots} &r&fpercelen over. Gebruik ze verstandig.'
 ```
 
 </details>

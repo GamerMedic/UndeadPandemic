@@ -10,43 +10,97 @@ description: Zhōngwén de mòrèn YAML wénjiàn. (Yóu gǔgē fānyì tígōng
 
 ```yaml
 messages:
+  # Welcome and Premium Messages
+  welcome-premium: "欢迎，{playerName}！"
+  upgrade-premium: "升级到高级版，享受独家福利！"
+  no-premium: "这是高级版功能！"
+
+  # Player Health and Effects
+  thirst-warning: "警告：你的口渴值很低！"
+  thirst-buffer: "你的口渴值危机四伏！你感觉虚弱且迷茫。"
+  water-purification: "你将脏水净化成了干净水！"
+  analgesia-used: "你使用了止痛药。你的健康部分恢复了。"
+  bandage-used: "你使用了绷带。健康恢复已启用。"
+  antibiotics-used: "你使用了抗生素。所有负面效果已清除！"
+  adrenaline-used: "你使用了肾上腺素。你现在恢复了满血，并且在接下来的30秒内有伤害抗性。"
+  infection-applied: "&4你已被感染！"
+
+  # Zombie Guts
   zombie-guts-effect-worn-off: "僵尸内脏效果已消失。"
   zombie-guts-removed-rain: "由于下雨，僵尸内脏效果已被移除。"
   zombie-guts-removed-water: "由于进入水中，僵尸内脏效果已被移除。"
-  welcome-premium: "欢迎，{playerName}！"
-  upgrade-premium: "升级到高级版，享受专属福利！"
-  no-premium: "这是一个高级功能！"
-  thirst-warning: "警告：您的口渴值较低！"
-  thirst-buffer: "您的口渴值已达到临界水平！您感到虚弱并且困惑。"
-  water-purification: "您已将脏水净化为干净的水！"
-  zombie-headshot: "您击中了僵尸的头部！"
-  zombie-bodyshot: "您击中了僵尸的身体！"
-  infection-applied: "&4您已被感染！"
-  world-restriction-message: "您不能在当前世界中使用此插件：%world%。"
-  xp-restricted-world: "此世界禁用XP收集。"
-  xp-restricted-item: "此服务器禁用与XP相关的物品。"
-  torch-used: "火把已激活，提供夜视！"
-  torch-out-of-power: "火把电量耗尽，无法使用。"
-  battery-empty: "此电池已耗尽，无法使用。"
-  battery-transferred: "电池电量已转移到火把上。"
-  cannot-switch-during-torch-use: "在火把使用期间，您无法更换物品。"
-  analgesia-used: "您已使用止痛药。您的健康已部分恢复。"
-  bandage-used: "您已使用绷带。健康恢复已激活。"
-  antibiotics-used: "您已使用抗生素。所有负面效果已被移除。"
-  adrenaline-used: "您已使用肾上腺素。您现在处于满血状态，并且在30秒内具有伤害抗性。"
-  crafting-success: "您已成功制作物品！"
-  receipe-missing: "此物品的配方缺失或不完整。"
-  invalid-material: "此物品的材料无效。"
-  config-reload: "配置设置已重新加载。"
-  no-permission: "您没有执行此命令的权限。"
+  zombie-guts-created: "*你把恶心的僵尸内脏涂在身上，现在你闻起来像腐烂的尸体！*"
+  zombie-guts-chestplate: "我把僵尸内脏涂在了衣服上... 真恶心。"
+  zombie-guts-status-four: "&4这个效果应该会持续一段时间。"
+  zombie-guts-status-three: "&c这个效果应该会持续足够长的时间。"
+  zombie-guts-status-two: "&6我带着这个不会太久。"
+  zombie-guts-status-one: "&e这只是一个污点，不能维持太久。"
+  zombie-guts-status-zero: "&7这样下去也没有意义，什么地方也不能去。"
+  zombie-guts-plate-status-four: "&4新鲜且滴水..."
+  zombie-guts-plate-status-three: "&c血迹斑斑。"
+  zombie-guts-plate-status-two: "&6正在干燥。恶臭上升。"
+  zombie-guts-plate-status-one: "&e腐烂。苍蝇聚集。"
+  zombie-guts-plate-status-zero: "&7正在分解..."
+
+  # Events
+  bloodmoon-rises: "&4☾ 血月升起... ☾"
+  bloodmoon-dawns: "&7☀ 血月在黎明破晓时消失... ☀"
+  bloodmoon-dread: "&7空气中弥漫着一股恐惧的气息..."
+
+  # Combat and Zombies
+  zombie-headshot: "&4&l爆头！"
+  zombie-bodyshot: "你击中了僵尸的身体！"
+
+  # Permissions and Restrictions
+  no-permission: "你没有权限执行此操作。"
   players-only-cmd: "只有玩家可以执行此命令。"
-  player-not-found: "无法找到玩家。"
-  invalid-item: "无效物品。可用物品：肾上腺素、止痛药、抗生素、绷带、火把、电池。"
-  invalid-qty: "无效数量。请输入有效数字。"
-  no-wire-cutters: "&c您需要使用钢丝剪来移除铁丝网！"
-  hurt-by-barbed-wire: "&c您被铁丝网刺伤了！"
-  reward-money: "您获得了{amount}金币奖励！"
-  reward-items: "您获得了x{quantity}个{itemName}奖励！"
+  player-not-found: "未找到玩家。"
+  world-restriction-message: "你不能在当前世界使用此插件：%world%。"
+  xp-restricted-world: "在此世界中禁止收集经验值。"
+  xp-restricted-item: "此服务器禁用了与经验相关的物品。"
+
+  # Inventory and Crafting
+  torch-used: "火把现在已激活，提供夜视效果！"
+  torch-out-of-power: "火把电力已耗尽，无法使用。"
+  battery-empty: "此电池已空，无法使用。"
+  battery-transferred: "电池电量已转移到火把上。"
+  cannot-switch-during-torch-use: "在使用火把时无法切换物品。"
+  crafting-success: "你已成功制作该物品！"
+  crafting-blacklist: "&4你不能制作这个物品！"
+  receipe-missing: "此物品的配方丢失或不完整。"
+  invalid-material: "该物品的材料无效。"
+  invalid-item: "无效的物品。可用物品：肾上腺素、止痛药、抗生素、绷带、火把、电池。"
+  invalid-qty: "数量无效。请输入一个有效的数字。"
+
+  # Barbed Wire
+  no-wire-cutters: "&c你需要 wire cutters 才能移除铁丝网！"
+  hurt-by-barbed-wire: "&c你被铁丝网伤到了！"
+
+  # Rewards
+  reward-money: "你获得了 {amount} 硬币的奖励！"
+  reward-items: "你获得了 x{quantity} 个 {itemName} 的奖励！"
+
+  # Configuration and Updates
+  config-reload: "配置设置已重新加载。"
+  update-plots-err: "&f无法更新 {player} 的地块数量。"
+
+  # Plot Management
+  plots-updated: '&2{player} 的地块数量已调整为 {new-plots}。他们现在有 {total-plots} 个地块剩余。'
+  missing-plots: '&4无法获取剩余的地块数量。'
+  missing-plots-err: '&4你必须选择给 {player} 分配多少地块。'
+
+  # Camp Commands
+  camp-cmd-no-player: '&4你必须选择一个玩家。'
+  camp-cmd-no-amount: '&4你必须选择给 {player} 分配多少地块。'
+  camp-cmd-no-neg: '&e你不能在 /camp 命令中使用负数。'
+  camp-created: '&e你的营地已创建！'
+  camp-created-err: '&4无法创建营地。'
+  camp-destroyed: '&e你的营地不再安全。'
+  camp-destroyed-err: '&c无法销毁你的营地。'
+  camp-exists: '&e无法创建营地，因为已经有一个同名的营地存在。'
+  camp-info: '------------- &c&l[营地信息] &r&f-------------'
+  camp-info-msg: '无法获取剩余的块数。'
+  camp-plot-count: '你剩余 &2{plots} &r&f个地块。请明智使用它们。'
 ```
 
 </details>

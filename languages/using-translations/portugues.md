@@ -12,44 +12,97 @@ description: >-
 
 ```yaml
 messages:
-  zombie-guts-effect-worn-off: "O efeito Zombie Guts acabou."
-  zombie-guts-removed-rain: "O efeito Zombie Guts foi removido devido à chuva."
-  zombie-guts-removed-water: "O efeito Zombie Guts foi removido devido ao contato com a água."
+  # Welcome and Premium Messages
   welcome-premium: "Bem-vindo, {playerName}!"
-  upgrade-premium: "Faça upgrade para premium para benefícios exclusivos!"
-  no-premium: "Esta é uma funcionalidade premium!"
+  upgrade-premium: "Faça upgrade para o premium e obtenha benefícios exclusivos!"
+  no-premium: "Esta é uma função Premium!"
+
+  # Player Health and Effects
   thirst-warning: "Aviso: Sua sede está baixa!"
-  thirst-buffer: "Sua sede está criticamente baixa! Você está se sentindo fraco e confuso."
+  thirst-buffer: "Sua sede está criticamente baixa! Você se sente fraco e confuso."
   water-purification: "Você purificou a água suja em água limpa!"
-  zombie-headshot: "Você acertou a cabeça do zumbi!"
-  zombie-bodyshot: "Você acertou o corpo do zumbi!"
-  infection-applied: "&4Você foi infectado!"
-  world-restriction-message: "Você não pode usar este plugin no mundo atual: %world%."
-  xp-restricted-world: "A coleta de XP está desativada neste mundo."
-  xp-restricted-item: "Itens relacionados a XP estão desativados neste servidor."
-  torch-used: "A tocha está agora ativa e fornece visão noturna!"
-  torch-out-of-power: "A tocha ficou sem bateria e não pode ser usada."
-  battery-empty: "Esta bateria está vazia e não pode ser usada."
-  battery-transferred: "A vida útil da bateria foi transferida para a tocha."
-  cannot-switch-during-torch-use: "Você não pode trocar de item enquanto a tocha estiver em uso."
   analgesia-used: "Você usou Analgesia. Sua saúde foi parcialmente restaurada."
   bandage-used: "Você usou um Curativo. A regeneração de saúde foi ativada."
-  antibiotics-used: "Você usou Antibióticos. Todos os efeitos negativos foram removidos."
-  adrenaline-used: "Você usou Adrenalina. Agora você está com saúde total e tem resistência a danos por 30 segundos."
+  antibiotics-used: "Você usou Antibióticos. Todos os efeitos negativos foram removidos!"
+  adrenaline-used: "Você usou Adrenalina. Agora está com saúde total e resistência a danos por 30 segundos."
+  infection-applied: "&4Você foi infectado!"
+
+  # Zombie Guts
+  zombie-guts-effect-worn-off: "O efeito das Entranhas de Zumbi desapareceu."
+  zombie-guts-removed-rain: "O efeito das Entranhas de Zumbi foi removido devido à chuva."
+  zombie-guts-removed-water: "O efeito das Entranhas de Zumbi foi removido ao entrar na água."
+  zombie-guts-created: "*Você se cobriu com as nojentas entranhas e agora você cheira a podre!*"
+  zombie-guts-chestplate: "Eu espalhei as entranhas na minha roupa... Que nojo."
+  zombie-guts-status-four: "&4Isso deve durar um tempo."
+  zombie-guts-status-three: "&cIsso deve durar o suficiente."
+  zombie-guts-status-two: "&6Eu não tenho muito tempo com isso."
+  zombie-guts-status-one: "&eIsso é apenas uma mancha, não vai durar muito."
+  zombie-guts-status-zero: "&7Isso não vai adiantar, você não pode ir para lugar algum com isso."
+  zombie-guts-plate-status-four: "&4Fresca e escorrendo..."
+  zombie-guts-plate-status-three: "&cEscorregadia de sangue."
+  zombie-guts-plate-status-two: "&6Secando. O cheiro está aumentando."
+  zombie-guts-plate-status-one: "&eApodrecendo. Moscas se acumulam."
+  zombie-guts-plate-status-zero: "&7Está caindo aos pedaços..."
+
+  # Events
+  bloodmoon-rises: "&4☾ A Lua de Sangue Está Subindo... ☾"
+  bloodmoon-dawns: "&7☀ A Lua de Sangue desaparece com a chegada da manhã... ☀"
+  bloodmoon-dread: "&7Uma sensação de medo preenche o ar..."
+
+  # Combat and Zombies
+  zombie-headshot: "&4&lTiro na cabeça!"
+  zombie-bodyshot: "Você acertou o corpo do zumbi!"
+
+  # Permissions and Restrictions
+  no-permission: "Você não tem permissão para fazer isso."
+  players-only-cmd: "Apenas jogadores podem executar este comando."
+  player-not-found: "Jogador não encontrado."
+  world-restriction-message: "Você não pode usar esta plugin no mundo atual: %world%."
+  xp-restricted-world: "A coleta de XP está desabilitada neste mundo."
+  xp-restricted-item: "Itens relacionados ao XP estão desabilitados neste servidor."
+
+  # Inventory and Crafting
+  torch-used: "A tocha agora está ativa e fornece visão noturna!"
+  torch-out-of-power: "A tocha ficou sem energia e não pode ser usada."
+  battery-empty: "Esta bateria está vazia e não pode ser usada."
+  battery-transferred: "A vida da bateria foi transferida para a tocha."
+  cannot-switch-during-torch-use: "Você não pode trocar de itens enquanto a tocha estiver em uso."
   crafting-success: "Você criou o item com sucesso!"
-  receipe-missing: "A receita para este item está ausente ou incompleta."
+  crafting-blacklist: "&4Você não pode criar este item!"
+  receipe-missing: "A receita para este item está faltando ou incompleta."
   invalid-material: "O material para este item é inválido."
-  config-reload: "As configurações de configuração foram recarregadas."
-  no-permission: "Você não tem permissão para executar este comando."
-  players-only-cmd: "Somente jogadores podem executar este comando."
-  player-not-found: "Não foi possível encontrar o jogador."
   invalid-item: "Item inválido. Itens disponíveis: Adrenalina, Analgesia, Antibióticos, Curativo, Tocha, Bateria."
-  invalid-qty: "Quantidade inválida. Insira um número válido."
-  no-wire-cutters: "&cVocê precisa de alicates de arame para remover o arame farpado!"
-  hurt-by-barbed-wire: "&cVocê se feriu com o arame farpado!"
+  invalid-qty: "Quantidade inválida. Por favor, insira um número válido."
+
+  # Barbed Wire
+  no-wire-cutters: "&cVocê precisa de cortadores de arame para remover o arame farpado!"
+  hurt-by-barbed-wire: "&cVocê foi ferido pelo arame farpado!"
+
+  # Rewards
   reward-money: "Você foi recompensado com {amount} moedas!"
   reward-items: "Você foi recompensado com x{quantity} {itemName}(s)!"
 
+  # Configuration and Updates
+  config-reload: "As configurações de configuração foram recarregadas."
+  update-plots-err: "&fNão foi possível atualizar o número de parcelas de {player}."
+
+  # Plot Management
+  plots-updated: '&2O número de parcelas de {player} foi ajustado para {new-plots}. Eles agora têm {total-plots} parcelas restantes.'
+  missing-plots: '&4Não foi possível recuperar o número restante de parcelas.'
+  missing-plots-err: '&4Você deve escolher quantas parcelas dar a {player}.'
+
+  # Camp Commands
+  camp-cmd-no-player: '&4Você deve selecionar um jogador.'
+  camp-cmd-no-amount: '&4Você deve escolher quantas parcelas dar a {player}.'
+  camp-cmd-no-neg: '&eVocê não pode usar números negativos no comando /camp.'
+  camp-created: '&eSeu acampamento foi criado!'
+  camp-created-err: '&4Não foi possível criar o acampamento.'
+  camp-destroyed: '&eSeu acampamento não está mais seguro.'
+  camp-destroyed-err: '&cNão foi possível destruir seu acampamento.'
+  camp-exists: '&eO acampamento não pôde ser criado porque já existe um com o mesmo nome.'
+  camp-info: '------------- &c&l[Informações do Acampamento] &r&f-------------'
+  camp-info-msg: 'Não foi possível recuperar o número restante de blocos.'
+  camp-plot-count: 'Você tem &2{plots} &r&fparcelas restantes. Use-as com sabedoria.'
 ```
 
 </details>
