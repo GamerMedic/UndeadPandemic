@@ -5,6 +5,8 @@ layout: landing
 
 # 🧟‍♂️ UndeadPandemic
 
+<figure><img src=".gitbook/assets/new-undeadpandemic-logo-compressed.png" alt=""><figcaption><p>Survive the apocalypse, or become part of it.</p></figcaption></figure>
+
 UndeadPandemic is Spigot plugin that turns your SMP Minecraft Server into Zombie-infested post-apocalyptic world!
 
 The aim of the game is to survive, or die trying.
