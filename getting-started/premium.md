@@ -22,7 +22,7 @@ Upgrade to the <mark style="color:yellow;">**Premium Version**</mark> of <mark s
 
 #### How Much Does It Cost?
 
-The Premium version is available for just **£5.00** (that's roughly $6.25USD\*). This one-time payment grants you lifetime access to all Premium features, ensuring you get the most out of your UndeadPandemic experience.
+The Premium version is available for just **£4.99** (that's roughly $6.25USD\*). This one-time payment grants you lifetime access to all Premium features, ensuring you get the most out of your UndeadPandemic experience.
 
 \*_As of 22/11/2024_.
 
@@ -30,7 +30,7 @@ The Premium version is available for just **£5.00** (that's roughly $6.25USD\*)
 
 Upgrading to the Premium version is simple:
 
-1. [Pre-order Premium and get Early Access to UndeadPandemic v3.0.0](https://buymeacoffee.com/stevezr963/e/336425) on the 1st Febuary 2025!
+1. [Purchase the Premium version from the shop](https://undeadpandemic.stevezr963.me/premium/).
 2. After payment, you’ll receive a unique API key, as well as your UUID.
 3. Enter the API key in your [`config.yml` file](../configuration/config.yml.md) to unlock all Premium features!
 
