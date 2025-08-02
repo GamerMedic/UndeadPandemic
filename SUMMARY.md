@@ -111,8 +111,9 @@
 ## 🖼️ Placeholder API
 
 * [Placeholders](placeholder-api/placeholders.md)
-  * [zombie\_kills](placeholder-api/placeholders/zombie_kills.md)
-  * [thirst](placeholder-api/placeholders/thirst.md)
+  * [Zombies Killed](placeholder-api/placeholders/zombies-killed.md)
+  * [Headshot](placeholder-api/placeholders/headshot.md)
+  * [Thirst](placeholder-api/placeholders/thirst.md)
 
 ## 🎭 Events
 
@@ -123,6 +124,7 @@
 ## 📂 Changelogs
 
 * [Changelogs](changelogs/changelogs/README.md)
+  * [👑 v3.0.4](changelogs/changelogs/v3.0.4.md)
   * [👑 v3.0.3](changelogs/changelogs/v3.0.3.md)
   * [👑 v3.0.2](changelogs/changelogs/v3.0.2.md)
   * [👑 v3.0.1](changelogs/changelogs/v3.0.1.md)

@@ -66,7 +66,7 @@ Do not change this unless instructed to do so by us. We cannot verify your licen
 
 `health` The default health for this type of zombie. The higher the health the harder to kill.
 
-`speed` How quickly a zombie can move. `0.2` is the standard walking speed on Minecraft.
+`speed` How quickly a zombie can move. `0.23` is the standard walking speed on Minecraft for a Zombie.
 
 `strength` The amount of damage that this type of zombie can inflict in one blow. `2 = 1❤️`
 
