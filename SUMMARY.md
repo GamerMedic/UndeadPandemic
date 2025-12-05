@@ -90,7 +90,7 @@
 * [🧟‍♂️ Zombie Mask](items/zombie-mask.md)
 * [🩸 Zombie Guts](items/zombie-guts.md)
 * [🍖 Rotten Flesh](items/rotten-flesh.md)
-* [🔦 Torch](items/torch/README.md)
+* [🔦 Torch](items/torch.md)
   * [🔋 Batteries](items/torch/batteries.md)
 * [🕸️ Barbed Wire](items/barbed-wire.md)
 * [✂️ Wire Cutters](items/wire-cutters.md)
@@ -110,7 +110,7 @@
 
 ## 🖼️ Placeholder API
 
-* [Placeholders](placeholder-api/placeholders/README.md)
+* [Placeholders](placeholder-api/placeholders.md)
   * [Zombies Killed](placeholder-api/placeholders/zombies-killed.md)
   * [Headshot](placeholder-api/placeholders/headshot.md)
   * [Thirst](placeholder-api/placeholders/thirst.md)
@@ -124,6 +124,7 @@
 ## 📂 Changelogs
 
 * [Changelogs](changelogs/changelogs/README.md)
+  * [👑 v3.1.0](changelogs/changelogs/v3.1.0.md)
   * [👑 v3.0.4](changelogs/changelogs/v3.0.4.md)
   * [👑 v3.0.3](changelogs/changelogs/v3.0.3.md)
   * [👑 v3.0.2](changelogs/changelogs/v3.0.2.md)
@@ -136,7 +137,7 @@
   * [v2.7.9](changelogs/changelogs/v2.7.9.md)
   * [v2.7.8](changelogs/changelogs/v2.7.8.md)
   * [v2.7.5](changelogs/changelogs/v2.7.5.md)
-  * [v2.6.1](changelogs/changelogs/v2.6.1.md)
+  * [v2.6.1](changelogs/changelogs/v2.6.1-1.md)
   * [v2.6.0](changelogs/changelogs/v2.6.0.md)
   * [v2.5.1](changelogs/changelogs/v2.5.1.md)
   * [v2.5.0](changelogs/changelogs/v2.5.0.md)
@@ -151,7 +152,7 @@
   * [🇩🇪 🇩🇪 Deutsch](languages/using-translations/deutsch.md)
   * [🇬🇧 🇬🇧 English](languages/using-translations/english.md)
   * [🇪🇸 🇪🇸 Español](languages/using-translations/espanol.md)
-  * [🇫🇷 🇫🇷 Français](languages/using-translations/francais.md)
+  * [🇫🇷 🇫🇷 Français](<languages/using-translations/francais (1).md>)
   * [🇳🇱 🇳🇱 Nederlands](languages/using-translations/nederlands.md)
   * [🇵🇹 🇵🇹 Português](languages/using-translations/portugues.md)
   * [🇨🇳 🇨🇳 Zhōngguó rén](languages/using-translations/chinese.md)

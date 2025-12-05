@@ -19,6 +19,36 @@ Changing the `version` number can result in a corrupted config.yml file.
 `worlds` Create a blacklist or whitelist of worlds where you want the plugin to work.
 {% endtab %}
 
+{% tab title="Storage" %}
+{% hint style="info" %}
+The Storage configuration section is useful if you support multiple servers over a Bungee (or similar) network. Using Flatfile is recommended for most standalone servers as it's much quicker to store and reduces lag.
+{% endhint %}
+
+**Section** `storage` _Configuration Section_
+
+`type`: **`flatfile`**` ``| sqlite | mysql` flatfile is set by default and can be found in `data/playerData.yml`.
+
+**Section** `mysql` _Storage Configuration Section_
+
+`host`: `localhost`
+
+`port`: `3306`
+
+`database`: `undeadpandemic`
+
+`username`: `root`
+
+`password`: `your-password`
+
+`table`: `player_data`
+
+`useSSL`: `false` Make sure that your database accepts SSL connections, otherwise connection will fail.
+
+**Section** `sqlite` _Storage Configuration Section_
+
+`file`: `playerData.db`
+{% endtab %}
+
 {% tab title="Premium" %}
 `api-key` A special key that is received when a premium licence is purchased.
 

@@ -19,34 +19,34 @@ Use any weapons and all the ammo that you can get your hands on, and use medicat
 [installation.md](getting-started/installation.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/HqigB6KtN3pARrnNNtzp" %}
+[Broken link](/broken/pages/HqigB6KtN3pARrnNNtzp)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/vIbOgTAloYVmIKRHCtcG" %}
+[Broken link](/broken/pages/vIbOgTAloYVmIKRHCtcG)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/5jor3e4F5Q4474IVMrnQ" %}
+[Broken link](/broken/pages/5jor3e4F5Q4474IVMrnQ)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/2kkNFb7mzTmTwkVjZFvL" %}
+[Broken link](/broken/pages/2kkNFb7mzTmTwkVjZFvL)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/IDSuXvq0ySVehE59Vvx4" %}
+[Broken link](/broken/pages/IDSuXvq0ySVehE59Vvx4)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/dKYCb5VUtb1pLCU5H94Z" %}
+[Broken link](/broken/pages/dKYCb5VUtb1pLCU5H94Z)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/Nn7j8AJUUaSxhDOvf7zd" %}
+[Broken link](/broken/pages/Nn7j8AJUUaSxhDOvf7zd)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/Qm4EpE1BTkQkyqy6hk3l" %}
+[Broken link](/broken/pages/Qm4EpE1BTkQkyqy6hk3l)
 {% endcontent-ref %}

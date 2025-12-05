@@ -1,5 +1,5 @@
 # undeadpandemic.use.medical
 
-This node will allow users to use [medical items](broken-reference).
+This node will allow users to use [medical items](/broken/pages/2kkNFb7mzTmTwkVjZFvL).
 
 [undeadpandemic.use](./) should be used unless there is a specific reason to only allow users to use medical items.
